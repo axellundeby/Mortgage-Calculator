@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boliglånssøknad</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .currency {
+            padding: 10px 12px;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+        }
+
+        input[type="number"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-left: none;
+            border-radius: 0 4px 4px 0;
+            font-size: 16px;
+        }
+
+        input.standalone-input {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .result-section {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Find the best mortgage for you!</h1>
+
+    <form id="loanForm">
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" class="standalone-input" min="18" max="100" value="30">
+        </div>
+
+        <div class="form-group">
+            <label for="loanAmount">Value of mortgage:</label>
+            <div class="input-container">
+                <span class="currency">kr</span>
+                <input type="number" id="loanAmount" value="2000000" min="100000" step="10000">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="houseValue">Value of house:</label>
+            <div class="input-container">
+                <span class="currency">kr</span>
+                <input type="number" id="houseValue" value="3000000" min="100000" step="10000">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="loanTerm">Repayment period: </label>
+            <input type="number" id="loanTerm" class="standalone-input" min="1" max="30" value="20">
+        </div>
+
+        <button type="button" onclick="calculateBestLoan()">Click here to find the best mortage</button>
+    </form>
+
+    <div id="resultSection" class="result-section">
+        <h2>Best offer:</h2>
+        <div id="loanResult"></div>
+    </div>
+
+    <script>
+        function calculateBestLoan() {
+            // Get input values
+            const age = document.getElementById('age').value;
+            const loanAmount = document.getElementById('loanAmount').value;
+            const houseValue = document.getElementById('houseValue').value;
+            const loanTerm = document.getElementById('loanTerm').value;
+
+            // Calculate loan-to-value ratio
+            const ltv = (loanAmount / houseValue * 100).toFixed(1);
+
+            // Show loading state
+            const resultDiv = document.getElementById('loanResult');
+            resultDiv.innerHTML = "<p>Analyzing your data...</p>";
+
+            // Show result section
+            document.getElementById('resultSection').style.display = 'block';
+
+            // Simulate API call
+            setTimeout(() => {
+                resultDiv.innerHTML = `
+            <p><strong>Your details:</strong></p>
+            <ul>
+                <li>Age: ${age} years</li>
+                <li>Loan amount: ${formatNumber(loanAmount)} NOK</li>
+                <li>House value: ${formatNumber(houseValue)} NOK</li>
+                <li>Loan-to-value ratio: ${ltv}%</li>
+                <li>Repayment period: ${loanTerm} years</li>
+            </ul>
+            <p>
+                <ul>
+                    <li><strong>Bank:</strong> DNB Bank ASA</li>
+                    <li><strong>Nominal Interest Rate:</strong> 5.14%</li>
+                    <li><strong>Effective Interest Rate:</strong> 5.3%</li>
+                    <li><strong>Establishment Fee:</strong> 2190 NOK</li>
+                    <li><strong>Term Fee:</strong> 65 NOK</li>
+                    <li><strong>Maximum Loan-to-Value Ratio:</strong> 75%</li>
+                </ul>
+            </p>
+            <button type="button">Change mortage to DNB Bank ASA now!</button>
+        `;
+
+                document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth' });
+            }, 1500);
+        }
+
+        function formatNumber(num) {
+            return new Intl.NumberFormat('no-NO').format(num);
+        }
+
+        
+        </script>
+    
+</body>
+
+</html>
