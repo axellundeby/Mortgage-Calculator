@@ -1,0 +1,2014 @@
+Bank,Lånenavn,Nominell rente,Etableringsgebyr,Termingebyr,Min beløp,Maks beløp,Min alder,Maks alder,Maks løpetid (år)
+Sparebanken DIN Telemark,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Hegra Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sunndal Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,ATV/snøscooterlån inntil 100%,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,5
+"Bank Norwegian, en filial av NOBA Bank Group AB (publ)",Usikret rammelån,13.99,0.0,0.0,10000.0,200000.0,23,100,5
+Lillesands Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Østlandet,Lån til elbil inntil 65%,6.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,ATV/snøscooterlån LO inntil 80%,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Valle Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,Lån til elbil inntil 65%,6.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+Odal Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Oppdalsbanken,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+"Bank Norwegian, en filial av NOBA Bank Group AB (publ)",Forbrukslån - Gjennomsnitt,15.29,5000.0,30.0,5000.0,600000.0,23,100,5
+"Bank Norwegian, en filial av NOBA Bank Group AB (publ)",Refinansiering,12.69,5000.0,30.0,5000.0,800000.0,23,100,15
+Vekselbanken,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Valdres Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Østlandet AS,Lån til elbil inntil 65%,6.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+Trøndelag Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Jæren Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,Lån til elbil inntil 80%,7.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+Luster Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,Lån til elbil inntil 80%,7.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+Soknedal Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Luster Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nordmøre,ATV/snøscooterlån LO inntil 100%,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Berg Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sør-Norge,LOfavør MC-lån med 0-20% egenkapital,8.19,2200.0,70.0,50000.0,1000000000.0,18,100,10
+AS Financiering (Sparebanken Øst),Lån til båt over 7 meter 35% egenkapital,7.1,5000.0,95.0,100000.0,10000000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,Lån til elbil inntil 80%,7.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 SMN,ATV/snøscooterlån inntil 80%,8.9,2990.0,95.0,30000.0,1000000000.0,18,100,5
+SpareBank 1 Lom og Skjåk,ATV/snøscooterlån LO inntil 100%,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Flekkefjord Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Tysnes Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,Båt over 7 meter inntil 100%,9.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+Spareskillingsbanken,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+SpareBank 1 Østlandet,Båt over 7 meter inntil 100%,9.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+Odal Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Agder Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Drangedal Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+Oppdalsbanken,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Østlandet AS,Båt over 7 meter inntil 100%,9.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+SpareBank 1 Finans Østlandet AS,LOfavør Grønt billån inntil 100%,8.45,1000.0,95.0,50000.0,1000000000.0,18,100,8
+Luster Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+SpareBank 1 Østlandet,LOfavør Grønt billån inntil 100%,8.45,1000.0,95.0,50000.0,1000000000.0,18,100,8
+SpareBank 1 SMN,ATV/snøscooterlån LO inntil 100%,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Valle Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Valdres Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,ATV/snøscooterlån LO inntil 80%,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Romsdal Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Østlandet AS,LOfavør Grønt billån inntil 80%,7.45,1000.0,95.0,50000.0,1000000000.0,18,100,8
+SpareBank 1 Nordmøre,ATV/snøscooterlån inntil 100%,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,5
+Sparebank 68° Nord,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+JBF Bank og Forsikring,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,LOfavør Grønt billån inntil 80%,7.45,1000.0,95.0,50000.0,1000000000.0,18,100,8
+SpareBank 1 Østlandet,LOfavør Grønt billån inntil 65%,6.45,1000.0,95.0,50000.0,1000000000.0,18,100,8
+Haugesund Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Rogaland Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Fana Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,LOfavør Grønt billån inntil 65%,6.45,1000.0,95.0,50000.0,1000000000.0,18,100,8
+Strømmen Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Brage Finans AS,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+Oslofjord Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,LOfavør Båt over 7 meter inntil 65%,7.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+Sparebanken Sør,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+Selbu Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Jæren Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,LOfavør Båt over 7 meter inntil 65%,7.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+Sparebanken Vest,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+Sparebanken Sør,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,ATV/snøscooterlån LO inntil 100%,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Høland og Setskog Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Lom og Skjåk,ATV/snøscooterlån LO inntil 80%,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Haugesund Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,LOfavør Båt over 7 meter inntil 65%,7.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+Sparebanken Vest,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nordmøre,ATV/snøscooterlån LO inntil 65%,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Romerike Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Grong Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 68° Nord,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Østlandet,Båt over 7 meter inntil 65%,7.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+SpareBank 1 Gudbrandsdal,ATV/snøscooterlån LO inntil 80%,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,5
+SpareBank 1 Finans Østlandet AS,Båt over 7 meter inntil 65%,7.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+Haugesund Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,Båt over 7 meter inntil 65%,7.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+SpareBank 1 Finans Midt-Norge AS,ATV/snøscooterlån LO inntil 65%,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,5
+SpareBank 1 Østfold Akershus,LOfavør Billån inntil 80%,7.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,Båt over 7 meter inntil 80%,8.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+Sparebanken DIN Telemark,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Voss Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+SpareBank 1 Gudbrandsdal,ATV/snøscooterlån LO inntil 100%,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Drangedal Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Vekselbanken,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,Båt over 7 meter inntil 80%,8.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+Skudenes & Aakra Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+Sogn Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Nidaros Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Birkenes Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Østlandet AS,Båt over 7 meter inntil 80%,8.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+Sparebanken Sør,Forbrukslån,15.0,2500.0,65.0,5000.0,500000.0,18,100,5
+Luster Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nordmøre,Kaskofritt Caravanlån/Bobillån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Østlandet,Båt under 7 meter inntil 100%,11.95,7995.0,95.0,50000.0,500000.0,18,100,7
+Soknedal Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Nidaros Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+Askim og Spydeberg Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Berg Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Hallingdal Valdres,ATV/snøscooterlån LO inntil 65%,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Romsdal Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,Kaskofritt Caravanlån/Bobillån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Finans Østlandet AS,Båt under 7 meter inntil 100%,11.95,7995.0,95.0,50000.0,500000.0,18,100,7
+Søgne og Greipstad Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Sparebank 68° Nord,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+SpareBank 1 Lom og Skjåk,LO Favør kaskofritt lån ATV/Snøscooter,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Lom og Skjåk,Kaskofritt Caravanlån/Bobillån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Sparebanken Narvik,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Haugesund Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Sparebanken DIN Telemark,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+Sparebanken Narvik,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Etnedal Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Stadsbygd Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+Voss Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,LO Favør kaskofritt lån ATV/Snøscooter,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Ringerike Hadeland,LOfavør Båt over 7 meter inntil 100%,9.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+SpareBank 1 Hallingdal Valdres,Kaskofritt Caravanlån/Bobillån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Strømmen Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Tolga-Os Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+Askim og Spydeberg Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Østlandet,LOfavør Båt over 7 meter inntil 100%,9.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+SpareBank 1 Finans Midt-Norge AS,Kaskofritt Caravanlån/Bobillån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Storebrand Bank ASA,Forbrukslån,11.56,990.0,50.0,20000.0,400000.0,23,70,5
+SpareBank 1 Gudbrandsdal,Kaskofritt Caravanlån/Bobillån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Hallingdal Valdres,ATV/snøscooterlån LO inntil 80%,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Nidaros Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Selbu Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,LOfavør Båt over 7 meter inntil 100%,9.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+Valle Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Evje og Hornnes Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Fana Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Aasen Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,LOfavør Båt over 7 meter inntil 80%,8.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+Skagerrak Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nordmøre,ATV/snøscooterlån LO inntil 80%,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,5
+SpareBank 1 Finans Østlandet AS,LOfavør Båt over 7 meter inntil 80%,8.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+Selbu Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Askim og Spydeberg Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+SpareBank 1 Østlandet,LOfavør Båt over 7 meter inntil 80%,8.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+SpareBank 1 Finans Østlandet AS,LOfavør Båt under 7 meter inntil 100%,11.65,7995.0,95.0,50000.0,500000.0,18,100,7
+SpareBank 1 SMN,ATV/snøscooterlån LO inntil 65%,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,5
+SpareBank 1 Østlandet,Båt under 7 meter inntil 65%,9.95,7995.0,95.0,50000.0,500000.0,18,100,7
+Kredittbanken ASA - Del av SpareBank 1 og Eika,Agrikjøp Forbrukslån,13.7,990.0,40.0,0.0,300000.0,20,100,5
+SpareBank 1 Gudbrandsdal,LO Favør kaskofritt lån ATV/Snøscooter,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Rindal Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Gudbrandsdal,ATV/snøscooterlån LO inntil 65%,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Romerike Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Østlandet AS,LOfavør Båt under 7 meter inntil 80%,10.65,7995.0,95.0,50000.0,500000.0,18,100,7
+SpareBank 1 Finans Østlandet AS,Båt under 7 meter inntil 65%,9.95,7995.0,95.0,50000.0,500000.0,18,100,7
+Kvinesdal Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nordmøre,LO Favør kaskofritt lån ATV/Snøscooter,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Finans Østlandet AS,Båt under 7 meter inntil 80%,10.95,7995.0,95.0,50000.0,500000.0,18,100,7
+SpareBank 1 Ringerike Hadeland,LOfavør Båt under 7 meter inntil 65%,9.65,7995.0,95.0,50000.0,500000.0,18,100,7
+Marker & Eidsberg Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Tysnes Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,LOfavør Båt under 7 meter inntil 65%,9.65,7995.0,95.0,50000.0,500000.0,18,100,7
+Flekkefjord Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+Ørskog Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sunndal Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Flekkefjord Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Vekselbanken,"Diverse forbruk privat, utan trygd",15.3,0.0,65.0,0.0,100000.0,18,100,5
+SpareBank 1 Hallingdal Valdres,LO Favør kaskofritt lån ATV/Snøscooter,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Lillesands Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,LOfavør Båt under 7 meter inntil 65%,9.65,7995.0,95.0,50000.0,500000.0,18,100,7
+SpareBank 1 Lom og Skjåk,ATV/snøscooterlån LO inntil 65%,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Grue Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,Båt under 7 meter inntil 100%,11.95,7995.0,95.0,50000.0,500000.0,18,100,7
+Skudenes & Aakra Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 SMN,LO Favør kaskofritt lån ATV/Snøscooter,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Ørland Sparebank,Kaskofritt billån,13.3,1500.0,95.0,30000.0,150000.0,18,100,10
+SpareBank 1 Sogn og Fjordane,Forbrukslån,19.45,1000.0,65.0,10000.0,100000.0,18,100,10
+SpareBank 1 Helgeland,Billån inntil 100 %,8.6,2990.0,95.0,20000.0,1000000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Elbillån inntil 80%,7.6,2400.0,95.0,30000.0,1000000000.0,18,100,8
+SpareBank 1 Nord-Norge,Billån inntil 100 %,8.6,2990.0,95.0,20000.0,1000000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Elbillån inntil 65%,6.8,2400.0,95.0,30000.0,1000000000.0,18,100,8
+Sparebank 1 Finans Nord-Norge AS,Billån inntil 100 %,8.6,2990.0,95.0,20000.0,1000000000.0,18,100,10
+Bien Sparebank ASA,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,Elbillån inntil 80%,7.6,2400.0,95.0,30000.0,1000000000.0,18,100,8
+Trøndelag Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Hallingdal Valdres,Elbillån inntil 65%,6.8,2400.0,95.0,30000.0,1000000000.0,18,100,8
+SpareBank 1 Østlandet,LOfavør Båt under 7 meter inntil 80%,10.65,7995.0,95.0,50000.0,500000.0,18,100,7
+SpareBank 1 Østfold Akershus,LOfavør Båt over 7 meter inntil 100%,9.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+SpareBank 1 Østlandet,LOfavør Båt under 7 meter inntil 100%,11.65,7995.0,95.0,50000.0,500000.0,18,100,7
+Kraft Bank ASA,Refinansieringslån uten sikkerhet,13.45,0.0,75.0,30000.0,500000.0,18,100,10
+SpareBank 1 Gudbrandsdal,18+ Start,13.25,800.0,50.0,5000.0,75000.0,18,34,5
+Rogaland Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,Elbillån inntil 65%,6.8,2400.0,95.0,30000.0,1000000000.0,18,100,8
+JBF Bank og Forsikring,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,Elbillån inntil 65%,6.8,2400.0,95.0,30000.0,1000000000.0,18,100,8
+SpareBank 1 Østlandet,Båt under 7 meter inntil 80%,10.95,7995.0,95.0,50000.0,500000.0,18,100,7
+Landkreditt Bank AS,Forbrukslån,14.05,500.0,30.0,0.0,65000.0,18,100,3
+SpareBank 1 Nordmøre,Elbillån inntil 65%,6.8,2400.0,95.0,30000.0,1000000000.0,18,100,8
+Sparebanken Møre,Båtlån under 7 meter,9.7,3950.0,95.0,1.0,1000000000.0,18,100,7
+SpareBank 1 Finans Midt-Norge AS,Elbillån inntil 100%,8.5,2400.0,95.0,30000.0,1000000000.0,18,100,8
+SpareBank 1 Nord-Norge,LOfavør Billån inntil 80%,7.4,2990.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Helgeland,Billån inntil 80%,7.7,2990.0,95.0,20000.0,1000000000.0,18,100,10
+SpareBank 1 Østlandet,Kaskofritt Billån inntil 100%,16.95,4599.0,95.0,30000.0,100000.0,18,100,5
+SpareBank 1 Sogn og Fjordane,Elbillån inntil 65%,6.8,2400.0,95.0,30000.0,1000000000.0,18,100,8
+SpareBank 1 Nord-Norge,Billån inntil 80%,7.7,2990.0,95.0,20000.0,1000000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,LOfavør Billån inntil 80%,7.4,2990.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,Kaskofritt Billån inntil 100%,16.95,4599.0,95.0,30000.0,100000.0,18,100,5
+Sparebank 1 Finans Nord-Norge AS,Billån inntil 80%,7.7,2990.0,95.0,20000.0,1000000000.0,18,100,10
+Bien Sparebank ASA,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Helgeland,Billån inntil 65%,6.85,2990.0,95.0,20000.0,1000000000.0,18,100,10
+SpareBank 1 Nord-Norge,Billån inntil 65%,6.85,2990.0,95.0,20000.0,1000000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,Billån inntil 65%,6.85,2990.0,95.0,20000.0,1000000000.0,18,100,10
+Hegra Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,Kaskofritt Billån inntil 100%,16.95,4599.0,95.0,30000.0,100000.0,18,100,5
+SpareBank 1 Nord-Norge,ATV-/ Snøscooterlån inntil 100%,9.7,2990.0,95.0,30000.0,1000000000.0,18,100,7
+SpareBank 1 Nord-Norge,LOfavør ATV-/ Snøscooterlån inntil 80%,8.6,2990.0,95.0,25000.0,1000000000.0,18,100,7
+Sparebank 1 Finans Nord-Norge AS,LOfavør ATV-/ Snøscooterlån inntil 80%,8.6,2990.0,95.0,25000.0,1000000000.0,18,100,7
+Sparebank 1 Finans Nord-Norge AS,ATV-/ Snøscooterlån inntil 100%,9.7,2990.0,95.0,30000.0,1000000000.0,18,100,7
+SpareBank 1 Lom og Skjåk,Elbillån inntil 80%,7.6,2400.0,95.0,30000.0,1000000000.0,18,100,8
+SpareBank 1 Nord-Norge,ATV-/Snøscooterlån inntil 80%,8.9,2990.0,95.0,30000.0,1000000000.0,18,100,7
+Sparebank 1 Finans Nord-Norge AS,ATV-/Snøscooterlån inntil 80%,8.9,2990.0,95.0,30000.0,1000000000.0,18,100,7
+SpareBank 1 Nord-Norge,ATV-/ Snøscooterlån inntil 65%,7.95,2990.0,95.0,25000.0,1000000000.0,18,100,7
+SpareBank 1 Gudbrandsdal,Elbillån inntil 80%,7.6,2400.0,95.0,30000.0,1000000000.0,18,100,8
+Oslofjord Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 1 Finans Nord-Norge AS,ATV-/ Snøscooterlån inntil 65%,7.95,2990.0,95.0,25000.0,1000000000.0,18,100,7
+Melhusbanken,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Lom og Skjåk,Elbillån inntil 65%,6.8,2400.0,95.0,30000.0,1000000000.0,18,100,8
+Sparebanken Øst,Kontokreditt,19.85,2990.0,0.0,1000.0,50000.0,18,100,5
+Santander Consumer Bank AS,Standard Caravanlån 80 %,8.9,2000.0,60.0,50000.0,3000000.0,18,100,15
+SpareBank 1 Sogn og Fjordane,Elbillån inntil 80%,7.6,2400.0,95.0,30000.0,1000000000.0,18,100,8
+SpareBank 1 Nord-Norge,Båtlån inntil 100%,8.9,5000.0,95.0,30000.0,1000000000.0,18,100,15
+Santander Consumer Bank AS,Standard Caravanlån 100%,9.9,2000.0,60.0,50000.0,3000000.0,18,100,15
+Sparebanken Øst,Forbrukslån,19.85,2990.0,130.0,1000.0,50000.0,18,100,5
+SpareBank 1 Helgeland,Båtlån inntil 100%,8.9,5000.0,95.0,30000.0,1000000000.0,18,100,15
+SpareBank 1 Finans Midt-Norge AS,LOfavør Elbillån inntil 100%,8.2,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Santander Consumer Bank AS,Standard Caravanlån 65%,7.85,2000.0,60.0,50000.0,3000000.0,18,100,15
+Sparebank 1 Finans Nord-Norge AS,Båtlån inntil 100%,8.9,5000.0,95.0,30000.0,1000000000.0,18,100,15
+Santander Consumer Bank AS,Standard Billån 80%,8.3,2000.0,60.0,50000.0,3000000.0,18,100,10
+SpareBank 1 Nord-Norge,LOfavør Båt under 7 meter inntil 80%,9.55,3950.0,95.0,25000.0,1000000000.0,18,100,10
+SpareBank 1 Helgeland,LOfavør Båt under 7 meter inntil 80%,9.55,3950.0,95.0,25000.0,1000000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Elbillån inntil 100%,8.5,2400.0,95.0,30000.0,1000000000.0,18,100,8
+Santander Consumer Bank AS,Standard Billån med 100%,9.3,2000.0,60.0,50000.0,3000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,LOfavør Båt under 7 meter inntil 80%,9.55,3950.0,95.0,25000.0,1000000000.0,18,100,10
+SpareBank 1 Helgeland,Båt under 7 meter inntil 80%,9.85,3950.0,95.0,25000.0,1000000000.0,18,100,10
+Haltdalen Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nord-Norge,Båt under 7 meter inntil 80%,9.85,3950.0,95.0,25000.0,1000000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,Båt under 7 meter inntil 80%,9.85,3950.0,95.0,25000.0,1000000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Elbillån inntil 100%,8.5,2400.0,95.0,30000.0,1000000000.0,18,100,8
+SpareBank 1 Helgeland,LOfavør Billån inntil 65%,6.55,2990.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 SMN,Elbillån inntil 80%,7.6,2400.0,95.0,30000.0,1000000000.0,18,100,8
+Tinn Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Hallingdal Valdres,Elbillån inntil 100%,8.5,2400.0,95.0,30000.0,1000000000.0,18,100,8
+SpareBank 1 Nord-Norge,LOfavør Billån inntil 65%,6.55,2990.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Østfold Akershus,LOfavør Båt over 7 meter inntil 65%,7.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+Sparebanken Møre,Kaskofritt billån,14.75,2990.0,95.0,1.0,1000000000.0,18,34,5
+SpareBank 1 Helgeland,LOfavør Billån inntil 80%,7.4,2990.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Nordmøre,Elbillån inntil 80%,7.6,2400.0,95.0,30000.0,1000000000.0,18,100,8
+Romsdal Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 1 Finans Nord-Norge AS,LOfavør Billån inntil 65%,6.55,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Sparebanken Møre,Båtlån over 7 meter inntil 80 %,8.25,6000.0,95.0,1.0,1000000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,Elbil inntil 80%,7.6,2990.0,95.0,20000.0,1000000000.0,18,100,10
+Sparebanken Møre,Elbil inntil 65 %,6.8,2990.0,95.0,1.0,1000000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,LOfavør Elbillån inntil 100%,8.2,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Sparebanken Møre,Båtlån over 7 meter inntil 65 %,7.65,6000.0,95.0,1.0,1000000000.0,18,100,10
+SpareBank 1 Nord-Norge,Elbil inntil 65%,6.75,2990.0,95.0,20000.0,1000000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,Elbil inntil 65%,6.75,2990.0,95.0,20000.0,1000000000.0,18,100,10
+Sparebanken Møre,Båtlån over 7 meter inntil 100 %,8.9,6000.0,95.0,1.0,1000000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,LOfavør Elbillån inntil 80%,7.3,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Santander Consumer Bank AS,Standard Båtlån under sju meter,9.95,3300.0,50.0,62500.0,2000000.0,18,80,10
+SpareBank 1 Nord-Norge,LOfavør Caravanlån inntil 65%,6.55,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Grue Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Møre,Bobil og campingvogn inntil 80 %,7.7,2990.0,95.0,1.0,1000000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,LOfavør Caravanlån inntil 65%,6.55,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Santander Consumer Bank AS,Veteranbillån,10.1,2400.0,75.0,100000.0,250000.0,30,70,5
+SpareBank 1 Nordmøre,Elbillån inntil 100%,8.5,2400.0,95.0,30000.0,1000000000.0,18,100,8
+Sparebanken Møre,Bobil og campingvogn inntil 100 %,8.6,2990.0,95.0,1.0,1000000000.0,18,100,10
+SpareBank 1 Nord-Norge,LOfavør Caravanlån inntil 80%,7.4,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Santander Consumer Bank AS,Standard Båtlån Over sju meter,9.45,6258.0,85.0,125000.0,2000000.0,18,80,10
+Sparebank 1 Finans Nord-Norge AS,LOfavør Caravanlån inntil 80%,7.4,2990.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,LOfavør Elbillån inntil 100%,8.2,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Santander Consumer Bank AS,Standard ATV-/Snøscooterlån 80 %,9.6,2400.0,75.0,50000.0,3000000.0,18,100,7
+Sparebanken Møre,Bobil og campingvogn inntil 65 %,6.9,2990.0,95.0,1.0,1000000000.0,18,100,10
+SpareBank 1 Nord-Norge,Caravanlån inntil 80%,7.7,2990.0,95.0,20000.0,10000000.0,18,100,10
+Santander Consumer Bank AS,Standard ATV-/Snøscooterlån 100%,10.1,2400.0,75.0,50000.0,3000000.0,18,100,7
+Sparebank 1 Finans Nord-Norge AS,Caravanlån inntil 80%,7.7,2990.0,95.0,20000.0,10000000.0,18,100,10
+Sparebanken Møre,Billån og Billån Ung med kaskoforsikring inntil 100 %,8.6,2990.0,95.0,1.0,1000000000.0,18,100,10
+SpareBank 1 SMN,Elbillån inntil 100%,8.5,2400.0,95.0,30000.0,1000000000.0,18,100,8
+Brage Finans AS,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nord-Norge,Caravanlån inntil 65 %,6.85,2990.0,95.0,20000.0,10000000.0,18,100,10
+Sparebanken Møre,Billån og Billån Ung med kaskoforsikring inntil 80 %,7.7,2990.0,95.0,1.0,1000000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,Caravanlån inntil 65 %,6.85,2990.0,95.0,20000.0,10000000.0,18,100,10
+Santander Consumer Bank AS,Standard ATV-/Snøscooterlån  65%,8.4,2400.0,75.0,50000.0,3000000.0,18,100,7
+SpareBank 1 Gudbrandsdal,LOfavør Elbillån inntil 100%,8.2,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Sparebanken Møre,ATV og snøscooter inntil 100 %,9.5,2990.0,95.0,1.0,1000000000.0,18,100,5
+Santander Consumer Bank AS,Standard MC-lån 80%,9.6,2400.0,75.0,10000.0,3000000.0,18,100,7
+Grong Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Helgeland,LOfavør Båtlån inntil 100%,8.6,5000.0,95.0,30000.0,1000000000.0,18,100,15
+Sparebanken Møre,Billån og Billån Ung med kaskoforsikring inntil 65 %,6.9,2990.0,95.0,1.0,1000000000.0,18,100,10
+Santander Consumer Bank AS,Standard MC-lån 100%,10.1,2400.0,75.0,10000.0,3000000.0,18,100,7
+Sparebanken Møre,ATV og Snøscooter inntil 65 %,7.7,2990.0,95.0,1.0,1000000000.0,18,100,5
+NORDirekte (Skagerrak Sparebank),Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nord-Norge,LOfavør Båtlån inntil 100%,8.6,5000.0,95.0,30000.0,1000000000.0,18,100,15
+Sparebank 1 Finans Nord-Norge AS,LOfavør Båtlån inntil 100%,8.6,5000.0,95.0,30000.0,1000000000.0,18,100,15
+Santander Consumer Bank AS,Standard MC-lån  65%,8.4,2400.0,75.0,10000.0,3000000.0,18,100,7
+Sparebanken Møre,ATV og snøscooter inntil 80 %,8.9,2990.0,95.0,1.0,1000000000.0,18,100,5
+SpareBank 1 Nordmøre,LOfavør Elbillån inntil 65%,6.5,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Etnedal Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Spareskillingsbanken,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Sparebanken Narvik,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Søgne og Greipstad Sparebank,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+SpareBank 1 Nord-Norge,LOfavør MC lån inntil 80%,8.6,2990.0,95.0,30000.0,1000000.0,18,100,10
+SpareBank 1 SMN,LOfavør Elbillån inntil 100%,8.2,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Sparebank 1 Finans Nord-Norge AS,LOfavør MC lån inntil 80%,8.6,2990.0,95.0,30000.0,1000000.0,18,100,10
+Voss Sparebank,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Grong Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nord-Norge,MC lån inntil 80%,8.9,2990.0,95.0,20000.0,1000000.0,18,100,8
+SpareBank 1 Gudbrandsdal,LOfavør Elbillån inntil 80%,7.3,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Sparebank 1 Finans Nord-Norge AS,MC lån inntil 80%,8.9,2990.0,95.0,20000.0,1000000.0,18,100,8
+Sogn Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,LOfavør Elbillån inntil 65%,6.5,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Brage Finans AS,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Brage Finans AS,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Sparebanken Møre,Motorsykkellån inntil 80 %,8.9,2990.0,95.0,1.0,1000000000.0,18,100,8
+SpareBank 1 Nord-Norge,LOfavør Elbil inntil 65%,6.45,1790.0,95.0,25000.0,1000000000.0,18,100,10
+Skudenes & Aakra Sparebank,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Sparebank 1 Finans Nord-Norge AS,LOfavør Elbil inntil 65%,6.45,1790.0,95.0,25000.0,1000000000.0,18,100,10
+"Nordax Bank, en del av NOBA Bank Group AB (publ)",Refinansieringslån,12.49,10000.0,65.0,10000.0,800000.0,23,100,20
+Sparebank 1 Finans Nord-Norge AS,LOfavør Elbil inntil 80%,7.3,1790.0,95.0,25000.0,1000000000.0,18,100,10
+Sparebanken Møre,Motorsykkellån inntil 65 %,7.7,2990.0,95.0,1.0,1000000000.0,18,100,8
+"Nordax Bank, en del av NOBA Bank Group AB (publ)",Nordax Lånet - Forbrukslån,12.99,0.0,65.0,10000.0,600000.0,23,70,5
+SpareBank 1 Nord-Norge,LOfavør Elbil inntil 80%,7.3,1790.0,95.0,25000.0,1000000000.0,18,100,10
+Sparebanken Møre,Motorsykkellån inntil 100 %,9.5,2990.0,95.0,1.0,1000000000.0,18,100,8
+Etnedal Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østfold Akershus,LOfavør Båt over 7 meter inntil 80%,8.05,9995.0,95.0,100000.0,3000000.0,18,100,20
+SpareBank 1 Nord-Norge,Elbil inntil 80%,7.6,2990.0,95.0,20000.0,1000000000.0,18,100,10
+"NORDEA BANK ABP, FILIAL I NORGE",Forbrukslån,11.9,990.0,50.0,10000.0,500000.0,21,100,5
+Sparebanken Møre,Elbil inntil 100 %,8.5,2990.0,95.0,1.0,1000000000.0,18,100,10
+"NORDEA BANK ABP, FILIAL I NORGE",Refinansiering,11.9,990.0,50.0,10000.0,500000.0,21,100,15
+Sparebanken Møre,Elbil inntil 80 %,7.6,2990.0,95.0,1.0,1000000000.0,18,100,10
+Fana Sparebank,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Kredittbanken ASA - Del av SpareBank 1 og Eika,Agrikjøp Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,10
+SpareBank 1 SMN,LOfavør Elbillån inntil 80%,7.3,1200.0,95.0,30000.0,1000000000.0,18,100,8
+JBF Bank og Forsikring,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østfold Akershus,LOfavør Båt under 7 meter inntil 65%,9.65,7995.0,95.0,50000.0,500000.0,18,100,7
+SpareBank 1 Hallingdal Valdres,LOfavør Elbillån inntil 65%,6.5,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Sparebanken Sør,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Sbanken (DNB Bank ASA),Billån 100 %,9.57,0.0,0.0,30000.0,1000000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,Caravanlån inntil 100%,8.6,2990.0,95.0,20000.0,10000000.0,18,100,10
+Sparebanken Vest,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Sbanken (DNB Bank ASA),Grønt Billån 100 %,8.42,0.0,0.0,0.0,1000000000.0,18,100,10
+SpareBank 1 Nord-Norge,Caravanlån inntil 100%,8.6,2990.0,95.0,20000.0,10000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,LOfavør Elbillån inntil 80%,7.3,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Agder Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Flekkefjord Sparebank,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+DNB Bank ASA,DNB Forbruksfinansiering,10.9,500.0,0.0,10000.0,250000.0,18,100,5
+SpareBank 1 Ringerike Hadeland,LOfavør Billån Ung inntil 100%,8.95,4599.0,95.0,10000.0,100000.0,18,34,5
+SpareBank 1 Gudbrandsdal,LOfavør Elbillån inntil 65%,6.5,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Marker & Eidsberg Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Haugesund Sparebank,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+SpareBank 1 Finans Østlandet AS,LOfavør Billån Ung inntil 100%,8.95,4599.0,95.0,10000.0,100000.0,18,34,5
+SpareBank 1 Nordmøre,LOfavør Elbillån inntil 100%,8.2,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Lillesands Sparebank,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+SpareBank 1 Sogn og Fjordane,Elbillån inntil 100%,8.5,2400.0,95.0,30000.0,1000000000.0,18,100,8
+SpareBank 1 Østlandet,LOfavør Billån Ung inntil 100%,8.95,4599.0,95.0,10000.0,100000.0,18,34,5
+Luster Sparebank,Fritidslån 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+SpareBank 1 Hallingdal Valdres,LOfavør Elbillån inntil 80%,7.3,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Valdres Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Nord-Norge,LOfavør ATV-/ Snøscooterlån inntil 100%,9.4,2990.0,95.0,25000.0,1000000000.0,18,100,7
+Vekselbanken,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Romsdal Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,LOfavør Elbillån inntil 65%,6.5,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Ørland Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Finans Midt-Norge AS,Båt LO over 7 meter inntil 65 % finansiering,7.35,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Sparebank 1 Finans Nord-Norge AS,LOfavør ATV-/ Snøscooterlån inntil 100%,9.4,2990.0,95.0,25000.0,1000000000.0,18,100,7
+Ørskog Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Marker & Eidsberg Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 1 Finans Nord-Norge AS,LOfavør ATV-/ Snøscooterlån inntil 65%,7.65,2990.0,95.0,25000.0,1000000000.0,18,100,7
+Kredittbanken ASA - Del av SpareBank 1 og Eika,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Melhusbanken,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Aasen Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Nordmøre,LOfavør Elbillån inntil 80%,7.3,1200.0,95.0,30000.0,1000000000.0,18,100,8
+SpareBank 1 Nord-Norge,LOfavør ATV-/ Snøscooterlån inntil 65%,7.65,2990.0,95.0,25000.0,1000000000.0,18,100,7
+Trøndelag Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Lom og Skjåk,LOfavør Elbillån inntil 65%,6.5,1200.0,95.0,30000.0,1000000000.0,18,100,8
+Strømmen Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Gudbrandsdal,Båt LO over 7 meter inntil 65 % finansiering,7.35,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Sunndal Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Helgeland,LOfavør Billån inntil 100%,8.3,2990.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Båt LO over 7 meter mellom 65 - 80 % finansiering,7.95,4500.0,95.0,50000.0,1000000000.0,18,100,15
+JBF Bank og Forsikring,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Tinn Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Nord-Norge,LOfavør Billån inntil 100%,8.3,2990.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Østfold Akershus,LOfavør Caravanlån inntil 100%,8.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,Båt LO over 7 meter mellom 65 - 80 % finansiering,7.95,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Sparebank 1 Finans Nord-Norge AS,LOfavør Billån inntil 100%,8.3,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Tolga-Os Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Rogaland Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Rindal Sparebank,Forbrukslån,12.5,3000.0,50.0,10000.0,200000.0,18,100,5
+Trøndelag Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Evje og Hornnes Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Tysnes Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Nordmøre,Båt LO over 7 meter inntil 65 % finansiering,7.35,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Bien Sparebank ASA,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,Båt over 7 meter inntil 100 % finansiering,8.9,6000.0,95.0,50000.0,1000000000.0,18,100,15
+SpareBank 1 Gudbrandsdal,Båt LO over 7 meter inntil 100 % finansiering,8.6,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Marker & Eidsberg Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Hallingdal Valdres,Båt LO over 7 meter inntil 65 % finansiering,7.35,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Romerike Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Etnedal Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Sogn Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Trøndelag Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Grong Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+"Ikano Bank AB (publ.), Norway Branch",Refinansiering,12.8,995.0,50.0,25000.0,400000.0,25,100,15
+"Ikano Bank AB (publ.), Norway Branch",Forbrukslån,12.8,995.0,50.0,25000.0,400000.0,25,100,5
+SpareBank 1 Lom og Skjåk,Båt LO over 7 meter inntil 65 % finansiering,7.35,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Resurs Bank AB NUF,Refinansiering,11.69,995.0,45.0,25000.0,400000.0,23,100,12
+SpareBank 1 SMN,Båt LO over 7 meter mellom 65 - 80 % finansiering,7.95,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Gildeskål Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Resurs Bank AB NUF,"Forbrukslån - fra 11,19% - 19,39% nom. rente",11.69,995.0,45.0,25000.0,400000.0,23,68,5
+SpareBank 1 Finans Midt-Norge AS,Båt LO over 7 meter inntil 100 % finansiering,8.6,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Sparebanken Narvik,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+NAF (Nordea Finans),NAF miljøbillån - 80 % finansiering,7.1,2200.0,60.0,10000.0,1000000000.0,18,100,10
+Romsdal Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+NAF (Nordea Finans),NAF miljøbillån - 65 % finansiering,6.3,2200.0,60.0,10000.0,1000000000.0,18,100,10
+Sparebanken DIN Telemark,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Østlandet,LOfavør Kaskofritt Billån inntil 100%,16.65,4599.0,95.0,30000.0,100000.0,18,100,5
+Agder Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+NAF (Nordea Finans),NAF billån - 80 % finansiering,7.15,2200.0,60.0,10000.0,1000000000.0,18,100,10
+SpareBank 1 Østfold Akershus,LOfavør Caravanlån inntil 65%,6.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,Båt over 7 meter inntil 65 % finansiering,7.65,6000.0,95.0,50000.0,1000000000.0,18,100,15
+NAF (Nordea Finans),NAF miljøbillån - 100 % finansiering,8.1,2200.0,60.0,10000.0,1000000000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,LOfavør Kaskofritt Billån inntil 100%,16.65,4599.0,95.0,30000.0,100000.0,18,100,5
+NAF (Nordea Finans),NAF billån - 100 % finansiering,8.15,2200.0,60.0,10000.0,1000000000.0,18,100,10
+Aurskog Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Trøndelag Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+NAF (Nordea Finans),NAF billån - 65 % finansiering,6.35,2200.0,60.0,10000.0,1000000000.0,18,100,10
+NAF (Nordea Finans),NAF Campingvogn-/bobillån 65 % finansiering,6.35,2200.0,60.0,10000.0,1500000.0,18,100,15
+SpareBank 1 SMN,Båt LO over 7 meter inntil 100 % finansiering,8.6,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Hegra Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+NAF (Nordea Finans),NAF Campingvogn-/bobillån 80 % finansiering,7.15,2200.0,60.0,10000.0,1500000.0,18,100,15
+Nordea Finans Norge AS,Caravanlån premium-65 % finansiering,6.35,2200.0,60.0,10000.0,1000000000.0,18,100,15
+SpareBank 1 Finans Midt-Norge AS,Båt over 7 meter mellom 65 - 80 % finansiering,8.25,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Bien Sparebank ASA,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Orkla Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+NAF (Nordea Finans),NAF Campingvogn-/bobillån 100 % finansiering,8.15,2200.0,60.0,10000.0,1500000.0,18,100,15
+Dittbillån.no (AS Financiering),Ditt billån m/ 50% egenkapital,6.4,0.0,0.0,1.0,3000000.0,18,100,5
+Nordea Finans Norge AS,Caravanlån premium 0 % EK,8.15,2200.0,60.0,10000.0,1000000000.0,18,100,15
+Nordea Finans Norge AS,Caravanlån premium 20 % EK,7.05,2200.0,60.0,10000.0,1000000000.0,18,100,15
+Birkenes Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Drangedal Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Nordea Finans Norge AS,Caravanlån 20 % EK,7.2,2500.0,60.0,10000.0,1500000.0,18,100,15
+Høland og Setskog Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Dittbillån.no (AS Financiering),Ditt billån m/ 35% egenkapital,6.65,0.0,0.0,1.0,3000000.0,18,100,5
+SpareBank 1 Gudbrandsdal,Båt over 7 meter inntil 100 % finansiering,8.9,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Nordea Finans Norge AS,Caravanlån 35 % EK,6.4,2500.0,60.0,10000.0,1500000.0,18,100,15
+Haltdalen Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Romsdal Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Nordea Finans Norge AS,Caravanlån 0 % EK,8.2,2500.0,60.0,10000.0,1500000.0,18,100,15
+SpareBank 1 Nordmøre,Båt LO over 7 meter mellom 65 - 80 % finansiering,7.95,4500.0,95.0,50000.0,1000000000.0,18,100,15
+SpareBank 1 Nordmøre,Båt LO over 7 meter inntil 100 % finansiering,8.6,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Oppdalsbanken,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Tysnes Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Gudbrandsdal,Båt LO over 7 meter mellom 65 - 80 % finansiering,7.95,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Orkla Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Aurskog Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,Båt over 7 meter inntil 100 % finansiering,8.9,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Rogaland Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Kvinesdal Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Rindal Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Avida Finans AB NUF,Forbrukslån,14.0,1990.0,29.0,10000.0,250000.0,20,100,5
+Bien Sparebank ASA,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Soknedal Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Valle Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,LOfavør Kaskofritt Billån inntil 100%,16.65,4599.0,95.0,30000.0,100000.0,18,100,5
+SpareBank 1 Lom og Skjåk,Båt over 7 meter mellom 65 - 80 % finansiering,8.25,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Haltdalen Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Romerike Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 68° Nord,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Hallingdal Valdres,Båt over 7 meter inntil 100 % finansiering,8.9,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Sparebanken Sør,Kontokreditt,19.0,0.0,0.0,5000.0,50000.0,18,100,5
+SpareBank 1 Finans Midt-Norge AS,Båt under 7 meter 20% egenkapital,9.7,3950.0,95.0,50000.0,350000.0,18,100,7
+Oslofjord Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Ørskog Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+JBF Bank og Forsikring,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Høland og Setskog Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+NORDirekte (Skagerrak Sparebank),Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Jæren Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Strømmen Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Kvinesdal Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 SMN,Båt over 7 meter mellom 65 - 80 % finansiering,8.25,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Rørosbanken Røros Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,Båt under 7 meter - LO,9.2,2950.0,95.0,50000.0,350000.0,18,100,7
+Jæren Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Melhusbanken,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+NORDirekte (Skagerrak Sparebank),Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Odal Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Marker & Eidsberg Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,Båt LO over 7 meter inntil 65 % finansiering,7.35,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Selbu Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Birkenes Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,Caravanlån/bobillån inntil 65 % finansiering,6.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Nordmøre,Båt over 7 meter mellom 65 - 80 % finansiering,8.25,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Evje og Hornnes Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Gudbrandsdal,Båt under 7 meter - LO,9.2,2950.0,95.0,50000.0,350000.0,18,100,7
+Rørosbanken Røros Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,Båt over 7 meter inntil 65 % finansiering,7.65,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Høland og Setskog Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Bjugn Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nordmøre,Båt over 7 meter inntil 100 % finansiering,8.9,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Tolga-Os Sparebank,Forbrukslån,20.1,2500.0,0.0,0.0,500000.0,18,100,5
+Tolga-Os Sparebank,Personlig kreditt,20.1,2500.0,0.0,0.0,500000.0,18,100,5
+SpareBank 1 Nord-Norge,Elbil inntil 100%,8.5,2990.0,95.0,20000.0,1000000000.0,18,100,10
+Express Bank,Refinansiering,10.49,950.0,45.0,50000.0,500000.0,23,100,15
+Grue Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Haltdalen Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Sparebank 1 Finans Nord-Norge AS,Elbil inntil 100%,8.5,2990.0,95.0,20000.0,1000000000.0,18,100,10
+SpareBank 1 Østfold Akershus,LOfavør Caravanlån inntil 80%,7.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Båt LO over 7 meter mellom 65 - 80 % finansiering,7.95,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Aurskog Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Hegra Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Lom og Skjåk,Båt LO over 7 meter inntil 100 % finansiering,8.6,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Skagerrak Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Hallingdal Valdres,Båt over 7 meter mellom 65 - 80 % finansiering,8.25,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Lillesands Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Rørosbanken Røros Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Aurskog Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Melhusbanken,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Bjugn Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Skagerrak Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Askim og Spydeberg Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Eika digitalbank AS,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Bjugn Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Finans Midt-Norge AS,Caravanlån/bobillån mellom 65 - 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Skagerrak Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Skue Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+JBF Bank og Forsikring,Kontokreditt,15.25,0.0,0.0,1000.0,200000.0,18,100,10
+Sogn Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Hallingdal Valdres,Båt LO over 7 meter inntil 100 % finansiering,8.6,4500.0,95.0,50000.0,1000000000.0,18,100,15
+Vekselbanken,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 SMN,Båt under 7 meter - LO,9.2,2950.0,95.0,50000.0,350000.0,18,100,7
+SpareBank 1 Finans Midt-Norge AS,Caravanlån/bobillån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Skagerrak Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 68° Nord,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Båt over 7 meter mellom 65 - 80 % finansiering,8.25,6000.0,95.0,50000.0,1000000000.0,18,100,15
+SpareBank 1 Østfold Akershus,LOfavør Grønt billån inntil 65%,6.45,1000.0,95.0,50000.0,1000000000.0,18,100,8
+Berg Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Birkenes Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nordmøre,Båt over 7 meter inntil 65 % finansiering,7.65,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Sparebanken DIN Telemark,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Sogn Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Haugesund Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+Berg Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Trøgstad Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Lom og Skjåk,Båt over 7 meter inntil 100 % finansiering,8.9,6000.0,95.0,50000.0,1000000000.0,18,100,15
+SpareBank 1 Hallingdal Valdres,Båt under 7 meter - LO,9.2,2950.0,95.0,50000.0,350000.0,18,100,7
+Valle Sparebank,Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,20,100,5
+SpareBank 1 Finans Midt-Norge AS,Caravanlån/bobillån inntil 100 % finansiering,8.6,2990.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Nordmøre,Båt under 7 meter 20% egenkapital,9.7,3950.0,95.0,50000.0,350000.0,18,100,7
+Orkla Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Finans Midt-Norge AS,Caravanlån/bobillån LO inntil 65 % finansiering,6.6,2690.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Sogn og Fjordane,Båt over 7 meter mellom 65 - 80 % finansiering,8.25,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Oslofjord Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sør-Norge,LOfavør Kaskofritt Billån,12.75,3733.0,70.0,30000.0,100000.0,18,100,5
+SpareBank 1 SMN,Caravanlån/bobillån inntil 65 % finansiering,6.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Sør-Norge,Kaskofritt Billån,13.75,3733.0,70.0,30000.0,100000.0,18,100,5
+Selbu Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Rørosbanken Røros Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Rindal Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østfold Akershus,LOfavør Grønt billån inntil 80%,7.45,1000.0,95.0,50000.0,1000000000.0,18,100,8
+SpareBank 1 Finans Midt-Norge AS,Caravanlån/bobillån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Nidaros Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Grue Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+"re:member (EnterCard Norge, filial av EnterCard Group AB)",re:member forbrukslån,12.0,10000.0,45.0,10000.0,350000.0,18,75,5
+Gildeskål Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sogn og Fjordane,Båt over 7 meter inntil 100 % finansiering,8.9,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Soknedal Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Grue Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østfold Akershus,LOfavør Kaskofritt Billån inntil 100%,16.65,4599.0,95.0,30000.0,100000.0,18,100,5
+SpareBank 1 Gudbrandsdal,Caravanlån/bobillån mellom 65 - 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Trøgstad Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Lom og Skjåk,Båt under 7 meter 20% egenkapital,9.7,3950.0,95.0,50000.0,350000.0,18,100,7
+Odal Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Voss Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Valdres Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nordmøre,Båt under 7 meter - LO,9.2,2950.0,95.0,50000.0,350000.0,18,100,7
+SpareBank 1 Lom og Skjåk,Båt over 7 meter inntil 65 % finansiering,7.65,6000.0,95.0,50000.0,1000000000.0,18,100,15
+SpareBank 1 Hallingdal Valdres,Båt under 7 meter 20% egenkapital,9.7,3950.0,95.0,50000.0,350000.0,18,100,7
+Ørland Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Båt under 7 meter 20% egenkapital,9.7,3950.0,95.0,50000.0,350000.0,18,100,7
+Soknedal Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Rindal Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,Motorsykkel mellom 65 - 80 % finansiering,8.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Sparebanken Vest,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Oslofjord Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Gudbrandsdal,Båt over 7 meter inntil 65 % finansiering,7.65,6000.0,95.0,50000.0,1000000000.0,18,100,15
+SpareBank 1 SMN,Caravanlån/bobillån mellom 65 - 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Drangedal Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Tinn Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østfold Akershus,LOfavør MC lån inntil 100%,8.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nordmøre,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Tinn Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Lom og Skjåk,Båt under 7 meter - LO,9.2,2950.0,95.0,50000.0,350000.0,18,100,7
+SpareBank 1 SMN,Båt under 7 meter 20% egenkapital,9.7,3950.0,95.0,50000.0,350000.0,18,100,7
+SpareBank 1 Finans Midt-Norge AS,Motorsykkel inntil 65 % finansiering,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Båt over 7 meter inntil 65 % finansiering,7.65,6000.0,95.0,50000.0,1000000000.0,18,100,15
+Ørskog Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Spareskillingsbanken,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Sunndal Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Narvik,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Finans Midt-Norge AS,Motorsykkel LO inntil 100 % finanisering,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 SMN,Caravanlån/bobillån inntil 100 % finansiering,8.6,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Jæren Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sogn og Fjordane,Båt over 7 meter inntil 65 % finansiering,7.65,6000.0,95.0,50000.0,1000000000.0,18,100,15
+SpareBank 1 Finans Midt-Norge AS,Motorsykkel inntil 100 % finansiering,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Søgne og Greipstad Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Sunndal Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Gudbrandsdal,Caravanlån/bobillån inntil 65 % finansiering,6.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Strømmen Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Kvinesdal Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+INSTABANK ASA,Personlån,10.2,900.0,45.0,5000.0,500000.0,23,80,5
+Sparebanken Sør,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Sogn og Fjordane,Båt under 7 meter 20% egenkapital,9.7,3950.0,95.0,50000.0,350000.0,18,100,7
+INSTABANK ASA,Refinansiering,10.2,900.0,45.0,5000.0,500000.0,23,80,5
+SpareBank 1 Hallingdal Valdres,Caravanlån/bobillån inntil 100 % finansiering,8.6,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Aasen Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Caravanlån/bobillån mellom 65 - 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Nordmøre,Caravanlån/bobillån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Gildeskål Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+"Bank Norwegian, en filial av NOBA Bank Group AB (publ)",Grønt billån,8.49,950.0,0.0,5000.0,350000.0,20,100,5
+SpareBank 1 Østfold Akershus,LOfavør MC lån inntil 80%,7.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+Strømmen Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,Motorsykkel LO mellom 65 - 80 % finansiering,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Oppdalsbanken,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Luster Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Caravanlån/bobillån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Caravanlån/bobillån inntil 65 % finansiering,6.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Skudenes & Aakra Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Tolga-Os Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,Kaskofritt Motorsykkel lån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Nordmøre,Caravanlån/bobillån inntil 65 % finansiering,6.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Nordmøre,Caravanlån/bobillån mellom 65 - 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Strømmen Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Jæren Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Tinn Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Handelsbanken AB NUF,Tekna Billån 80%,6.65,1000.0,45.0,50000.0,1000000000.0,18,100,8
+SpareBank 1 Nordmøre,Caravanlån/bobillån inntil 100 % finansiering,8.6,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Handelsbanken AB NUF,Tekna Båtlån 65%,6.65,1000.0,45.0,50000.0,1000000000.0,18,100,5
+Askim og Spydeberg Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Caravanlån/bobillån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Høland og Setskog Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Handelsbanken AB NUF,Juristforbundet Billån 80 %,6.65,1000.0,45.0,50000.0,1000000000.0,18,100,8
+Handelsbanken AB NUF,Juristforbundet Båtlån,6.65,900.0,45.0,50000.0,1000000000.0,18,100,5
+SpareBank 1 Finans Midt-Norge AS,Motorsykkel LO inntil 65 % finansiering,7.4,2690.0,95.0,10000.0,10000000.0,18,100,10
+Handelsbanken AB NUF,Akademiker Pluss Billån 80%,6.65,1000.0,45.0,50000.0,1000000000.0,18,100,8
+JBF Bank og Forsikring,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Handelsbanken AB NUF,Akademiker Pluss Båtlån 65%,6.65,1000.0,45.0,50000.0,1000000000.0,18,100,8
+SpareBank 1 Lom og Skjåk,Caravanlån/bobillån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Trøgstad Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Etnedal Sparebank,Forbrukslån uten sikkerhet,16.35,500.0,50.0,1000.0,200000.0,18,100,5
+Marker & Eidsberg Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Finans Midt-Norge AS,Kaskofritt Billån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Haugesund Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Caravanlån/bobillån inntil 100 % finansiering,8.6,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Rindal Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Østfold Akershus,Lån til elbil 100%,8.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 SMN,Caravanlån/bobillån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Haugesund Sparebank,Personkontokreditt,15.65,1500.0,50.0,0.0,500000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Caravanlån/bobillån inntil 65 % finansiering,6.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Stadsbygd Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Tinn Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 SMN,Caravanlån/bobillån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Odal Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sogn Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Berg Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Gudbrandsdal,Caravanlån/bobillån inntil 100 % finansiering,8.6,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Oppdalsbanken,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Lom og Skjåk,Caravanlån/bobillån LO inntil 65 % finansiering,6.6,2690.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Sogn og Fjordane,Caravanlån/bobillån mellom 65 - 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Tinn Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Østfold Akershus,Lån til elbil inntil 65%,6.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,Kaskofritt Caravanlån/Bobillån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Lom og Skjåk,Caravanlån/bobillån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Fana Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Sparebanken Narvik,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Helgeland,Båt under 7 meter inntil 65%,9.25,3950.0,95.0,25000.0,1000000000.0,18,100,10
+Bjugn Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Trøgstad Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nord-Norge,Båt under 7 meter inntil 65%,9.25,3950.0,95.0,25000.0,1000000000.0,18,100,10
+SpareBank 1 Sogn og Fjordane,Caravanlån/bobillån inntil 65 % finansiering,6.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Flekkefjord Sparebank,Båtlån under 7 meter 80%,9.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Caravanlån/bobillån mellom 65 - 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,Båt under 7 meter inntil 65%,9.25,3950.0,95.0,25000.0,1000000000.0,18,100,10
+Tysnes Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Nord-Norge,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+Valdres Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Valle Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Østfold Akershus,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+Spareskillingsbanken,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+SpareBank 1 Østfold Akershus,MC inntil 100%,8.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+Vekselbanken,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Østlandet,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+Ørland Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Finans Midt-Norge AS,LO Billån Ung 18-34 kaskofritt,9.4,2400.0,95.0,30000.0,130000.0,18,34,5
+Tinn Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Hallingdal Valdres,Caravanlån/bobillån LO inntil 65 % finansiering,6.6,2690.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Sogn og Fjordane,Caravanlån/bobillån inntil 100 % finansiering,8.6,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Valdres Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Kredittbanken ASA - Del av SpareBank 1 og Eika,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+Valdres Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Ørskog Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Hallingdal Valdres,Caravanlån/bobillån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Nordmøre,Caravanlån/bobillån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Kredittbanken ASA - Del av SpareBank 1 og Eika,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Valdres Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Aasen Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Sparebanken DIN Telemark,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 SMN,Motorsykkel mellom 65 - 80 % finansiering,8.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Nordmøre,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+Bien Sparebank ASA,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Søgne og Greipstad Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Sparebanken Narvik,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Ringerike Hadeland,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+SpareBank 1 SMN,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+Strømmen Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Trøgstad Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Sør-Norge,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+Grong Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Lom og Skjåk,Motorsykkel inntil 100 % finansiering,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Agder Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Sunndal Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Tysnes Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Gudbrandsdal,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+Tinn Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Tysnes Sparebank,Billån i Tysnes Sparebank,10.85,2500.0,65.0,0.0,1000000000.0,18,100,5
+SpareBank 1 Hallingdal Valdres,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+Sparebanken Vest,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Tolga-Os Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Romsdal Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Lom og Skjåk,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Caravanlån/bobillån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Oppdalsbanken,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Trøndelag Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Finans Østlandet AS,Billån Ung inntil 100%,9.95,4599.0,95.0,10000.0,100000.0,18,34,5
+Rørosbanken Røros Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 SMN,Motorsykkel inntil 100 % finansiering,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Sparebanken DIN Telemark,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Bien Sparebank ASA,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Selbu Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Østfold Akershus,MC lån inntil 80%,7.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Østlandet,Billån Ung inntil 100%,9.95,4599.0,95.0,10000.0,100000.0,18,34,5
+Sparebanken Narvik,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Jæren Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Tysnes Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Skagerrak Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Skue Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Grong Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Hallingdal Valdres,Motorsykkel inntil 100 % finansiering,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 SMN,Motorsykkel inntil 65 % finansiering,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Sogn Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 SMN,Motorsykkel LO inntil 100 % finanisering,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Trøndelag Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Soknedal Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Tolga-Os Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Sparebank 68° Nord,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Nordmøre,Caravanlån/bobillån LO inntil 65 % finansiering,6.6,2690.0,95.0,50000.0,1000000000.0,18,100,10
+Kredittbanken ASA - Del av SpareBank 1 og Eika,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+Oppdalsbanken,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Etnedal Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Brage Finans AS,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Motorsykkel LO inntil 100 % finanisering,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Aurskog Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Askim og Spydeberg Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Birkenes Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 68° Nord,Kontokreditt,15.5,500.0,0.0,1000.0,50000.0,18,100,10
+Brage Finans AS,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Vekselbanken,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Orkla Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Voss Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+NAF (Nordea Finans),NAF Motorsykkellån 65 % finansiering,7.2,2200.0,60.0,10000.0,1000000000.0,18,100,10
+Marker & Eidsberg Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+NAF (Nordea Finans),NAF Motorsykkellån 80 % finansiering,8.8,2200.0,60.0,10000.0,1000000000.0,18,100,10
+Oslofjord Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Bjugn Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Brage Finans AS,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+NAF (Nordea Finans),NAF Motorsykkellån 100 % finansiering,9.35,2200.0,60.0,10000.0,1000000000.0,18,100,10
+Sparebanken Sør,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Rindal Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 SMN,Caravanlån/bobillån LO inntil 65 % finansiering,6.6,2690.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Motorsykkel inntil 65 % finansiering,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Ørskog Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Brage Finans AS,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Haugesund Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Rogaland Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Romerike Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Brage Finans AS,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Nordea Finans Norge AS,MClån minimum 35 % egenkapital,7.75,2500.0,85.0,10000.0,1500000.0,18,100,10
+SpareBank 1 Nordmøre,Motorsykkel mellom 65 - 80 % finansiering,8.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Nordea Finans Norge AS,MC-lån  0 % EK,9.4,2500.0,85.0,10000.0,1500000.0,18,100,10
+Skagerrak Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Nordea Finans Norge AS,MC-lån 20 % EK,9.0,2500.0,85.0,10000.0,1500000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,Billån Ung inntil 100%,9.95,4599.0,95.0,10000.0,100000.0,18,34,5
+Romsdal Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Odal Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Nordea Finans Norge AS,Billån - minimum 35 % egenkapital,6.4,2500.0,60.0,1.0,1000000000.0,18,65,10
+Nordea Finans Norge AS,Billån minimum 20 % egenkapital,7.2,2500.0,60.0,1.0,1000000000.0,18,65,10
+Romerike Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Nordea Finans Norge AS,Billån - 100 % finansiering,8.2,2500.0,60.0,1.0,1000000000.0,18,65,10
+Flekkefjord Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Motorsykkel mellom 65 - 80 % finansiering,8.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Caravanlån/bobillån LO inntil 65 % finansiering,6.6,2690.0,95.0,50000.0,1000000000.0,18,100,10
+Evje og Hornnes Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Høland og Setskog Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Brage Finans AS,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Gildeskål Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Søgne og Greipstad Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Sparebank 68° Nord,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Motorsykkel inntil 65 % finansiering,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Aurskog Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østfold Akershus,MC lån inntil 65%,6.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+JBF Bank og Forsikring,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Marker & Eidsberg Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Stadsbygd Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Brage Finans AS,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Jæren Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Søgne og Greipstad Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Kvinesdal Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Melhusbanken,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Skue Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Nordmøre,Motorsykkel inntil 100 % finansiering,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Trøgstad Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Askim og Spydeberg Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Motorsykkel mellom 65 - 80 % finansiering,8.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+NORDirekte (Skagerrak Sparebank),Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Nordea Finans Norge AS,Billån premium-100 % finansiering,8.15,2200.0,60.0,10000.0,1000000000.0,18,100,10
+Nordea Finans Norge AS,Billån premium-80 % finansiering,7.05,2200.0,60.0,10000.0,1000000000.0,18,100,10
+Skue Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Nordea Finans Norge AS,MClån premium-100% finansering,9.3,2200.0,60.0,10000.0,1000000000.0,18,100,10
+Nordea Finans Norge AS,MClån premium-65% finansiering,7.15,2200.0,60.0,10000.0,1000000000.0,18,100,10
+Brage Finans AS,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Askim og Spydeberg Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Nordea Finans Norge AS,MC-lån premium 20 % EK,8.75,2200.0,60.0,10000.0,1000000000.0,18,100,10
+SpareBank 1 Nordmøre,Motorsykkel inntil 65 % finansiering,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Brage Finans AS,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Odal Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Brage Finans AS,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Nordea Finans Norge AS,Billån Premium- 35 % EK,6.35,2200.0,60.0,10000.0,1000000000.0,18,100,10
+Luster Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Gildeskål Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 SMN,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Marker & Eidsberg Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Sogn og Fjordane,Motorsykkel inntil 65 % finansiering,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Sparebank 68° Nord,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Etnedal Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Lom og Skjåk,Motorsykkel LO mellom 65 - 80 % finansiering,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Selbu Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Evje og Hornnes Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Hegra Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Hallingdal Valdres,Motorsykkel LO inntil 100 % finanisering,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Bjugn Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Evje og Hornnes Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Sør-Norge,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Gildeskål Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Grong Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Gudbrandsdal,Motorsykkel mellom 65 - 80 % finansiering,8.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Brage Finans AS,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Sparebanken DIN Telemark,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Askim og Spydeberg Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Grue Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Rogaland Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Brage Finans AS,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Lillesands Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Bien Sparebank ASA,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Østfold Akershus,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Brage Finans AS,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Haltdalen Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Kredittbanken ASA - Del av SpareBank 1 og Eika,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Romsdal Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Østlandet,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Hegra Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Skudenes & Aakra Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Oslofjord Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Tolga-Os Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Sparebank 1 Finans Nord-Norge AS,Kaskofritt ATV-/Snøscooterlån,15.95,2990.0,95.0,20000.0,50000.0,18,100,3
+SpareBank 1 Hallingdal Valdres,Motorsykkel LO inntil 65 % finansiering,7.4,2690.0,95.0,10000.0,10000000.0,18,100,10
+Agder Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Nord-Norge,Kaskofritt ATV-/Snøscooterlån,15.95,2990.0,95.0,20000.0,50000.0,18,100,3
+SpareBank 1 Lom og Skjåk,Motorsykkel LO inntil 100 % finanisering,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Helgeland,Kaskofritt billån,15.95,2990.0,95.0,20000.0,125000.0,18,100,5
+Haltdalen Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Gudbrandsdal,Motorsykkel inntil 65 % finansiering,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Askim og Spydeberg Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Sogn og Fjordane,Motorsykkel inntil 100 % finansiering,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Lillesands Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nord-Norge,Kaskofritt billån,15.95,2990.0,95.0,20000.0,125000.0,18,100,5
+Ørland Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+SpareBank 1 Helgeland,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Aurskog Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Aasen Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Evje og Hornnes Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Bien Sparebank ASA,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Sparebank 68° Nord,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 SMN,Motorsykkel LO mellom 65 - 80 % finansiering,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,Kaskofritt billån,15.95,2990.0,95.0,20000.0,125000.0,18,100,5
+SpareBank 1 Østfold Akershus,Lån til elbil inntil 80%,7.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Evje og Hornnes Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Birkenes Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Nordmøre,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Stadsbygd Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Bjugn Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Drangedal Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nordmøre,Motorsykkel LO inntil 100 % finanisering,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Skagerrak Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Voss Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+SpareBank 1 Gudbrandsdal,Motorsykkel inntil 100 % finansiering,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Drangedal Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Drangedal Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Nord-Norge,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Trøndelag Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Marker & Eidsberg Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Hegra Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Nidaros Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Sogn og Fjordane,Motorsykkel mellom 65 - 80 % finansiering,8.9,2990.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+SpareBank 1 SMN,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+NORDirekte (Skagerrak Sparebank),Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Helgeland,LOfavør Kaskofritt billån,15.65,2990.0,95.0,20000.0,125000.0,18,100,5
+SpareBank 1 Gudbrandsdal,Kaskofritt Billån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Østfold Akershus,Billån inntil 80%,7.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+Kvinesdal Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Nidaros Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Kaskofritt Motorsykkel lån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Etnedal Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nord-Norge,LOfavør Kaskofritt billån,15.65,2990.0,95.0,20000.0,125000.0,18,100,5
+Oppdalsbanken,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Sør-Norge,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+Tolga-Os Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Nidaros Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Haugesund Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Rørosbanken Røros Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Sparebank 1 Finans Nord-Norge AS,LOfavør Kaskofritt billån,15.65,2990.0,95.0,20000.0,125000.0,18,100,5
+SpareBank 1 Østfold Akershus,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+Etnedal Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Berg Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Nord-Norge,LOfavør Kaskofritt ATV-/Snøscooterlån,15.65,2990.0,95.0,20000.0,50000.0,18,100,3
+SpareBank 1 Gudbrandsdal,Kaskofritt Caravanlån/Bobillån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Østlandet,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+Grue Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Helgeland,LOfavør Kaskofritt ATV-/Snøscooterlån,15.65,2990.0,95.0,20000.0,50000.0,18,100,3
+Trøgstad Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+Sparebanken Sør,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Kaskofritt Billån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Grue Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Odal Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken DIN Telemark,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Kaskofritt Motorsykkel lån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Sparebank 1 Finans Nord-Norge AS,LOfavør Kaskofritt ATV-/Snøscooterlån,15.65,2990.0,95.0,20000.0,50000.0,18,100,3
+Facit Bank,Forbrukslån,11.9,990.0,19.0,15000.0,150000.0,25,69,5
+Etnedal Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Valle Sparebank,Forbrukslån,13.7,990.0,0.0,0.0,300000.0,20,100,5
+SpareBank 1 Helgeland,Kaskofritt ATV-/Snøscooterlån,15.95,2990.0,95.0,20000.0,50000.0,18,100,3
+SpareBank 1 Gudbrandsdal,LOfavør Depositumslån,13.2,500.0,0.0,0.0,40000.0,18,100,5
+Berg Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Gudbrandsdal,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+Sparebanken Sør,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Haltdalen Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Sparebanken DIN Telemark,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+SpareBank 1 Hallingdal Valdres,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+SpareBank 1 SMN,Motorsykkel LO inntil 65 % finansiering,7.4,2690.0,95.0,10000.0,10000000.0,18,100,10
+SpareBank 1 Helgeland,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+Skue Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Nidaros Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Kaskofritt Motorsykkel lån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Etnedal Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Grong Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Lom og Skjåk,Kaskofritt Billån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Aasen Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Ørskog Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Lom og Skjåk,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+Valdres Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Lom og Skjåk,Kaskofritt Caravanlån/Bobillån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Romsdal Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 68° Nord,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Skudenes & Aakra Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Rindal Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Nordmøre,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+Trøndelag Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Haltdalen Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Stadsbygd Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Eika digitalbank AS,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Odal Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Nord-Norge,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,LOfavør Refinansiering,12.9,0.0,35.0,0.0,1000000000.0,18,100,10
+Ørland Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Kaskofritt Caravanlån/Bobillån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Sunndal Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Nordmøre,Kaskofritt Billån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Aasen Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+SpareBank 1 SMN,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+Haugesund Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+DNB Bank ASA,DNB Billån Ung egenkapital mellom 20 og 35%,7.4,2500.0,65.0,40000.0,200000.0,18,33,10
+SpareBank 1 SMN,Kaskofritt Caravanlån/Bobillån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Marker & Eidsberg Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Tinn Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+DNB Bank ASA,DNB Billån Ung egenkapital mindre enn 20 %,8.4,2500.0,65.0,40000.0,200000.0,18,33,10
+DNB Bank ASA,DNB Billån SAGA / SAGA Platinum egenkapital mindre enn 20%,8.4,2300.0,65.0,40000.0,1000000000.0,18,100,10
+Ørland Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 SMN,Kaskofritt Motorsykkel lån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Berg Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+DNB Bank ASA,DNB Billån Ung egenkapital 35 % eller mer,6.74,2500.0,65.0,25000.0,200000.0,18,33,10
+Luster Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Kredittbanken ASA - Del av SpareBank 1 og Eika,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+DNB Bank ASA,DNB Billån SAGA / SAGA Platinum  egenkapital mer enn 35%,6.74,2300.0,65.0,40000.0,1000000000.0,18,100,10
+Søgne og Greipstad Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Vekselbanken,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+DNB Bank ASA,DNB Billån SAGA / SAGA Platinum egenkapital mellom 20-35%,7.4,2300.0,65.0,40000.0,1000000000.0,18,100,10
+Soknedal Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Norsk Sykepleierforbund (DNB),NSF Billån egenkapital mindre 20 %,8.4,2300.0,65.0,40000.0,1000000000.0,18,100,10
+Lillesands Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+SpareBank 1 Nordmøre,Motorsykkel LO mellom 65 - 80 % finansiering,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Birkenes Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Norsk Sykepleierforbund (DNB),NSF Billån egenkapital mellom 20 % og 35 %,7.4,2300.0,65.0,40000.0,1000000000.0,18,100,10
+Tolga-Os Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nordmøre,Kaskofritt Caravanlån/Bobillån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Sogn Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Norsk Sykepleierforbund (DNB),NSF Billån egenkapital 35 % eller mer,6.74,2300.0,65.0,40000.0,1000000000.0,18,100,10
+Lillesands Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nordmøre,Kaskofritt Motorsykkel lån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Kvinesdal Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Skudenes & Aakra Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Agder Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 SMN,Kaskofritt Billån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Vekselbanken,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Narvik,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Kvinesdal Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Oslofjord Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Nord-Norge,LOfavør Caravanlån inntil 100%,8.3,2990.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,LO Billån Ung 18-34 kaskofritt,9.4,2400.0,95.0,30000.0,130000.0,18,34,5
+Haugesund Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Østfold Akershus,LOfavør Grønt billån inntil 100%,8.45,1000.0,95.0,50000.0,1000000000.0,18,100,8
+Sunndal Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Trøndelag Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Fana Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+SpareBank 1 Helgeland,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+JBF Bank og Forsikring,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Sparebank 1 Finans Nord-Norge AS,LOfavør Caravanlån inntil 100%,8.3,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Flekkefjord Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+SpareBank 1 Nordmøre,Motorsykkel LO inntil 65 % finansiering,7.4,2690.0,95.0,10000.0,10000000.0,18,100,10
+Selbu Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Soknedal Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Skue Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Østfold Akershus,Billån inntil 100%,8.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+SpareBank 1 Østfold Akershus,LOfavør Båt under 7 meter inntil 80%,10.65,7995.0,95.0,50000.0,500000.0,18,100,7
+DNB Bank ASA,DNB Sikret Billån egenkapital mellom 20 % og 35 %,7.5,2500.0,65.0,40000.0,1000000000.0,18,63,5
+SpareBank 1 Østfold Akershus,LOfavør Båt under 7 meter inntil 100%,11.65,7995.0,95.0,50000.0,500000.0,18,100,7
+Valdres Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+DNB Bank ASA,DNB Sikret Billån egenkapital mindre enn 20 %,8.5,2500.0,65.0,40000.0,1000000000.0,18,63,5
+SpareBank 1 Gudbrandsdal,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+NORDirekte (Skagerrak Sparebank),Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Skudenes & Aakra Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Sogn og Fjordane,Kaskofritt Billån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+DNB Bank ASA,DNB Grønt Billån egenkapital mindre enn 20 %,8.4,2500.0,65.0,40000.0,1000000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+Skagerrak Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+DNB Bank ASA,DNB Sikret Billån egenkapital 35 % eller mer,6.84,2500.0,65.0,40000.0,1000000000.0,18,63,5
+DNB Bank ASA,DNB Grønt Billån egenkapital mellom 20 % og 35 %,7.4,2500.0,65.0,40000.0,1000000000.0,18,100,10
+Flekkefjord Sparebank,Båtlån over 7 meter 65%,7.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+SpareBank 1 Lom og Skjåk,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+Tysnes Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+DNB Bank ASA,DNB Billån egenkapital mindre enn 20 %,8.5,2500.0,65.0,40000.0,1000000000.0,18,100,10
+Sunndal Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+SpareBank 1 Østfold Akershus,Billån Ung inntil 100%,9.95,4599.0,95.0,10000.0,100000.0,18,34,5
+Melhusbanken,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Søgne og Greipstad Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+DNB Bank ASA,DNB Grønt Billån egenkapital 35 % eller mer,6.74,2500.0,65.0,40000.0,1000000000.0,18,100,10
+Gildeskål Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nord-Norge,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+SpareBank 1 Ringerike Hadeland,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+DNB Bank ASA,DNB Billån egenkapital 35 % eller mer,6.84,2500.0,65.0,40000.0,1000000000.0,18,100,10
+Haugesund Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Romerike Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+DNB Bank ASA,DNB Billån egenkapital mellom 20 og 35%,7.5,2500.0,65.0,40000.0,1000000000.0,18,100,10
+Berg Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Fana Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Eika digitalbank AS,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+DNB Bank ASA,"DNB Båtlån over 7 meter, egenkapital 20-35%",8.7,2500.0,65.0,40000.0,3000000.0,18,100,15
+SpareBank 1 Nordmøre,LO Billån Ung 18-34 kaskofritt,9.4,2400.0,95.0,30000.0,130000.0,18,34,5
+DNB Bank ASA,DNB MC lån egenkapital mindre enn 20 %,9.55,2500.0,65.0,40000.0,1500000.0,18,100,10
+DNB Bank ASA,"DNB Båtlån under 7 meter, egenkapital 35 % eller mer",8.84,3700.0,65.0,40000.0,1500000.0,18,100,12
+Tysnes Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+NORDirekte (Skagerrak Sparebank),Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+DNB Bank ASA,"DNB Båtlån over 7 meter, egenkapital 35 % eller mer",7.95,2500.0,65.0,40000.0,1500000.0,18,100,15
+Eika digitalbank AS,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 1 Finans Nord-Norge AS,MC lån inntil 65%,7.7,2990.0,95.0,20000.0,1000000.0,18,100,8
+DNB Bank ASA,DNB Caravanlån egenkapital 35 % eller mer,6.84,2500.0,65.0,40000.0,1500000.0,18,100,10
+SpareBank 1 Nord-Norge,MC lån inntil 65%,7.7,2990.0,95.0,20000.0,1000000.0,18,100,8
+Romerike Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+DNB Bank ASA,"DNB Båtlån under 7 meter, egenkapital 20- 35 %",9.75,3700.0,65.0,40000.0,1500000.0,18,100,12
+SpareBank 1 Nord-Norge,LOfavør Elbil inntil 100%,8.2,1790.0,95.0,25000.0,1000000000.0,18,100,10
+Fana Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+DNB Bank ASA,DNB Caravanlån egenkapital mindre enn 20 %,8.5,2500.0,65.0,40000.0,1500000.0,18,100,10
+Strømmen Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Østfold Akershus,LOfavør MC lån inntil 65%,6.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+DNB Bank ASA,DNB Caravanlån egenkapital mellom 20 og 35%,7.5,2500.0,65.0,40000.0,1500000.0,18,100,10
+Eika digitalbank AS,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 1 Finans Nord-Norge AS,LOfavør Elbil inntil 100%,8.2,1790.0,95.0,25000.0,1000000000.0,18,100,10
+Jæren Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Valdres Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sør-Norge,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+Berg Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Østfold Akershus,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+Skue Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Sparebank 68° Nord,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+SpareBank 1 Lom og Skjåk,LO Billån Ung 18-34 kaskofritt,9.4,2400.0,95.0,30000.0,130000.0,18,34,5
+Skagerrak Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+Sunndal Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Hallingdal Valdres,LO Billån Ung 18-34 kaskofritt,9.4,2400.0,95.0,30000.0,130000.0,18,34,5
+SpareBank 1 Nordmøre,SpareBank 1 Forbrukslån,13.7,990.0,40.0,0.0,500000.0,20,100,5
+Valle Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Luster Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Romerike Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Melhusbanken,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Gudbrandsdal,Motorsykkel LO mellom 65 - 80 % finansiering,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Ørland Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Motorsykkel LO inntil 65 % finansiering,7.4,2690.0,95.0,10000.0,10000000.0,18,100,10
+Rørosbanken Røros Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+JBF Bank og Forsikring,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Drangedal Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Sparebank 1 Finans Nord-Norge AS,LOfavør MC lån inntil 65 %,7.4,2990.0,95.0,30000.0,1000000.0,18,100,8
+Sunndal Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Aasen Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nord-Norge,LOfavør MC lån inntil 65 %,7.4,2990.0,95.0,30000.0,1000000.0,18,100,8
+Skagerrak Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Flekkefjord Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Soknedal Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Motorsykkel LO mellom 65 - 80 % finansiering,8.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Kvinesdal Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Trøgstad Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Vekselbanken,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Jæren Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Nord-Norge,LOfavør MC lån inntill 100%,9.25,2990.0,95.0,30000.0,1000000.0,18,100,8
+JBF Bank og Forsikring,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Drangedal Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Kvinesdal Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Sparebank 1 Finans Nord-Norge AS,LOfavør MC lån inntill 100%,9.25,2990.0,95.0,30000.0,1000000.0,18,100,8
+Nidaros Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Sparebank 1 Finans Nord-Norge AS,MC lån inntil 100%,9.55,2990.0,95.0,20000.0,1000000.0,18,100,8
+Strømmen Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+DNB Bank ASA,DNB MC lån egenkapital mellom 20 % og 35 %,9.1,2500.0,65.0,40000.0,1500000.0,18,100,10
+Sogn Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Hegra Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nord-Norge,MC lån inntil 100%,9.55,2990.0,95.0,20000.0,1000000.0,18,100,8
+SpareBank 1 SMN,LO Billån Ung 18-34 kaskofritt,9.4,2400.0,95.0,30000.0,130000.0,18,34,5
+DNB Bank ASA,DNB MC lån egenkapital 35 % eller mer,7.8,2500.0,65.0,40000.0,1500000.0,18,100,10
+Stadsbygd Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+JBF Bank og Forsikring,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Birkenes Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Sparebanken Narvik,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Ørland Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Sogn Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Melhusbanken,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Voss Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Hegra Sparebank,Billån i banken 35 % eller mer egenkapital,5.1,2000.0,50.0,0.0,1000000000.0,18,100,5
+Oppdalsbanken,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Soknedal Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Romsdal Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Trøgstad Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Tysnes Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Birkenes Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Tinn Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Strømmen Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sogn Sparebank,Personleg kreditt,16.0,1000.0,0.0,0.0,50000.0,18,100,5
+Fana Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Selbu Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Etnedal Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Sparebanken Vest,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Østfold Akershus,Billån inntil 65%,6.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+Valle Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Gudbrandsdal,Motorsykkel LO inntil 65 % finansiering,7.4,2690.0,95.0,10000.0,10000000.0,18,100,10
+Rørosbanken Røros Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Bien Sparebank ASA,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Askim og Spydeberg Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Sunndal Sparebank,Grønt Billån Over 35 %,6.55,1950.0,65.0,100000.0,1500000.0,18,100,7
+Rogaland Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Sparebanken DIN Telemark,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Hegra Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Evje og Hornnes Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Selbu Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Berg Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Aurskog Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Sparebanken Sør,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Kvinesdal Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Birkenes Sparebank,Billån UNG,7.6,500.0,50.0,0.0,100000.0,18,35,10
+Stadsbygd Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Gildeskål Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Bien Sparebank ASA,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Spareskillingsbanken,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Sogn Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Trøndelag Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken DIN Telemark,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Tysnes Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Søgne og Greipstad Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Nordea Finans Norge AS,Båtlån minimum 35 % EK,6.95,3500.0,60.0,0.0,1000000000.0,18,100,15
+Sparebanken Narvik,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Marker & Eidsberg Sparebank,Kaskofritt billån,12.55,3000.0,85.0,30000.0,100000.0,18,70,5
+Nordea Finans Norge AS,Båtlån minimum 20 % EK,7.7,3500.0,60.0,0.0,1000000000.0,18,100,15
+Selbu Sparebank,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Agder Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Oppdalsbanken,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Santander Consumer Bank AS,Standard Billån 65 %,6.95,2000.0,60.0,50000.0,3000000.0,18,100,10
+Santander Consumer Bank AS,Kaskofritt MC-lån 100%,11.99,3020.0,75.0,10000.0,150000.0,18,100,7
+Valle Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Spareskillingsbanken,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Oslofjord Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+SpareBank 1 Østfold Akershus,Båt over 7 meter inntil 100%,9.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+Eika digitalbank AS,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Sogn Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Santander Consumer Bank AS,Kaskofritt Billån 100%,11.99,3020.0,75.0,10000.0,150000.0,18,100,7
+Sparebank 68° Nord,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Hegra Sparebank,Billån i banken mellom 20 og 35 % egenkapital,5.75,2000.0,50.0,0.0,1000000000.0,18,100,5
+Fana Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Eika digitalbank AS,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Eika digitalbank AS,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Orkla Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Skudenes & Aakra Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Odal Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Flekkefjord Sparebank,Forbrukslån,17.0,2400.0,50.0,5000.0,50000.0,18,99,5
+Sparebanken Vest,Båtlån under 7 meter 65%,8.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Eika digitalbank AS,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+JBF Bank og Forsikring,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Trøndelag Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Sparebanken Vest,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Eika digitalbank AS,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Askim og Spydeberg Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+TF Bank Norge NUF,Forbrukslån - Representativ utlånsrente,14.2,990.0,69.0,5000.0,500000.0,20,100,5
+Evje og Hornnes Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Jæren Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Lillesands Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Aasen Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Tinn Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Aasen Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Skagerrak Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Sparebanken Narvik,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Brage Finans AS,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Søgne og Greipstad Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Orkla Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Orkla Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Stadsbygd Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Grong Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Rindal Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Luster Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Trøndelag Sparebank,Billån i banken over 35%,7.4,2000.0,65.0,0.0,1000000000.0,18,100,10
+Grue Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Rogaland Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Trøndelag Sparebank,Forbrukslån,16.9,2000.0,65.0,0.0,500000.0,18,100,5
+Lillesands Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Trøndelag Sparebank,Billån i banken under 20%,8.4,2000.0,65.0,0.0,1000000000.0,18,100,10
+Eika digitalbank AS,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Trøndelag Sparebank,Billån i banken 20-35%,7.9,2000.0,65.0,0.0,1000000000.0,18,100,10
+Skagerrak Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Flekkefjord Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Eika digitalbank AS,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Trøndelag Sparebank,Grønt billån i banken 20-35%,7.1,2000.0,65.0,0.0,1000000000.0,18,100,10
+Trøndelag Sparebank,Grønt billån i banken over 35%,6.5,2000.0,65.0,0.0,1000000000.0,18,100,10
+Grue Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Skudenes & Aakra Sparebank,Båtlån over 7 meter 80%,8.7,2500.0,95.0,100000.0,3000000.0,18,100,15
+Santander Consumer Bank AS,Kaskofritt Caravanlån 100%,11.99,3020.0,75.0,10000.0,150000.0,18,100,7
+Birkenes Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Melhusbanken,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Trøndelag Sparebank,Grønt billån i banken under 20%,8.1,2000.0,65.0,0.0,1000000000.0,18,100,10
+Santander Consumer Bank AS,Kaskofritt ATV-/Snøscooterlån 100%,11.99,3020.0,75.0,10000.0,150000.0,18,100,7
+Fana Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Orkla Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Vest,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Jæren Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Drangedal Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Spareskillingsbanken,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Bjugn Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Tolga-Os Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Stadsbygd Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Rørosbanken Røros Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Vest,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Valle Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østfold Akershus,Båt over 7 meter inntil 65%,7.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+Bjugn Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Santander Consumer Bank AS,Refinansiering - forbrukslån,13.58,950.0,30.0,30000.0,400000.0,23,73,5
+Spareskillingsbanken,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Søgne og Greipstad Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Etnedal Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Høland og Setskog Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Oppdalsbanken,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Voss Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Tolga-Os Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Rogaland Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Voss Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Nidaros Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Drangedal Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Romsdal Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Ørland Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Spareskillingsbanken,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Rogaland Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+JBF Bank og Forsikring,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Stadsbygd Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Strømmen Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Haugesund Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Orkla Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Sunndal Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Flekkefjord Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Lillesands Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Bjugn Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sogn Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Sparebanken Sør,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Luster Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Jæren Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Spareskillingsbanken,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Romsdal Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Nidaros Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Kredittbanken ASA - Del av SpareBank 1 og Eika,Møre Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+Vekselbanken,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Soknedal Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Ørland Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Rindal Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Rørosbanken Røros Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Nidaros Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Selbu Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Skue Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Kvinesdal Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Tolga-Os Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Skudenes & Aakra Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Voss Sparebank,Forbrukslån,16.2,0.0,50.0,0.0,500000.0,18,100,5
+Trøndelag Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Høland og Setskog Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Sparebank 68° Nord,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Flekkefjord Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Sparebanken Sør,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Melhusbanken,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Strømmen Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Sparebanken DIN Telemark,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Aasen Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Romerike Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Stadsbygd Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Hegra Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Morrow Bank ASA,Lån,13.5,10000.0,35.0,10000.0,500000.0,20,100,5
+Sparebanken Vest,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Tolga-Os Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Jæren Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Sparebanken Sør,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Søgne og Greipstad Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Oslofjord Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Helgeland,SpareBank 1 Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+SpareBank 1 Østfold Akershus,Båt over 7 meter inntil 80%,8.35,9995.0,95.0,100000.0,3000000.0,18,100,20
+Askim og Spydeberg Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Voss Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Romerike Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Skue Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Voss Sparebank,Brukskontokreditt,13.95,250.0,0.0,1.0,50000.0,18,100,99
+Ørland Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Tolga-Os Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Sparebanken Narvik,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Vekselbanken,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Aasen Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Lillesands Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Strømmen Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Gildeskål Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Ørskog Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Brage Finans AS,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Aurskog Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Drangedal Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Askim og Spydeberg Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Voss Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Sparebanken Vest,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Fana Sparebank,MC 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Hegra Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Vekselbanken,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Skudenes & Aakra Sparebank,Andre forbrukslån,14.95,1500.0,60.0,0.0,100000.0,18,100,5
+Luster Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Skudenes & Aakra Sparebank,Personkontokreditt,13.45,1500.0,50.0,0.0,100000.0,18,100,5
+JBF Bank og Forsikring,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Luster Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Luster Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Rogaland Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Nidaros Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Evje og Hornnes Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Ørland Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Skudenes & Aakra Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Eika digitalbank AS,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+NORDirekte (Skagerrak Sparebank),Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Selbu Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Luster Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Sparebank 68° Nord,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Skagerrak Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Marker & Eidsberg Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Eika digitalbank AS,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken DIN Telemark,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Voss Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Melhusbanken,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Ørskog Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Fana Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Sparebanken Sør,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Rogaland Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Valle Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Aasen Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Valle Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Sparebanken Vest,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Haugesund Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Etnedal Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Aurskog Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Spareskillingsbanken,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Oslofjord Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Spareskillingsbanken,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Aasen Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Ørland Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Melhusbanken,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Tinn Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Sør,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Brage Finans AS,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+NORDirekte (Skagerrak Sparebank),Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+JBF Bank og Forsikring,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Strømmen Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Valle Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Selbu Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Drangedal Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Flekkefjord Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Østfold Akershus,Båt under 7 meter inntil 100%,11.95,7995.0,95.0,50000.0,500000.0,18,100,7
+Askim og Spydeberg Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Sparebanken DIN Telemark,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Romerike Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Fana Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Flekkefjord Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Sparebanken Vest,Forbrukslån uten sikkerhet,16.65,1500.0,69.0,10000.0,400000.0,18,100,5
+Sparebanken Narvik,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+NORDirekte (Skagerrak Sparebank),Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Haugesund Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Romsdal Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Agder Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Drangedal Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Soknedal Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Selbu Sparebank,Billån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Lillesands Sparebank,MC 80%,8.85,2500.0,95.0,50000.0,1000000.0,18,100,5
+Kredittbanken ASA - Del av SpareBank 1 og Eika,BN Bank Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+Høland og Setskog Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Luster Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Soknedal Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Helgeland,LOfavør Båt under 7 meter inntil 65 %,8.95,3950.0,95.0,30000.0,1000000.0,18,100,10
+Sparebank 68° Nord,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Ørskog Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Haugesund Sparebank,Billån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Sparebanken Sør,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Sparebank 1 Finans Nord-Norge AS,LOfavør Båt under 7 meter inntil 65 %,8.95,3950.0,95.0,30000.0,1000000.0,18,100,10
+Høland og Setskog Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nord-Norge,LOfavør Båt under 7 meter inntil 65 %,8.95,3950.0,95.0,30000.0,1000000.0,18,100,10
+Sparebanken DIN Telemark,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Lillesands Sparebank,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Agder Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Sparebanken Vest,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Melhusbanken,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Spareskillingsbanken,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Spareskillingsbanken,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Høland og Setskog Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Rørosbanken Røros Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Fana Sparebank,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Stadsbygd Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Trøgstad Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Ørland Sparebank,Billån 100 %,8.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Skue Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Søgne og Greipstad Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Berg Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Flekkefjord Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Høland og Setskog Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Tolga-Os Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Rørosbanken Røros Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Tysnes Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Voss Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Voss Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Tinn Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Sbanken (DNB Bank ASA),Billån 80 %,8.418,0.0,0.0,30000.0,1000000000.0,18,100,10
+Skue Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Handelsbanken AB NUF,Juristforbundet Billån 65 %,6.15,1000.0,45.0,50000.0,1000000000.0,18,100,8
+SpareBank 1 Gudbrandsdal,Kaskofritt lån ATV/Snøscooter,14.75,2700.0,95.0,30000.0,133916.0,18,100,5
+Birkenes Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Drangedal Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Søgne og Greipstad Sparebank,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Fana Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+SpareBank 1 Hallingdal Valdres,Kaskofritt lån ATV/Snøscooter,14.75,2700.0,95.0,30000.0,133916.0,18,100,5
+Orkla Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Fana Sparebank,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Sbanken (DNB Bank ASA),Billån 65 %,7.104,0.0,0.0,30000.0,1000000000.0,18,100,10
+Sparebanken Sør,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Haugesund Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Handelsbanken AB NUF,Akademiker Pluss Billån 65%,6.15,1000.0,45.0,50000.0,1000000000.0,18,100,8
+Kvinesdal Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Flekkefjord Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Haltdalen Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Spareskillingsbanken,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Lillesands Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+SpareBank 1 Nordmøre,Kaskofritt lån ATV/Snøscooter,14.75,2700.0,95.0,30000.0,133916.0,18,100,5
+Haltdalen Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Flekkefjord Sparebank,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Luster Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Jæren Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østfold Akershus,Caravanlån inntil 100%,8.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+Orkla Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Valdres Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Vest,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Nidaros Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Aurskog Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Rindal Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Østfold Akershus,Båt under 7 meter inntil 80%,10.95,7995.0,95.0,50000.0,500000.0,18,100,7
+Lillesands Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Odal Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østfold Akershus,Båt under 7 meter inntil 65%,9.95,7995.0,95.0,50000.0,500000.0,18,100,7
+Selbu Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Høland og Setskog Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,Kaskofritt lån ATV/Snøscooter,14.75,2700.0,95.0,30000.0,133916.0,18,100,5
+SpareBank 1 Lom og Skjåk,Kaskofritt lån ATV/Snøscooter,14.75,2700.0,95.0,30000.0,133916.0,18,100,5
+Skudenes & Aakra Sparebank,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Bjugn Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Jæren Sparebank,Lån uten sikkerhet,19.1,0.0,70.0,0.0,500000.0,18,100,5
+Hegra Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Skudenes & Aakra Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Hegra Sparebank,Billån i banken under 20 % egenkapital,6.7,2000.0,50.0,0.0,1000000000.0,18,100,5
+Luster Sparebank,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Rindal Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Etnedal Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Vest,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Lillesands Sparebank,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Birkenes Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,Billån mellom 65 % og 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Oppdalsbanken,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Voss Sparebank,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Agder Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Rogaland Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,Billån inntil 65 % finansiering,6.9,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Sparebanken Narvik,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sunndal Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Haugesund Sparebank,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+SpareBank 1 Finans Midt-Norge AS,Billån mellom 65 % og 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 SMN,Kaskofritt lån ATV/Snøscooter,14.75,2700.0,95.0,30000.0,133916.0,18,100,5
+NORDirekte (Skagerrak Sparebank),Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Agder Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Haugesund Sparebank,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Sbanken (DNB Bank ASA),Grønt Billån 65 %,6.823,0.0,0.0,30000.0,1000000000.0,18,100,10
+Stadsbygd Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Handelsbanken AB NUF,Tekna Billån 65%,6.15,1000.0,45.0,50000.0,1000000000.0,18,100,8
+Valdres Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Askim og Spydeberg Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+SpareBank 1 Finans Midt-Norge AS,Billån inntil 65 % finansiering,6.9,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Soknedal Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sogn og Fjordane,Kaskofritt lån ATV/Snøscooter,14.75,2700.0,95.0,30000.0,133916.0,18,100,5
+Sbanken (DNB Bank ASA),Grønt Billån 80 %,7.674,0.0,0.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Billån inntil 65 % finansiering,6.9,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Orkla Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Bjugn Sparebank,Eika Caravanlån under 20 % Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Sør,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Grue Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Askim og Spydeberg Sparebank,MC 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Ørskog Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Søgne og Greipstad Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Ørskog Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Lom og Skjåk,Billån inntil 65 % finansiering,6.9,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Sogn Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Skudenes & Aakra Sparebank,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+SpareBank 1 Østfold Akershus,Caravanlån inntil 65%,6.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+Grong Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Odal Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Ørland Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Sparebanken Møre,Forbrukslån,13.85,1500.0,50.0,50000.0,100000.0,18,100,5
+SpareBank 1 SMN,Billån inntil 100 % finansiering,8.6,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Oslofjord Sparebank,Eika MC/ATV med 20 % til 35 % Egenkapital,8.85,3000.0,85.0,40000.0,200000.0,18,70,7
+Oppdalsbanken,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Romerike Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken DIN Telemark,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Oslofjord Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Kvinesdal Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Nordmøre,Billån mellom 65 % og 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Ørskog Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Søgne og Greipstad Sparebank,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Sparebanken Vest,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Grue Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Flekkefjord Sparebank,Fritidslån 100%,9.5,2500.0,95.0,50000.0,1000000.0,18,100,5
+Romsdal Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+NORDirekte (Skagerrak Sparebank),Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,Billån inntil 100 % finansiering,8.6,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Spareskillingsbanken,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+SpareBank 1 Sogn og Fjordane,Billån inntil 65 % finansiering,6.9,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Aurskog Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Rørosbanken Røros Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken DIN Telemark,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Billån mellom 65 % og 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Rogaland Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Vekselbanken,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Voss Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Jæren Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Voss Sparebank,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+SpareBank 1 Hallingdal Valdres,Billån mellom 65 % og 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Rogaland Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Evje og Hornnes Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 68° Nord,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Billån inntil 65 % finansiering,6.9,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Agder Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Valle Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Søgne og Greipstad Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Kredittbanken ASA - Del av SpareBank 1 og Eika,Coop Refinansiering,12.9,0.0,49.0,0.0,1000000000.0,18,100,10
+SpareBank 1 Nordmøre,Billån inntil 100 % finansiering,8.6,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Haltdalen Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Grue Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Lom og Skjåk,Billån mellom 65 % og 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Evje og Hornnes Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken DIN Telemark,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Søgne og Greipstad Sparebank,Forbrukslån,16.5,1000.0,65.0,65000.0,100000.0,18,100,5
+Tinn Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Trøgstad Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Luster Sparebank,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Selbu Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Birkenes Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Agder Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Hallingdal Valdres,Billån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,Billån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Drangedal Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Gildeskål Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,Billån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Sogn og Fjordane,Billån inntil 100 % finansiering,8.6,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Sparebanken Sør,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+Hegra Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Birkenes Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Odal Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Vest,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Billån inntil 100 % finansiering,8.6,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Høland og Setskog Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Soknedal Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Vest,Fritidslån 65%,7.75,2500.0,95.0,50000.0,1000000.0,18,100,5
+SpareBank 1 Hallingdal Valdres,Billån inntil 100 % finansiering,8.6,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Ørskog Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Marker & Eidsberg Sparebank,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+SpareBank 1 Nordmøre,Billån inntil 65 % finansiering,6.9,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Grong Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Rørosbanken Røros Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Fana Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+SpareBank 1 Sogn og Fjordane,Billån mellom 65 % og 80 % finansiering,7.7,2990.0,95.0,50000.0,1000000000.0,18,100,10
+Rindal Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Sør,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Spareskillingsbanken,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Billån inntil 100 % finansiering,8.6,2990.0,95.0,30000.0,1000000000.0,18,100,10
+Gildeskål Sparebank,Eika MC/ATV over 35 % Egenkapital,7.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Bjugn Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebanken Narvik,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 68° Nord,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,Billån inntil 100%,8.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+Birkenes Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Lom og Skjåk,Billån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Voss Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Flekkefjord Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Trøndelag Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Ringerike Hadeland,Billån inntil 65%,6.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+Odal Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,Billån inntil 80%,7.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+Ørland Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Rindal Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Ørland Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Østfold Akershus,Kaskofritt Billån inntil 100%,16.95,4599.0,95.0,30000.0,100000.0,18,100,5
+Grong Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Østlandet AS,Billån inntil 100%,8.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+Trøgstad Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Luster Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Billån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Østlandet,Billån inntil 65%,6.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+Bien Sparebank ASA,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Berg Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nordmøre,Billån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,Billån inntil 80%,7.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+Haugesund Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,Billån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,Billån inntil 65%,6.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+Skagerrak Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Bjugn Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Bien Sparebank ASA,Eika Båtlån,9.15,3800.0,85.0,0.0,1000000000.0,18,100,10
+Skudenes & Aakra Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Askim og Spydeberg Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+NORDirekte (Skagerrak Sparebank),Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Oppdalsbanken,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,LOfavør Billån inntil 100%,8.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Billån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Kvinesdal Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Marker & Eidsberg Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,LOfavør Billån inntil 80%,7.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+Oppdalsbanken,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Skudenes & Aakra Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 SMN,Billån LO inntil 65 % finansiering,6.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Romerike Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Drangedal Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 SMN,Billån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Sparebank 68° Nord,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Marker & Eidsberg Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Østlandet AS,LOfavør Billån inntil 80%,7.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,LOfavør Billån inntil 100%,8.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+Grong Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Tolga-Os Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Billån LO inntil 100 % finansiering,8.3,2690.0,95.0,30000.0,1000000000.0,18,100,10
+SpareBank 1 Østfold Akershus,LOfavør Billån Ung inntil 100%,8.95,4599.0,95.0,10000.0,100000.0,18,34,5
+Berg Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Østlandet AS,LOfavør Billån inntil 100%,8.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+Nidaros Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Aurskog Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Fana Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,Billån LO inntil 65 % finansiering,6.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Haltdalen Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Drangedal Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Etnedal Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,Billån inntil 80%,7.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+Gildeskål Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,Billån inntil 100%,8.85,4599.0,95.0,50000.0,1000000.0,18,100,8
+Strømmen Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+"Svea Bank AB, Filial i Norge",Svealånet (store lånet),13.9,950.0,55.0,20000.0,400000.0,20,67,5
+Haugesund Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+SpareBank 1 Nordmøre,Billån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Melhusbanken,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Grong Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Vekselbanken,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+SpareBank 1 Ringerike Hadeland,Caravanlån inntil 65%,6.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+Rindal Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Lom og Skjåk,Kaskofritt Billån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Lea Bank AB (publ) NUF,Refinansiering,10.5,10000.0,45.0,10000.0,500000.0,23,70,15
+Sogn Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nord-Norge,LOfavør Båtlån inntill 80%,7.95,5000.0,95.0,30000.0,1000000000.0,18,100,15
+SpareBank 1 Finans Østlandet AS,Caravanlån inntil 80%,7.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+Spareskillingsbanken,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Rindal Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Aasen Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Helgeland,LOfavør Båtlån inntil 65%,7.45,5000.0,95.0,30000.0,1000000000.0,18,100,15
+SpareBank 1 Helgeland,LOfavør Båtlån inntill 80%,7.95,5000.0,95.0,30000.0,1000000000.0,18,100,15
+SpareBank 1 Østlandet,Caravanlån inntil 65%,6.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+Romerike Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Lea Bank AB (publ) NUF,Forbrukslån,10.5,10000.0,45.0,10000.0,500000.0,23,70,5
+SpareBank 1 Nord-Norge,LOfavør Båtlån inntil 65%,7.45,5000.0,95.0,30000.0,1000000000.0,18,100,15
+Drangedal Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Kaskofritt Billån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Skue Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Gildeskål Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 1 Finans Nord-Norge AS,LOfavør Båtlån inntill 80%,7.95,5000.0,95.0,30000.0,1000000000.0,18,100,15
+SpareBank 1 Finans Østlandet AS,Caravanlån inntil 65%,6.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+Trøgstad Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Stadsbygd Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,LOfavør Båtlån inntil 65%,7.45,5000.0,95.0,30000.0,1000000000.0,18,100,15
+Romsdal Sparebank,Eika MC/ATV lån under 20 % Egenkapital,9.55,3000.0,85.0,40000.0,200000.0,18,70,7
+Gildeskål Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,LOfavør Billån inntil 65%,6.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Helgeland,Båtlån inntil 65%,7.75,5000.0,95.0,30000.0,1000000000.0,18,100,15
+Evje og Hornnes Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Skudenes & Aakra Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Helgeland,Båtlån inntil 80%,8.25,5000.0,95.0,30000.0,1000000000.0,18,100,15
+Trøndelag Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Gudbrandsdal,Kaskofritt Billån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Nord-Norge,Båtlån inntil 65%,7.75,5000.0,95.0,30000.0,1000000000.0,18,100,15
+SpareBank 1 Østlandet,LOfavør Billån inntil 65%,6.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Østfold Akershus,Caravanlån inntil 80%,7.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+Nidaros Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Skue Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nord-Norge,Båtlån inntil 80%,8.25,5000.0,95.0,30000.0,1000000000.0,18,100,15
+SpareBank 1 Finans Østlandet AS,LOfavør Billån inntil 65%,6.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+DNB Bank ASA,SAGA Forbrukslån,10.9,500.0,0.0,10000.0,300000.0,23,100,5
+Sparebank 1 Finans Nord-Norge AS,Båtlån inntil 65%,7.75,5000.0,95.0,30000.0,1000000000.0,18,100,15
+SpareBank 1 Ringerike Hadeland,LOfavør Billån inntil 80%,7.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+Sparebank 68° Nord,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Sparebank 1 Finans Nord-Norge AS,Båtlån inntil 80%,8.25,5000.0,95.0,30000.0,1000000000.0,18,100,15
+Hegra Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,Kaskofritt Billån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Høland og Setskog Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Askim og Spydeberg Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Billån LO inntil 65 % finansiering,6.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+NOBL (DNB),Billån egenkapital 35 % eller mer,6.74,2300.0,65.0,0.0,1000000000.0,18,100,10
+Gildeskål Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+NOBL (DNB),Billån egenkapital mellom 35 og 20 %,7.4,2300.0,65.0,0.0,1000000000.0,18,100,10
+Selbu Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+SpareBank 1 Østlandet,LOfavør Caravanlån inntil 100%,8.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+BONORD (DNB),Billån egenkapital mellom 35 og 20 %,7.4,2300.0,65.0,0.0,1000000000.0,18,100,10
+Valle Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Trøgstad Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+BONORD (DNB),Billån egenkapital mindre enn 20 %,8.4,2300.0,65.0,0.0,1000000000.0,18,100,10
+Selbu Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,LOfavør Caravanlån inntil 100%,8.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+Vekselbanken,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Gudbrandsdal,Billån LO mellom 65 - 80 % finansiering,7.4,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Oppdalsbanken,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Valdres Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+BONORD (DNB),Billån egenkapital 35 % eller mer,6.74,2300.0,65.0,0.0,1000000000.0,18,100,10
+Aasen Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Bien Sparebank ASA,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Østlandet AS,LOfavør Caravanlån inntil 100%,8.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+Aasen Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Haltdalen Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,Caravanlån inntil 100%,8.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+Flekkefjord Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,Caravanlån inntil 100%,8.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+Hegra Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Trøgstad Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,Caravanlån inntil 100%,8.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+SpareBank 1 Østlandet,Caravanlån inntil 80%,7.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+Fana Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Skagerrak Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,Kaskofritt Billån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Melhusbanken,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Haugesund Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,Caravanlån inntil 80%,7.85,4599.0,95.0,50000.0,3000000.0,18,100,10
+SpareBank 1 Nordmøre,Kaskofritt Billån LO,13.75,2400.0,95.0,30000.0,130000.0,18,100,5
+Haltdalen Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Valdres Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Tolga-Os Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Rørosbanken Røros Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Ørskog Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Stadsbygd Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,MC lån inntil 65%,6.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Billån Ung 18-34 kaskofritt,9.7,2700.0,95.0,30000.0,1000000000.0,18,34,5
+Tolga-Os Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+NORDirekte (Skagerrak Sparebank),Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Gudbrandsdal,Billån Ung 18-34 kaskofritt,9.7,2700.0,95.0,30000.0,1000000000.0,18,34,5
+SpareBank 1 Østfold Akershus,LOfavør Billån inntil 100%,8.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+Nidaros Sparebank,Caravanlån 100%,8.5,2500.0,95.0,50000.0,1000000.0,18,100,8
+Bjugn Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Orkla Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Evje og Hornnes Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Etnedal Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Grue Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Hallingdal Valdres,Billån Ung 18-34 kaskofritt,9.7,2700.0,95.0,30000.0,1000000000.0,18,34,5
+SpareBank 1 Ringerike Hadeland,LOfavør Caravanlån inntil 80%,7.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+SpareBank 1 Østlandet,LOfavør Caravanlån inntil 80%,7.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+Tolga-Os Sparebank,Caravanlån 65 %,6.8,2500.0,95.0,50000.0,1000000.0,18,100,10
+Aurskog Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Rindal Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Gudbrandsdal,Billån LO inntil 65 % finansiering,6.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Tolga-Os Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Lillesands Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Tysnes Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,Billån Ung 18-34 kaskofritt,9.7,2700.0,95.0,30000.0,1000000000.0,18,34,5
+SpareBank 1 Finans Østlandet AS,LOfavør Caravanlån inntil 80%,7.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+Skudenes & Aakra Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nordmøre,Billån LO inntil 65 % finansiering,6.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Skue Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Skue Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Tysnes Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,LOfavør Caravanlån inntil 65%,6.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,LOfavør Caravanlån inntil 65%,6.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+Spareskillingsbanken,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+NOBL (DNB),Billån egenkapital mindre enn 20 %,8.4,2300.0,65.0,0.0,1000000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Billån LO inntil 65 % finansiering,6.6,2690.0,95.0,30000.0,1000000000.0,18,100,10
+Grue Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Høland og Setskog Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,LOfavør Caravanlån inntil 65%,6.55,4599.0,95.0,50000.0,3000000.0,18,100,10
+Agder Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,MC inntil 100%,8.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,Kaskofritt Motorsykkel lån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Lom og Skjåk,ATV/snøscooterlån inntil 65%,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,5
+Aurskog Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,MC inntil 100%,8.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,ATV/snøscooterlån inntil 65%,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,5
+Haugesund Sparebank,Lån med annen sikkerhet,10.25,1500.0,50.0,1000.0,150000.0,18,100,5
+Melhusbanken,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Søgne og Greipstad Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Ørskog Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,ATV/snøscooterlån inntil 65%,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,5
+SpareBank 1 Finans Østlandet AS,MC inntil 100%,8.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,Kaskofritt Motorsykkel lån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Haltdalen Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Gudbrandsdal,ATV/snøscooterlån inntil 65%,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,5
+Vekselbanken,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Grong Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sogn og Fjordane,Billån Ung 18-34 kaskofritt,9.7,2700.0,95.0,30000.0,1000000000.0,18,34,5
+Haugesund Sparebank,Forbrukslån uten sikkerhet,15.75,1500.0,50.0,0.0,100000.0,18,100,1
+SpareBank 1 Ringerike Hadeland,MC lån inntil 80%,7.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Hallingdal Valdres,Kaskofritt Motorsykkel lån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Aurskog Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,MC lån inntil 80%,7.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+Aasen Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Sunndal Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Orkla Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Stadsbygd Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Finans Østlandet AS,MC lån inntil 80%,7.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+Odal Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Oslofjord Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 SMN,Billån Ung 18-34 kaskofritt,9.7,2700.0,95.0,30000.0,1000000000.0,18,34,5
+Lillesands Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+Soknedal Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,MC lån inntil 65%,6.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Nordmøre,Billån Ung 18-34 kaskofritt,9.7,2700.0,95.0,30000.0,1000000000.0,18,34,5
+Oslofjord Sparebank,Grønt Billån 20%-35% Egenkapital,7.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,MC lån inntil 65%,6.85,4599.0,95.0,50000.0,1000000.0,18,100,10
+Sparebank 1 Finans Nord-Norge AS,Billån ung,9.95,2990.0,95.0,20000.0,125000.0,18,34,5
+Sparebanken Sør,Nedbetaling med annen sikkerhet,9.85,2500.0,65.0,5000.0,50000.0,18,100,10
+Bien Sparebank ASA,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sør-Norge,LOfavør Billån Ung med 0-20 % egenkapital,7.19,2000.0,70.0,50000.0,2000000.0,18,33,10
+AS Financiering (Sparebanken Øst),Grønt billån m/ 0% egenkapital,8.1,2250.0,85.0,20000.0,10000000.0,18,100,10
+SpareBank 1 Finans Midt-Norge AS,ATV/snøscooterlån inntil 100%,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,5
+Agder Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Nord-Norge,Billån ung,9.95,2990.0,95.0,20000.0,125000.0,18,34,5
+SpareBank 1 Sør-Norge,Caravanlån/bobillån med 35% egenkapital eller mer,6.69,2200.0,70.0,50000.0,1000000000.0,18,100,15
+AS Financiering (Sparebanken Øst),Grønt billån m/ 20% egenkapital,7.1,2250.0,85.0,20000.0,10000000.0,18,100,10
+SpareBank 1 Nordmøre,Kaskofritt Motorsykkel lån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Romerike Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sør-Norge,LOfavør Billån Ung med 35 % egenkapital eller mer,5.69,2000.0,70.0,50000.0,2000000.0,18,33,10
+SpareBank 1 Finans Østlandet AS,LOfavør MC lån inntil 65%,6.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,LOfavør MC lån inntil 80%,7.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Sør-Norge,LOfavør Billån Ung med 20-35 % egenkapital,6.29,2000.0,70.0,50000.0,2000000.0,18,33,10
+Søgne og Greipstad Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Rogaland Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Haltdalen Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sør-Norge,Billån Ung med 20-35 % egenkapital,7.29,2000.0,70.0,50000.0,2000000.0,18,33,10
+NORDirekte (Skagerrak Sparebank),Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Ringerike Hadeland,LOfavør MC lån inntil 100%,8.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Sør-Norge,Billån Ung med 35 % egenkapital eller mer,6.69,2000.0,70.0,50000.0,2000000.0,18,33,10
+SpareBank 1 Hallingdal Valdres,ATV/snøscooterlån inntil 80%,8.9,2990.0,95.0,30000.0,1000000000.0,18,100,5
+Rørosbanken Røros Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sør-Norge,LOfavør Billån med 35 % egenkapital eller mer,6.39,2200.0,70.0,50000.0,2000000.0,18,74,10
+Tysnes Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Østlandet AS,LOfavør MC lån inntil 80%,7.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Sør-Norge,Billån Ung med 0-20 % egenkapital,8.19,2000.0,70.0,50000.0,2000000.0,18,33,10
+SpareBank 1 SMN,ATV/snøscooterlån inntil 65%,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,5
+Orkla Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+AS Financiering (Sparebanken Øst),Caravanlån m/ 20% egenkapital,7.25,2750.0,95.0,1.0,10000000.0,18,100,10
+SpareBank 1 Sør-Norge,LOfavør Billån med 20-35 % egenkapital,7.39,2200.0,70.0,50000.0,2000000.0,18,74,10
+SpareBank 1 Østlandet,LOfavør MC lån inntil 100%,8.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+Hegra Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Aasen Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Sør-Norge,LOfavør Billån med 0-20 % egenkapital,8.19,2200.0,70.0,50000.0,2000000.0,18,74,10
+AS Financiering (Sparebanken Øst),Caravanlån m/ 35% egenkapital,6.4,2750.0,95.0,20000.0,10000000.0,18,100,10
+SpareBank 1 Gudbrandsdal,ATV/snøscooterlån inntil 80%,8.9,2990.0,95.0,30000.0,1000000000.0,18,100,5
+SpareBank 1 Sør-Norge,Billån med 0-20 % egenkapital,8.49,2200.0,70.0,50000.0,2000000.0,18,74,10
+Birkenes Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+AS Financiering (Sparebanken Øst),Caravanlån m/ 0% egenkapital,8.25,2750.0,95.0,1.0,10000000.0,18,100,10
+SpareBank 1 Sør-Norge,Billån med 35 % egenkapital eller mer,6.69,2200.0,70.0,50000.0,2000000.0,18,74,10
+Sogn Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,ATV/snøscooterlån inntil 80%,8.9,2990.0,95.0,30000.0,1000000000.0,18,100,5
+SpareBank 1 Sør-Norge,Billån med 20-35 % egenkapital,7.69,2200.0,70.0,50000.0,2000000.0,18,74,10
+SpareBank 1 Nordmøre,ATV/snøscooterlån inntil 65%,7.7,2990.0,95.0,30000.0,1000000000.0,18,100,5
+SpareBank 1 Finans Østlandet AS,LOfavør MC lån inntil 100%,8.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,Kaskofritt Motorsykkel lån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+JBF Bank og Forsikring,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+AS Financiering (Sparebanken Øst),Billån m/ 20% egenkapital,7.25,2750.0,95.0,20000.0,10000000.0,18,100,10
+SpareBank 1 SMN,Kaskofritt Motorsykkel lån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+Stadsbygd Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Sparebanken Vest,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+AS Financiering (Sparebanken Øst),Billån m/ 35% egenkapital,6.4,2750.0,95.0,20000.0,10000000.0,18,100,10
+Agder Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+AS Financiering (Sparebanken Øst),Billån m/ 0% egenkapital,8.25,2750.0,95.0,20000.0,10000000.0,18,100,10
+Sparebanken Sør,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+Kvinesdal Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Berg Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sunndal Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Finans Midt-Norge AS,ATV/snøscooterlån LO inntil 100%,9.2,2690.0,95.0,30000.0,1000000000.0,18,100,5
+Odal Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sør-Norge,LOfavør MC-lån med 35% egenkapital eller mer,6.39,2200.0,70.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,Lån til elbil 100%,8.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Sør-Norge,LOfavør MC-lån med 20-35% egenkapital,7.39,2200.0,70.0,50000.0,1000000000.0,18,100,10
+AS Financiering (Sparebanken Øst),Lån til båt over 7 meter 20% egenkapital,7.65,5000.0,95.0,10000.0,1000000.0,18,100,10
+Skue Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Trøgstad Sparebank,Eika Billån 20%-35% Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+AS Financiering (Sparebanken Øst),Lån til MC/ATV/Snøscooter 35% egenkapital,6.8,2750.0,95.0,20000.0,10000000.0,18,100,10
+SpareBank 1 Sør-Norge,MC-lån med 20-35% egenkapital,7.69,2200.0,70.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Østlandet,Lån til elbil 100%,8.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,ATV/snøscooterlån inntil 100%,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,5
+AS Financiering (Sparebanken Øst),Lån til båt over 7 meter 0% egenkapital,8.65,5000.0,95.0,10000.0,1000000.0,18,100,10
+SpareBank 1 Sør-Norge,MC-lån med 35% egenkapital eller mer,6.69,2200.0,70.0,50000.0,1000000000.0,18,100,10
+Orkla Sparebank,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Valdres Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+AS Financiering (Sparebanken Øst),Lån til MC/ATV/Snøscooter 0% egenkapital,8.9,2750.0,95.0,20000.0,10000000.0,18,100,10
+SpareBank 1 Sør-Norge,LOfavør Lån til båt over 7 meter,7.19,5000.0,70.0,240000.0,15000000.0,18,74,20
+SpareBank 1 Finans Østlandet AS,Lån til elbil 100%,8.75,4599.0,85.0,50000.0,1000000000.0,18,100,10
+SpareBank 1 Nordmøre,ATV/snøscooterlån inntil 80%,8.9,2990.0,95.0,30000.0,1000000000.0,18,100,5
+SpareBank 1 Sør-Norge,MC-lån med 0-20% egenkapital,8.49,2200.0,70.0,50000.0,1000000000.0,18,100,10
+AS Financiering (Sparebanken Øst),Lån til MC/ATV/Snøscooter 20% egenkapital,8.4,2750.0,95.0,20000.0,10000000.0,18,100,10
+Gildeskål Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Sunndal Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sør-Norge,Lån til båt under 7 meter inntil 65%,8.99,5000.0,70.0,50000.0,1500000.0,18,74,5
+SpareBank 1 Gudbrandsdal,ATV/snøscooterlån inntil 100%,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,5
+Voss Sparebank,Caravanlån 80 %,7.5,2500.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Sogn og Fjordane,Kaskofritt Motorsykkel lån,14.75,2700.0,95.0,30000.0,130000.0,18,100,5
+SpareBank 1 Sør-Norge,LOfavør Lån til båt under 7 meter inntil 65%,7.99,5000.0,70.0,50000.0,1500000.0,18,74,5
+Berg Sparebank,Eika Billån 35% Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Evje og Hornnes Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sør-Norge,LOfavør Lån til elbil med 0-20 % egenkapital,7.89,0.0,70.0,50000.0,2000000.0,18,74,10
+Voss Sparebank,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Ørland Sparebank,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Sør-Norge,Lån til båt over 7 meter,7.49,5000.0,70.0,300000.0,15000000.0,18,74,20
+SpareBank 1 Helgeland,LO Favør billån ung,9.65,2990.0,95.0,30000.0,100000.0,18,34,5
+Grue Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+AS Financiering (Sparebanken Øst),Kaskofritt lån til MC/ATV/Snøscooter,11.45,2750.0,95.0,20000.0,100000.0,18,100,5
+SpareBank 1 Sør-Norge,LOfavør Lån til elbil med 35 % egenkapital eller mer,6.09,0.0,70.0,50000.0,2000000.0,18,74,10
+Skudenes & Aakra Sparebank,Grønt billån  65%,6.65,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Ringerike Hadeland,LOfavør MC lån inntil 65%,6.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Sør-Norge,LOfavør Lån til elbil med 20-35 % egenkapital,7.09,0.0,70.0,50000.0,2000000.0,18,74,10
+Oslofjord Sparebank,Grønt Billån 35% Egenkapital,6.65,2500.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Sør-Norge,Lån til elbil med 20-35 % egenkapital,7.39,1200.0,70.0,50000.0,2000000.0,18,74,10
+Grong Sparebank,Eika Caravanlån med 20 % - 35 % Egenkapital,7.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+Bien Sparebank ASA,Eika Caravanlån 35 % Egenkapital,6.85,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Hallingdal Valdres,ATV/snøscooterlån inntil 100%,9.5,2990.0,95.0,30000.0,1000000000.0,18,100,5
+SpareBank 1 Nord-Norge,LO Favør billån ung,9.65,2990.0,95.0,30000.0,100000.0,18,34,5
+AS Financiering (Sparebanken Øst),Kaskofritt caravanlån,11.45,2750.0,95.0,20000.0,100000.0,18,100,5
+SpareBank 1 Sør-Norge,Lån til elbil med 35 % egenkapital eller mer,6.39,1200.0,70.0,50000.0,2000000.0,18,74,10
+SpareBank 1 Østfold Akershus,LOfavør Billån inntil 65%,6.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+Tinn Sparebank,Grønt Billån under 20% Egenkapital,8.25,2500.0,85.0,40000.0,1000000000.0,18,70,10
+Sparebank 1 Finans Nord-Norge AS,LO Favør billån ung,9.65,2990.0,95.0,30000.0,100000.0,18,34,5
+SpareBank 1 Østlandet,LOfavør MC lån inntil 65%,6.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+AS Financiering (Sparebanken Øst),Grønt billån m/ 35% egenkapital,6.25,2250.0,85.0,20000.0,10000000.0,18,100,10
+SpareBank 1 Sør-Norge,Caravanlån/bobillån med 20-35 % egenkapital,7.69,2200.0,70.0,50000.0,1000000000.0,18,100,15
+Spareskillingsbanken,Grønt billån 80%,7.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+Tysnes Sparebank,Eika Billån under 20% Egenkapital,8.55,3000.0,85.0,40000.0,1000000000.0,18,70,10
+SpareBank 1 Østlandet,LOfavør MC lån inntil 80%,7.55,4599.0,95.0,50000.0,1000000.0,18,100,10
+Sparebanken Sør,Grønt billån 100%,8.4,2000.0,85.0,50000.0,1000000.0,18,100,10
+SpareBank 1 Lom og Skjåk,ATV/snøscooterlån inntil 80%,8.9,2990.0,95.0,30000.0,1000000000.0,18,100,5
+AS Financiering (Sparebanken Øst),Kaskofritt billån,11.45,2750.0,95.0,20000.0,100000.0,18,100,5
+SpareBank 1 Sør-Norge,Lån til elbil med 0-20 % egenkapital,8.19,1200.0,70.0,50000.0,2000000.0,18,74,10
+SpareBank 1 Helgeland,Billån ung,9.95,2990.0,95.0,20000.0,125000.0,18,34,5

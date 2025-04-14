@@ -90,10 +90,10 @@ if __name__ == "__main__":
     }
     person2 = {
         "name": "Emil",
-        "age": 22,
+        "age": 20,
         "mortgage_value": 3_000_000,
-        "house_value": 5_500_000,
-        "repayment_years": 25
+        "house_value": 5_000_000,
+        "repayment_years": 30
     } 
     # calculate_best_mortgages(
     #     client_age=person1["age"],
