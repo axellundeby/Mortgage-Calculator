@@ -54,6 +54,7 @@ def hent_forbrukslan_data():
                         "Min alder": int(get_text('min_alder') or 0),
                         "Maks alder": int(get_text('maks_alder') or 100),
                         "Maks løpetid (år)": int(get_text('maks_lopetid_ar') or 0),
+                        "Belaningsgrad": float(get_text('belaningsgrad')),
                     }
 
                     writer.writerow([
@@ -67,6 +68,7 @@ def hent_forbrukslan_data():
                         row["Min alder"],
                         row["Maks alder"],
                         row["Maks løpetid (år)"],
+                        row["Belaningsgrad"]
                     ])
 
             print("Data er lagret i 'forbrukslan_data_clean.csv'")
