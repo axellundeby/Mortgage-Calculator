@@ -1,93 +1,116 @@
 import csv
-import os
-from dotenv import load_dotenv
-import requests
-from xml.etree import ElementTree
+import numpy_financial as npf
+import math
 
-load_dotenv()
+def beregn_maanedlig_betaling(
+    laanebelop,
+    years,
+    nominell_rente_aarlig,
+    etableringsgebyr_prosent,
+    etableringsgebyr_min,
+    termingebyr
+): 
+    nedbetalingstid_maaneder = years * 12
 
-def hent_forbrukslan_data():
-    url = 'https://www.finansportalen.no/services/feed/v3/bank/smaalan.atom'
-    username = os.getenv('FINANSPORTALEN_USERNAME')
-    password = os.getenv('FINANSPORTALEN_PASSWORD')
+    etableringsgebyr = max(etableringsgebyr_prosent / 100 * laanebelop, etableringsgebyr_min)
+    tilbakebetalings_belop = laanebelop + etableringsgebyr 
+    maanedlig_rente = nominell_rente_aarlig / 100 / 12
 
-    try:
-        response = requests.get(url, auth=(username, password))
+    maanedlig_betaling = tilbakebetalings_belop * (
+        maanedlig_rente * (1 + maanedlig_rente) ** nedbetalingstid_maaneder
+    ) / ((1 + maanedlig_rente) ** nedbetalingstid_maaneder - 1)
 
-        if response.status_code == 200:
-            root = ElementTree.fromstring(response.content)
-            ns = {
-                'atom': 'http://www.w3.org/2005/Atom',
-                'f': 'http://www.finansportalen.no/feed/ns/1.0'
-            }
+    maanedlig_betaling_med_gebyr = maanedlig_betaling + termingebyr
 
-            with open('forbrukslan_data_clean.csv', mode='w', newline='', encoding='utf-8') as file:
-                writer = csv.writer(file)
-                writer.writerow([
-                    "Bank", "Lånenavn", "Nominell rente", "Etableringsgebyr", "Etableringsgebyr i %",
-                    "Termingebyr", "Min beløp", "Maks beløp", "Min alder",
-                    "Maks alder", "Maks løpetid (år)", "Belaningsgrad"
-                ])
+    return round(maanedlig_betaling_med_gebyr)
 
-                for entry in root.findall('atom:entry', ns):
-                    def get(tag):
-                        return entry.find(f'f:{tag}', ns)
+def beregn_effektiv_rente(
+    laanebelop,
+    years,
+    nominell_rente_aarlig,
+    etableringsgebyr_prosent,
+    etableringsgebyr_min,
+    termingebyr): 
 
-                    def get_text(tag):
-                        el = get(tag)
-                        return el.text if el is not None and el.text else None
+    nedbetalingstid_maaneder = years * 12
+    
+    etableringsgebyr = max(etableringsgebyr_prosent / 100 * laanebelop, etableringsgebyr_min)
+    tilbakebetalings_belop = laanebelop + etableringsgebyr if etableringsgebyr_prosent > 0 else laanebelop
+    utbetalt_belop = laanebelop if etableringsgebyr_prosent > 0 else laanebelop - etableringsgebyr
 
-                    gebyr_type = get_text('etableringsgebyr_type') or ""
-                    etableringsgebyr_prosent = 0.0
-                    etableringsgebyr_kr = 0.0
+    maanedlig_rente = nominell_rente_aarlig / 100 / 12
 
-                    if "kr" in gebyr_type:
-                        etableringsgebyr_kr = float(get_text('etableringsgebyr') or 0)
-                    elif "prosent" in gebyr_type:
-                        etableringsgebyr_prosent = float(get_text('etableringsgebyr_prosent') or 0)
-                        etableringsgebyr_kr = float(get_text('etableringsgebyr_min_belop') or 0)
-                    elif "intervall" in gebyr_type:
-                        etableringsgebyr_kr = float(get_text('etableringsgebyr_1') or 0)
-                    else:
-                        etableringsgebyr_kr = float(get_text('etableringsgebyr') or 0)
+    maanedlig_betaling = tilbakebetalings_belop * (
+        maanedlig_rente * (1 + maanedlig_rente) ** nedbetalingstid_maaneder
+    ) / ((1 + maanedlig_rente) ** nedbetalingstid_maaneder - 1)
 
-                    row = {
-                        "Bank": get_text('leverandor_tekst') or "N/A",
-                        "Lånenavn": get_text('navn') or "N/A",
-                        "Nominell rente": float(get_text('nominell_rente_1') or 0),
-                        "Etableringsgebyr": etableringsgebyr_kr,
-                        "Etableringsgebyr i %": etableringsgebyr_prosent,
-                        "Termingebyr": float(get_text('termingebyr') or 0),
-                        "Min beløp": float(get_text('min_belop') or 0),
-                        "Maks beløp": float(get_text('maks_belop') or 1e9),
-                        "Min alder": int(get_text('min_alder') or 0),
-                        "Maks alder": int(get_text('maks_alder') or 100),
-                        "Maks løpetid (år)": int(get_text('maks_lopetid_ar') or 0),
-                        "Belaningsgrad": float(get_text('belaningsgrad') or 100),
-                    }
+    maanedlig_betaling_med_gebyr = maanedlig_betaling + termingebyr
 
-                    writer.writerow([
-                        row["Bank"],
-                        row["Lånenavn"],
-                        row["Nominell rente"],
-                        row["Etableringsgebyr"],
-                        row["Etableringsgebyr i %"],
-                        row["Termingebyr"],
-                        row["Min beløp"],
-                        row["Maks beløp"],
-                        row["Min alder"],
-                        row["Maks alder"],
-                        row["Maks løpetid (år)"],
-                        row["Belaningsgrad"]
-                    ])
+    kontantstrom = [-utbetalt_belop] + [maanedlig_betaling_med_gebyr] * nedbetalingstid_maaneder
+    effektiv_rente_per_maaned = npf.irr(kontantstrom)
+    effektiv_rente_aarlig = (1 + effektiv_rente_per_maaned) ** 12 - 1
 
-            print("Data er lagret i 'forbrukslan_data_clean.csv'")
+    return round(effektiv_rente_aarlig * 100, 3)
 
-        else:
-            print(f"Feil ved henting av data: HTTP {response.status_code}")
 
-    except Exception as e:
-        print(f"En feil oppstod: {e}")
+
+def find_best_loan(csv_path, age, amount, years):
+    candidates = []
+
+    with open(csv_path, newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            try:
+                bank = row["Bank"]
+                product = row["Lånenavn"]
+                nominal = float(row["Nominell rente"])
+                establishment_fee = float(row["Etableringsgebyr"] or 0)
+                establishment_fee_pct = float(row.get("Etableringsgebyr i %", 0))
+                term_fee = float(row["Termingebyr"] or 0)
+                min_amount = float(row["Min beløp"] or 0)
+                max_amount = float(row["Maks beløp"] or 1e9)
+                min_age = int(row["Min alder"] or 0)
+                max_age = int(row["Maks alder"] or 100)
+                max_term = int(row["Maks løpetid (år)"] or 0)
+                maxlvt =  float(row["Belaningsgrad"] or 0)
+
+                lvt = amount / (amount + establishment_fee)
+
+                if not maxlvt < lvt:
+                    continue
+                if not (min_amount <= amount <= max_amount):
+                    continue
+                if not (min_age <= age <= max_age):
+                    continue
+                if years > max_term:
+                    continue
+                effective = beregn_effektiv_rente(amount, years, nominal,establishment_fee_pct ,establishment_fee, term_fee)
+                monthlypayment = beregn_maanedlig_betaling(amount, years, nominal,establishment_fee_pct ,establishment_fee, term_fee)
+                if effective is None:
+                    continue
+
+                candidates.append({
+                    "Bank": bank,
+                    "Produkt": product,
+                    "Nominell rente": nominal,
+                    "Effektiv rente": effective,
+                    "Etableringsgebyr": establishment_fee,
+                    "Termingebyr": term_fee,
+                    "Maks løpetid": max_term,
+                    "Måndlig betaling": monthlypayment,
+                    "max": max_amount,
+                })
+            except Exception as e:
+                print("Feil i rad:", e)
+
+    sorted_loans = sorted(candidates, key=lambda x: x["Effektiv rente"])
+
+    print(f"\n📊 Beste lån for alder {age}, beløp {amount} kr over {years} år:")
+    print(f"{'Bank':<35} {'Effektiv (%)':<13} {'Nominell (%)':<13} {'Måndlig betaling i kr':<13}")
+    print("-" * 130)
+    for loan in sorted_loans[:1000]:
+        print(f"{loan['Bank'][:33]:<35} {loan['Effektiv rente']:<13.2f} {loan['Nominell rente']:<13.2f} {loan['Måndlig betaling']:<13.2f} {loan['max']:<13.2f}" )
 
 if __name__ == "__main__":
-    hent_forbrukslan_data()
+    #print(beregn_effektiv_rente(500_000, 8, 10.49,1, 950, 45))
+    find_best_loan("forbrukslan_data_clean.csv", age=26, amount=500_000, years=8)

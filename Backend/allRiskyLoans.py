@@ -24,9 +24,9 @@ def hent_forbrukslan_data():
             with open('forbrukslan_data_clean.csv', mode='w', newline='', encoding='utf-8') as file:
                 writer = csv.writer(file)
                 writer.writerow([
-                    "Bank", "Lånenavn", "Nominell rente", "Etableringsgebyr",
+                    "Bank", "Lånenavn", "Nominell rente", "Etableringsgebyr", "Etableringsgebyr i %",
                     "Termingebyr", "Min beløp", "Maks beløp", "Min alder",
-                    "Maks alder", "Maks løpetid (år)"
+                    "Maks alder", "Maks løpetid (år)", "Belaningsgrad"
                 ])
 
                 for entry in root.findall('atom:entry', ns):
@@ -36,18 +36,27 @@ def hent_forbrukslan_data():
                     def get_text(tag):
                         el = get(tag)
                         return el.text if el is not None and el.text else None
+                    
+                    gebyr_type = (get_text('etableringsgebyr_type') or "").lower()
+                    etableringsgebyr_prosent = 0.0
+                    etableringsgebyr_kr = 0.0
 
-                    etableringsgebyr_text = get_text('etableringsgebyr')
-                    if not etableringsgebyr_text:
-                        etableringsgebyr_text = get_text('etableringsgebyr_min_belop')
-                    if not etableringsgebyr_text:
-                        etableringsgebyr_text = get_text('etableringsgebyr_1_min_belop')
+                    if "%" in gebyr_type:
+                        etableringsgebyr_prosent = float(get_text('etableringsgebyr_prosent') or 0)
+                        etableringsgebyr_kr = float(get_text('etableringsgebyr_min_belop') or 0)
+                    elif "kr" in gebyr_type:
+                        etableringsgebyr_kr = float(get_text('etableringsgebyr') or 0)
+                    elif "intervall" in gebyr_type:
+                        etableringsgebyr_kr = float(get_text('etableringsgebyr_1') or 0)
+                    else:
+                        etableringsgebyr_kr = float(get_text('etableringsgebyr') or 0)
 
                     row = {
                         "Bank": get_text('leverandor_tekst') or "N/A",
                         "Lånenavn": get_text('navn') or "N/A",
                         "Nominell rente": float(get_text('nominell_rente_1') or 0),
-                        "Etableringsgebyr": float(etableringsgebyr_text or 0),
+                        "Etableringsgebyr": float(etableringsgebyr_kr or 0),
+                        "Etableringsgebyr i %": float(etableringsgebyr_prosent),
                         "Termingebyr": float(get_text('termingebyr') or 0),
                         "Min beløp": float(get_text('min_belop') or 0),
                         "Maks beløp": float(get_text('maks_belop') or 1e9),
@@ -62,6 +71,7 @@ def hent_forbrukslan_data():
                         row["Lånenavn"],
                         row["Nominell rente"],
                         row["Etableringsgebyr"],
+                        row["Etableringsgebyr i %"],
                         row["Termingebyr"],
                         row["Min beløp"],
                         row["Maks beløp"],
