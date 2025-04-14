@@ -54,7 +54,7 @@ def beregn_effektiv_rente(
 
 
 
-def find_best_loan(csv_path, age, amount, years):
+def find_best_loan(csv_path, age, amount, years, top_n=3):
     candidates = []
 
     with open(csv_path, newline='', encoding='utf-8') as f:
@@ -103,13 +103,7 @@ def find_best_loan(csv_path, age, amount, years):
             except Exception as e:
                 print("Feil i rad:", e)
 
+
     sorted_loans = sorted(candidates, key=lambda x: x["Effektiv rente"])
+    return sorted_loans[:top_n]
 
-    print(f"\n📊 Beste lån for alder {age}, beløp {amount} kr over {years} år:")
-    print(f"{'Bank':<35} {'Effektiv (%)':<13} {'Nominell (%)':<13} {'Måndlig betaling i kr':<13}")
-    print("-" * 130)
-    for loan in sorted_loans[:1000]:
-        print(f"{loan['Bank'][:33]:<35} {loan['Effektiv rente']:<13.3f} % {loan['Nominell rente']:<13.2f} {loan['Måndlig betaling']:<13}")
-
-if __name__ == "__main__":
-    find_best_loan("forbrukslan_data_clean.csv", age=26, amount=40_000, years=3)
