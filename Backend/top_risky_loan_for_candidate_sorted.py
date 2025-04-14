@@ -109,8 +109,7 @@ def find_best_loan(csv_path, age, amount, years):
     print(f"{'Bank':<35} {'Effektiv (%)':<13} {'Nominell (%)':<13} {'Måndlig betaling i kr':<13}")
     print("-" * 130)
     for loan in sorted_loans[:1000]:
-        print(f"{loan['Bank'][:33]:<35} {loan['Effektiv rente']:<13.2f} {loan['Nominell rente']:<13.2f} {loan['Måndlig betaling']:<13.2f} {loan['max']:<13.2f}" )
+        print(f"{loan['Bank'][:33]:<35} {loan['Effektiv rente']:<13.3f} % {loan['Nominell rente']:<13.2f} {loan['Måndlig betaling']:<13}")
 
 if __name__ == "__main__":
-    #print(beregn_effektiv_rente(500_000, 8, 10.49,1, 950, 45))
-    find_best_loan("forbrukslan_data_clean.csv", age=26, amount=500_000, years=8)
+    find_best_loan("forbrukslan_data_clean.csv", age=26, amount=40_000, years=3)
