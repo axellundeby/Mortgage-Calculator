@@ -1,11 +1,19 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import os
-
-# Importer din loan-funksjon
+from fastapi.middleware.cors import CORSMiddleware
 from best_risky_three_loans_for_candidate import find_best_loan
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 class LoanRequest(BaseModel):
     age: int

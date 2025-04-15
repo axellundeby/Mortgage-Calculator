@@ -28,15 +28,19 @@ export default function LoanForm() {
     setLoans([]);
 
     try {
-      const res = await fetch('http://localhost:8000/api/find-loan', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          age: parseInt(form.age),
-          amount: parseFloat(form.amount),
-          years: parseInt(form.years),
-        }),
-      });
+        const res = await fetch('http://localhost:8000/api/find-loan', {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              age: parseInt(form.age),
+              amount: parseFloat(form.amount),
+              years: parseInt(form.years),
+            }),
+          });
+          
 
       if (!res.ok) throw new Error('API-feil');
 
