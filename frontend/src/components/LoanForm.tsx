@@ -1,98 +1,84 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-type Loan = {
-  Bank: string;
-  Produkt: string;
-  'Nominell rente': number;
-  'Effektiv rente': number;
-  'Etableringsgebyr': number;
-  'Termingebyr': number;
-  'Maks løpetid': number;
-  'Måndlig betaling': number;
-};
-
-export default function LoanForm() {
-  const [form, setForm] = useState({ age: '', amount: '', years: '' });
-  const [loans, setLoans] = useState<Loan[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+const LoanForm: React.FC = () => {
+  const [age, setAge] = useState("");
+  const [amount, setAmount] = useState("");
+  const [years, setYears] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    setError(null);
-    setLoans([]);
 
-    try {
-        const res = await fetch('http://localhost:8000/api/find-loan', {
-            method: 'POST',
-            mode: 'cors',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              age: parseInt(form.age),
-              amount: parseFloat(form.amount),
-              years: parseInt(form.years),
-            }),
-          });
-          
+    const response = await fetch("http://localhost:8000/api/find-loan", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        age: Number(age),
+        amount: Number(amount),
+        years: Number(years),
+      }),
+    });
 
-      if (!res.ok) throw new Error('API-feil');
-
-      const data = await res.json();
-      if (data.length === 0) setError('Ingen lån kvalifiserer.');
-      else setLoans(data);
-    } catch (err: any) {
-      setError(err.message || 'Ukjent feil');
-    } finally {
-      setLoading(false);
-    }
+    const data = await response.json();
+    console.log("API response:", data);
+    // TODO: Vis resultatene i UI
   };
 
   return (
-    <div className="max-w-xl mx-auto p-4">
-      <h1 className="text-2xl font-semibold mb-4">Finn beste lån</h1>
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <form
+        onSubmit={handleSubmit}
+        className="bg-white shadow-md rounded-lg p-8 w-full max-w-md"
+      >
+        <h2 className="text-2xl font-bold mb-6 text-center">Lånekalkulator</h2>
 
-      <form onSubmit={handleSubmit} className="grid gap-4">
-        <input name="age" type="number" placeholder="Alder" required value={form.age} onChange={handleChange} className="border p-2 rounded" />
-        <input name="amount" type="number" placeholder="Lånebeløp (kr)" required value={form.amount} onChange={handleChange} className="border p-2 rounded" />
-        <input name="years" type="number" placeholder="Løpetid (år)" required value={form.years} onChange={handleChange} className="border p-2 rounded" />
-        <button type="submit" className="bg-blue-600 text-white rounded py-2 hover:bg-blue-700 transition">Finn lån</button>
-      </form>
-
-      {loading && <p className="mt-4">🔍 Søker etter lån...</p>}
-      {error && <p className="mt-4 text-red-600">{error}</p>}
-
-      {loans.length > 0 && (
-        <div className="mt-6">
-          <h2 className="text-xl font-semibold mb-2">Topp 3 lån</h2>
-          <table className="w-full border">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="border p-2 text-left">Bank</th>
-                <th className="border p-2 text-left">Effektiv %</th>
-                <th className="border p-2 text-left">Nominell %</th>
-                <th className="border p-2 text-left">Månedlig betaling</th>
-              </tr>
-            </thead>
-            <tbody>
-              {loans.map((loan, i) => (
-                <tr key={i}>
-                  <td className="border p-2">{loan.Bank}</td>
-                  <td className="border p-2">{loan['Effektiv rente']}</td>
-                  <td className="border p-2">{loan['Nominell rente']}</td>
-                  <td className="border p-2">{loan['Måndlig betaling']}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="mb-4">
+          <label className="block text-gray-700 font-medium mb-2">Alder</label>
+          <input
+            type="number"
+            value={age}
+            onChange={(e) => setAge(e.target.value)}
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
         </div>
-      )}
+
+        <div className="mb-4">
+          <label className="block text-gray-700 font-medium mb-2">
+            Lånebeløp (kr)
+          </label>
+          <input
+            type="number"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
+        </div>
+
+        <div className="mb-6">
+          <label className="block text-gray-700 font-medium mb-2">
+            Løpetid (år)
+          </label>
+          <input
+            type="number"
+            value={years}
+            onChange={(e) => setYears(e.target.value)}
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors"
+        >
+          Finn beste lån
+        </button>
+      </form>
     </div>
   );
-}
+};
+
+export default LoanForm;

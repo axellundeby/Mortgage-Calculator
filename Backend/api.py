@@ -35,3 +35,5 @@ def api_find_loan(req: LoanRequest):
     )
 
     return loans
+
+#uvicorn api:app --reload
