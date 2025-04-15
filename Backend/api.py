@@ -24,7 +24,6 @@ class LoanRequest(BaseModel):
 def api_find_loan(req: LoanRequest):
     # Absolutt sti til CSV-filen uansett hvor serveren startes fra
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
-    print(f"🔍 Leser CSV fra: {csv_path}")
 
     loans = find_best_loan(
         csv_path=csv_path,
