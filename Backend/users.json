@@ -31,5 +31,16 @@
       "nedbetalt": 754000,
       "mangler": 246000
     }
+  },
+  "callum": {
+    "password": "gran",
+    "loan": {
+      "bank": "Sparebanken \u00d8st",
+      "produkt": "Kontokreditt",
+      "effektiv_rente": 27.229,
+      "m\u00e5ntlig_betaling": 977,
+      "nedbetalt": 34000,
+      "mangler": 16000.0
+    }
   }
 }
