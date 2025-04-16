@@ -3,6 +3,11 @@ from pydantic import BaseModel
 import os
 from fastapi.middleware.cors import CORSMiddleware
 from best_risky_three_loans_for_candidate import find_best_loan
+import random
+import pandas as pd
+from users import register_user
+from pydantic import BaseModel
+from users import User 
 
 app = FastAPI()
 
@@ -34,5 +39,15 @@ def api_find_loan(req: LoanRequest):
     )
 
     return loans
+
+
+class RegisterRequest(BaseModel):
+    username: str
+    password: str
+
+@app.post("/api/register")
+def register(req: RegisterRequest):
+    return register_user(User(username=req.username, password=req.password))
+
 
 #uvicorn api:app --reload
