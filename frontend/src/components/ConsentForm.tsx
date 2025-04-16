@@ -65,9 +65,10 @@ const ConsentForm: React.FC = () => {
                     <p><strong>Bank:</strong> {loan.bank}</p>
                     <p><strong>Produkt:</strong> {loan.produkt}</p>
                     <p><strong>Effektiv rente:</strong> {loan.effektiv_rente}%</p>
-                    <p><strong>Månedlig betaling:</strong> {loan.måntlig_betaling} kr</p>
-                    <p><strong>Nedbetalt:</strong> {loan.nedbetalt} kr</p>
-                    <p><strong>Gjenstående:</strong> {loan.mangler} kr</p>
+                    <p><strong>Månedlig betaling:</strong> {loan.måntlig_betaling.toLocaleString("nb-NO")} kr</p>
+                    <p><strong>Nedbetalt:</strong> {loan.nedbetalt.toLocaleString("nb-NO")} kr</p>
+                    <p><strong>Gjenstående:</strong> {loan.mangler.toLocaleString("nb-NO")} kr</p>
+
                 </div>
             )}
 
