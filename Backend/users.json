@@ -1,8 +1,11 @@
 {
-  "ola": {
-    "password": "804e445bb10e5ddd3e1ca92b3228b1da4b1bc1f7120671c7dae1cba2c529b7dc"
-  },
   "olav": {
     "password": "804e445bb10e5ddd3e1ca92b3228b1da4b1bc1f7120671c7dae1cba2c529b7dc"
+  },
+  "hesterbest": {
+    "password": "88d178d728e8394f3bddcbf9718730f9c0b5b6ce689d99a5146ba9a9d02b4b1b"
+  },
+  "1234": {
+    "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
   }
 }

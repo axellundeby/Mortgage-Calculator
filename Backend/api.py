@@ -1,13 +1,7 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-import os
 from fastapi.middleware.cors import CORSMiddleware
-from best_risky_three_loans_for_candidate import find_best_loan
-import random
-import pandas as pd
-from users import register_user
-from pydantic import BaseModel
-from users import User 
+from users import register_user, authenticate_user, get_random_loan_and_status, User
 
 app = FastAPI()
 
@@ -19,35 +13,32 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-class LoanRequest(BaseModel):
-    age: int
-    amount: float
-    years: int
-
-@app.post("/api/find-loan")
-def api_find_loan(req: LoanRequest):
-    # Absolutt sti til CSV-filen uansett hvor serveren startes fra
-    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
-
-    loans = find_best_loan(
-        csv_path=csv_path,
-        age=req.age,
-        amount=req.amount,
-        years=req.years,
-        top_n=3  
-    )
-
-    return loans
-
-
 class RegisterRequest(BaseModel):
     username: str
     password: str
 
+class LoginRequest(BaseModel):
+    username: str
+    password: str
+
+class FullmaktRequest(BaseModel):
+    username: str
+    fullmakt: bool
+
 @app.post("/api/register")
 def register(req: RegisterRequest):
-    return register_user(User(username=req.username, password=req.password))
+    user = User(username=req.username, password=req.password)
+    return register_user(user)
 
+@app.post("/api/login")
+def login(req: LoginRequest):
+    user = User(username=req.username, password=req.password)
+    return authenticate_user(user)
 
-#uvicorn api:app --reload
+@app.post("/api/authorize")
+def authorize(req: FullmaktRequest):
+    if not req.fullmakt:
+        raise HTTPException(status_code=400, detail="Fullmakt ikke gitt")
+
+    loan_info = get_random_loan_and_status()
+    return {"message": "Fullmakt gitt", "loan": loan_info}
