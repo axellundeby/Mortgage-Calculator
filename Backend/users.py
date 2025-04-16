@@ -65,7 +65,15 @@ def get_random_loan_and_status():
 
     max_loan = float(selected["Maks beløp"])
     min_loan = float(selected["Min beløp"])
-    paid = random.randint(int(min_loan), int(max_loan))
+
+    max_amount=0
+    if max_loan > 1000000:
+        max_amount = 1000000
+    else:
+        max_amount = max_loan
+
+    paid = round(random.randint(int(min_loan), int(max_amount)) / 1000) * 1000
+
     years = int(selected.get("Maks løpetid (år)", 5)) 
 
     laanebelop = paid  
@@ -74,7 +82,7 @@ def get_random_loan_and_status():
     etableringsgebyr_min = selected["Etableringsgebyr"]
     termingebyr = selected["Termingebyr"]
 
-    missing = max_loan - paid
+    missing = max_amount - paid
 
     effektiv_rente = beregn_effektiv_rente(
         laanebelop,
