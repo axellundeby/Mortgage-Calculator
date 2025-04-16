@@ -1,57 +1,78 @@
 import React, { useState } from "react";
 
+interface LoanData {
+    bank: string;
+    produkt: string;
+    effektiv_rente: number;
+    måntlig_betaling: number;
+    nedbetalt: number;
+    mangler: number;
+}
+
 const ConsentForm: React.FC = () => {
-  const [consentGiven, setConsentGiven] = useState(false);
-  const [loan, setLoan] = useState<any | null>(null);
+    const [loan, setLoan] = useState<LoanData | null>(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
 
-  const handleConsent = async () => {
-    if (!consentGiven) return;
+    const fetchLoan = async () => {
+        setLoading(true);
+        setError("");
 
-    const response = await fetch("http://localhost:8000/api/get-random-loan");
-    const data = await response.json();
-    setLoan(data);
-  };
+        try {
+            const response = await fetch("http://localhost:8000/api/authorize", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    username: "ola", // TODO: Bytt ut med faktisk logged-in bruker
+                    fullmakt: true,
+                }),
+            });
 
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
-      <div className="bg-white shadow-md rounded p-8 w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-4">Fullmakt</h2>
-        <p className="mb-4">
-          For å hente informasjon om lånet ditt trenger vi at du gir samtykke. Dette simulerer BankID-innlogging.
-        </p>
-        <label className="flex items-center mb-4">
-          <input
-            type="checkbox"
-            checked={consentGiven}
-            onChange={() => setConsentGiven(!consentGiven)}
-            className="mr-2"
-          />
-          Jeg gir fullmakt til å hente informasjon om mitt eksisterende lån.
-        </label>
-        <button
-          onClick={handleConsent}
-          disabled={!consentGiven}
-          className={`w-full py-2 rounded-md text-white ${
-            consentGiven ? "bg-blue-600 hover:bg-blue-700" : "bg-gray-400"
-          }`}
-        >
-          Hent låneinformasjon
-        </button>
+            if (!response.ok) {
+                throw new Error("Klarte ikke hente lån");
+            }
 
-        {loan && (
-          <div className="mt-6 text-sm">
-            <h3 className="font-semibold text-lg mb-2">Ditt nåværende lån:</h3>
-            <p><strong>Bank:</strong> {loan.bank}</p>
-            <p><strong>Produkt:</strong> {loan.produkt}</p>
-            <p><strong>Effektiv rente:</strong> {loan["effektiv rente"]}%</p>
-            <p><strong>Månedlig betaling:</strong> {loan["måntlig betaling"]} kr</p>
-            <p><strong>Lånebeløp:</strong> {loan.beløp} kr</p>
-            <p><strong>Nedbetalt:</strong> {loan.nedbetalt} kr</p>
-          </div>
-        )}
-      </div>
-    </div>
-  );
+            const data = await response.json();
+            setLoan(data.loan);
+        } catch (err: any) {
+            setError(err.message || "Noe gikk galt");
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    return (
+        <div className="max-w-lg mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
+            <h2 className="text-2xl font-bold mb-4 text-center">Samtykke</h2>
+            <p className="mb-4">
+                For å hente informasjon om ditt nåværende lån, vennligst gi samtykke:
+            </p>
+            <button
+                onClick={fetchLoan}
+                className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
+                disabled={loading}
+            >
+                {loading ? "Henter..." : "Hent låneinformasjon"}
+            </button>
+
+            {error && <p className="text-red-500 mt-4">{error}</p>}
+
+            {loan && (
+                <div className="mt-6 p-4 border rounded shadow bg-white">
+                    <h3 className="text-xl font-semibold">Låneinformasjon</h3>
+                    <p><strong>Bank:</strong> {loan.bank}</p>
+                    <p><strong>Produkt:</strong> {loan.produkt}</p>
+                    <p><strong>Effektiv rente:</strong> {loan.effektiv_rente}%</p>
+                    <p><strong>Månedlig betaling:</strong> {loan.måntlig_betaling} kr</p>
+                    <p><strong>Nedbetalt:</strong> {loan.nedbetalt} kr</p>
+                    <p><strong>Gjenstående:</strong> {loan.mangler} kr</p>
+                </div>
+            )}
+
+        </div>
+    );
 };
 
 export default ConsentForm;

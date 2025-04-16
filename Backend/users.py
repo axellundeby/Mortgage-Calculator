@@ -62,11 +62,11 @@ def get_random_loan_and_status():
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
     df = pd.read_csv(csv_path)
     selected = df.sample(1).iloc[0]
-    max_loan = float(selected["max"])
-    min_loan = float(selected["Min beløp"])
-    paid = random.randint(min_loan, max_loan)
-    years = int(selected.get("Maks løpetid", 5)) 
 
+    max_loan = float(selected["Maks beløp"])
+    min_loan = float(selected["Min beløp"])
+    paid = random.randint(int(min_loan), int(max_loan))
+    years = int(selected.get("Maks løpetid (år)", 5)) 
 
     laanebelop = paid  
     nominell_rente_aarlig = selected["Nominell rente"]
@@ -74,27 +74,33 @@ def get_random_loan_and_status():
     etableringsgebyr_min = selected["Etableringsgebyr"]
     termingebyr = selected["Termingebyr"]
 
-    effektiv_rente = beregn_effektiv_rente(laanebelop,
-    years,
-    nominell_rente_aarlig,
-    etableringsgebyr_prosent,
-    etableringsgebyr_min,
-    termingebyr)
+    missing = max_loan - paid
 
-    montly_payment = beregn_maanedlig_betaling(laanebelop,
-    years,
-    nominell_rente_aarlig,
-    etableringsgebyr_prosent,
-    etableringsgebyr_min,
-    termingebyr)
+    effektiv_rente = beregn_effektiv_rente(
+        laanebelop,
+        years,
+        nominell_rente_aarlig,
+        etableringsgebyr_prosent,
+        etableringsgebyr_min,
+        termingebyr
+    )
+
+    montly_payment = beregn_maanedlig_betaling(
+        laanebelop,
+        years,
+        nominell_rente_aarlig,
+        etableringsgebyr_prosent,
+        etableringsgebyr_min,
+        termingebyr
+    )
 
     return {
         "bank": selected["Bank"],
-        "produkt": selected["Produkt"],
-        "effektiv rente": effektiv_rente,
-        "måntlig betaling":montly_payment,
-        "beløp": max_loan,
-        "nedbetalt": paid
+        "produkt": selected["Lånenavn"],
+        "effektiv_rente": effektiv_rente,
+        "måntlig_betaling": montly_payment,
+        "nedbetalt": paid,
+        "mangler": missing
     }
 
 
