@@ -17,7 +17,7 @@ class User(BaseModel):
 
 
 def hash_password(password: str) -> str:
-    return hashlib.sha256(password.encode()).hexdigest()
+    return password
 
 
 def load_users():
@@ -30,6 +30,22 @@ def load_users():
 def save_users(users):
     with open(USERS_FILE, "w") as f:
         json.dump(users, f, indent=2)
+
+def save_user_loan(username: str, loan_data: dict):
+    users = load_users()
+    if username not in users:
+        raise HTTPException(status_code=404, detail="Bruker finnes ikke")
+
+    if "loan" not in users[username]:
+        users[username]["loan"] = loan_data
+        save_users(users)
+
+def get_user_loan(username: str):
+    users = load_users()
+    if username not in users:
+        raise HTTPException(status_code=404, detail="Bruker finnes ikke")
+
+    return users[username].get("loan", None)
 
 
 def register_user(user: User):

@@ -19,9 +19,10 @@ const RegisterForm: React.FC = () => {
 
     const data = await res.json();
     console.log(data);
+
+    localStorage.setItem("username", username); // 🔐 lagrer brukernavnet
     alert("Registrert!");
     navigate("/consent");
-
   };
 
   return (

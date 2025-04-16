@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from users import register_user, authenticate_user, get_random_loan_and_status, User
+from users import register_user, authenticate_user, get_random_loan_and_status, get_user_loan, save_user_loan, User
 from best_risky_three_loans_for_candidate import find_best_loan
 
 
@@ -47,6 +47,11 @@ def api_find_loan(req: LoanRequest):
 
     return loans
 
+@app.get("/api/user-loan/{username}")
+def get_user_loan_data(username: str):
+    return get_user_loan(username)
+
+
 
 @app.post("/api/register")
 def register(req: RegisterRequest):
@@ -64,4 +69,6 @@ def authorize(req: FullmaktRequest):
         raise HTTPException(status_code=400, detail="Fullmakt ikke gitt")
 
     loan_info = get_random_loan_and_status()
+    save_user_loan(req.username, loan_info)
     return {"message": "Fullmakt gitt", "loan": loan_info}
+
