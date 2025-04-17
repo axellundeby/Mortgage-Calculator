@@ -82,30 +82,29 @@ def get_random_loan_and_status():
     max_loan = float(selected["Maks beløp"])
     min_loan = float(selected["Min beløp"])
 
-    max_amount=0
-    if max_loan > 500_000:
-        max_amount = 500_000
-    else:
-        max_amount = max_loan
+    øvre_grense = min(500_000, max_loan)
+    nedre_grense = max(20_000, min_loan)
 
-    paid = round(random.randint(int(min_loan), int(max_amount)) / 1000) * 1000
+    if nedre_grense >= øvre_grense:
+        nedre_grense = øvre_grense * 0.8  # fallback hvis grensen er for trang
 
-    andel_nedbetalt = paid / max_amount  
+    # Simuler hvor mye som er betalt ned
+    total_laanebelop = round(random.randint(int(nedre_grense), int(øvre_grense)) / 1000) * 1000
+    andel_nedbetalt = random.uniform(0.3, 0.8)  # antar mellom 30–80 % er betalt ned
+
+    nedbetalt = round(total_laanebelop * andel_nedbetalt)
+    gjenstaaende = total_laanebelop - nedbetalt
+
     maks_løpetid = int(selected["Maks løpetid (år)"])
-
     estimerte_gjenstående_år = max(1, round((1 - andel_nedbetalt) * maks_løpetid))
-
 
     nominell_rente_aarlig = selected["Nominell rente"]
     etableringsgebyr_prosent = selected["Etableringsgebyr i %"]
     etableringsgebyr_min = selected["Etableringsgebyr"]
     termingebyr = selected["Termingebyr"]
 
-    missing = max_amount - paid
-    laanebelop = paid + missing  
-
     effektiv_rente = beregn_effektiv_rente(
-        laanebelop,
+        total_laanebelop,
         maks_løpetid,
         nominell_rente_aarlig,
         etableringsgebyr_prosent,
@@ -114,7 +113,7 @@ def get_random_loan_and_status():
     )
 
     montly_payment = beregn_maanedlig_betaling(
-        laanebelop,
+        total_laanebelop,
         maks_løpetid,
         nominell_rente_aarlig,
         etableringsgebyr_prosent,
@@ -127,13 +126,11 @@ def get_random_loan_and_status():
     return {
         "bank": selected["Bank"],
         "produkt": selected["Lånenavn"],
-        "sum_lånt": laanebelop,
+        "sum_lånt": total_laanebelop,
         "effektiv_rente": effektiv_rente,
         "måntlig_betaling": montly_payment,
-        "nedbetalt": paid,
-        "mangler": missing,
+        "nedbetalt": nedbetalt,
+        "mangler": gjenstaaende,
         "years": estimerte_gjenstående_år,
         "gjennstende_total_kostnad": totalKostnad
     }
-
-
