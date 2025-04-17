@@ -86,6 +86,7 @@ def find_best_loan(csv_path, age, amount, years, top_n=3):
                     continue
                 effective = beregn_effektiv_rente(amount, years, nominal,establishment_fee_pct ,establishment_fee, term_fee)
                 monthlypayment = beregn_maanedlig_betaling(amount, years, nominal,establishment_fee_pct ,establishment_fee, term_fee)
+                totalpayment = monthlypayment * 12 * years
                 if effective is None:
                     continue
 
@@ -99,6 +100,8 @@ def find_best_loan(csv_path, age, amount, years, top_n=3):
                     "Maks løpetid": max_term,
                     "Måndlig betaling": monthlypayment,
                     "max": max_amount,
+                    "total": totalpayment
+
                 })
             except Exception as e:
                 print("Feil i rad:", e)

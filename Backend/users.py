@@ -122,14 +122,18 @@ def get_random_loan_and_status():
         termingebyr
     )
 
+    totalKostnad = montly_payment * 12 * estimerte_gjenstående_år
+
     return {
         "bank": selected["Bank"],
         "produkt": selected["Lånenavn"],
+        "sum_lånt": laanebelop,
         "effektiv_rente": effektiv_rente,
         "måntlig_betaling": montly_payment,
         "nedbetalt": paid,
         "mangler": missing,
-        "years": estimerte_gjenstående_år
+        "years": estimerte_gjenstående_år,
+        "gjennstende_total_kostnad": totalKostnad
     }
 
 

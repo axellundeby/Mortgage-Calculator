@@ -3,11 +3,13 @@ import React, { useState } from "react";
 interface Loan {
   bank: string;
   produkt: string;
+  sum_lånt: number;
   effektiv_rente: number;
   måntlig_betaling: number;
   nedbetalt: number;
   mangler: number;
   years: number;
+  total_kostnad?: number;
 }
 
 const CombinedLoanForm: React.FC = () => {
@@ -51,9 +53,7 @@ const CombinedLoanForm: React.FC = () => {
       setAlternatives(bestLoans);
 
       const currentTotal = currentLoan.måntlig_betaling * currentLoan.years * 12;
-      const bestTotal = bestLoans[0] && (bestLoans[0]["Totalkostnad"] || bestLoans[0]["total_kostnad"])
-        ? bestLoans[0]["Totalkostnad"] || bestLoans[0]["total_kostnad"]
-        : currentTotal;
+      const bestTotal = bestLoans[0]?.total || currentTotal;
       setSavings(Math.round(currentTotal - bestTotal));
     } catch (err) {
       console.error("Feil ved henting av lån eller alternativer", err);
@@ -82,11 +82,13 @@ const CombinedLoanForm: React.FC = () => {
           <ul className="mb-6">
             <li><strong>Bank:</strong> {loan.bank}</li>
             <li><strong>Produkt:</strong> {loan.produkt}</li>
+            <li><strong>Sum lånt:</strong> {loan.sum_lånt?.toLocaleString("no-NO")} kr</li>
             <li><strong>Effektiv rente:</strong> {loan.effektiv_rente?.toFixed(2)}%</li>
             <li><strong>Månedlig betaling:</strong> {loan.måntlig_betaling?.toLocaleString("no-NO")} kr</li>
             <li><strong>Nedbetalt:</strong> {loan.nedbetalt?.toLocaleString("no-NO")} kr</li>
             <li><strong>Gjenstående:</strong> {loan.mangler?.toLocaleString("no-NO")} kr</li>
             <li><strong>Antall år igjen:</strong> {loan.years} år</li>
+            <li><strong>Total gjennstående kostnad:</strong> {(loan.total_kostnad || loan.måntlig_betaling * loan.years * 12).toLocaleString("no-NO")} kr</li>
           </ul>
 
           {alternatives.length > 0 && (
@@ -98,7 +100,7 @@ const CombinedLoanForm: React.FC = () => {
                     <strong>{alt["Bank"]}</strong> - {alt["Produkt"]} <br />
                     Effektiv rente: {alt["Effektiv rente"]?.toFixed(2)}% <br />
                     Månedlig betaling: {alt["Måndlig betaling"]?.toLocaleString("no-NO")} kr <br />
-                    Totalkostnad: {(alt["Totalkostnad"] || alt["total_kostnad"] || 0).toLocaleString("no-NO")} kr
+                    Totalkostnad: {(alt["total"] || 0).toLocaleString("no-NO")} kr
                   </li>
                 ))}
               </ul>
