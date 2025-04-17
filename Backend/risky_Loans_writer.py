@@ -37,6 +37,9 @@ def hent_forbrukslan_data():
                         el = get(tag)
                         return el.text if el is not None and el.text else None
                     
+                    if get_text("lanetype") != "forbrukslan":
+                        continue
+                    
                     gebyr_type = (get_text('etableringsgebyr_type') or "").lower()
                     etableringsgebyr_prosent = 0.0
                     etableringsgebyr_kr = 0.0

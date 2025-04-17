@@ -7,6 +7,7 @@ interface Loan {
   måntlig_betaling: number;
   nedbetalt: number;
   mangler: number;
+  years: number;
 }
 
 const ConsentForm: React.FC = () => {
@@ -66,6 +67,7 @@ const ConsentForm: React.FC = () => {
           <p><strong>Månedlig betaling:</strong> {loan.måntlig_betaling.toLocaleString("no-NO")} kr</p>
           <p><strong>Nedbetalt:</strong> {loan.nedbetalt.toLocaleString("no-NO")} kr</p>
           <p><strong>Gjenstående:</strong> {loan.mangler.toLocaleString("no-NO")} kr</p>
+          <p><strong>Antall år igjen:</strong> {loan.years} år</p>
         </div>
       )}
     </div>

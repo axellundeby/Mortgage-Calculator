@@ -90,7 +90,13 @@ def get_random_loan_and_status():
 
     paid = round(random.randint(int(min_loan), int(max_amount)) / 1000) * 1000
 
-    years = int(selected.get("Maks løpetid (år)", 5)) 
+    andel_nedbetalt = paid / max_amount  
+    maks_løpetid = int(selected["Maks løpetid (år)"])
+
+    estimerte_gjenstående_år = max(1, round((1 - andel_nedbetalt) * maks_løpetid))
+
+
+    years = random.randint(1, int(selected["Maks løpetid (år)"]))
 
     laanebelop = paid  
     nominell_rente_aarlig = selected["Nominell rente"]
@@ -124,7 +130,8 @@ def get_random_loan_and_status():
         "effektiv_rente": effektiv_rente,
         "måntlig_betaling": montly_payment,
         "nedbetalt": paid,
-        "mangler": missing
+        "mangler": missing,
+        "years": years
     }
 
 
