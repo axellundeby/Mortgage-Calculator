@@ -131,7 +131,7 @@ def get_random_loan_and_status():
         "måntlig_betaling": montly_payment,
         "nedbetalt": paid,
         "mangler": missing,
-        "years": years
+        "years": estimerte_gjenstående_år
     }
 
 
