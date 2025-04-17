@@ -10,17 +10,9 @@ interface Loan {
   years: number;
 }
 
-interface AlternativeLoan {
-  bank: string;
-  produkt: string;
-  effektiv_rente: number;
-  månedlig_betaling: number;
-  total_kostnad: number;
-}
-
 const CombinedLoanForm: React.FC = () => {
   const [loan, setLoan] = useState<Loan | null>(null);
-  const [alternatives, setAlternatives] = useState<AlternativeLoan[]>([]);
+  const [alternatives, setAlternatives] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [savings, setSavings] = useState<number | null>(null);
 
@@ -38,6 +30,12 @@ const CombinedLoanForm: React.FC = () => {
       const currentLoan = data.loan;
       setLoan(currentLoan);
 
+      console.log("🔍 Sender forespørsel med:", {
+        age: 25,
+        amount: currentLoan.mangler,
+        years: currentLoan.years,
+      });
+
       const res = await fetch("http://localhost:8000/api/find-loan", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -47,11 +45,15 @@ const CombinedLoanForm: React.FC = () => {
           years: currentLoan.years,
         }),
       });
+
       const bestLoans = await res.json();
+      console.log("🧾 Mottok alternative lån:", bestLoans);
       setAlternatives(bestLoans);
 
       const currentTotal = currentLoan.måntlig_betaling * currentLoan.years * 12;
-      const bestTotal = bestLoans[0] && bestLoans[0].total_kostnad ? bestLoans[0].total_kostnad : currentTotal;
+      const bestTotal = bestLoans[0] && (bestLoans[0]["Totalkostnad"] || bestLoans[0]["total_kostnad"])
+        ? bestLoans[0]["Totalkostnad"] || bestLoans[0]["total_kostnad"]
+        : currentTotal;
       setSavings(Math.round(currentTotal - bestTotal));
     } catch (err) {
       console.error("Feil ved henting av lån eller alternativer", err);
@@ -93,10 +95,10 @@ const CombinedLoanForm: React.FC = () => {
               <ul className="mb-4">
                 {alternatives.map((alt, idx) => (
                   <li key={idx} className="border-b py-2">
-                    <strong>{alt.bank}</strong> - {alt.produkt} <br />
-                    Effektiv rente: {alt.effektiv_rente?.toFixed(2)}% <br />
-                    Månedlig betaling: {alt.månedlig_betaling?.toLocaleString("no-NO")} kr <br />
-                    Totalkostnad: {alt.total_kostnad?.toLocaleString("no-NO")} kr
+                    <strong>{alt["Bank"]}</strong> - {alt["Produkt"]} <br />
+                    Effektiv rente: {alt["Effektiv rente"]?.toFixed(2)}% <br />
+                    Månedlig betaling: {alt["Måndlig betaling"]?.toLocaleString("no-NO")} kr <br />
+                    Totalkostnad: {(alt["Totalkostnad"] || alt["total_kostnad"] || 0).toLocaleString("no-NO")} kr
                   </li>
                 ))}
               </ul>

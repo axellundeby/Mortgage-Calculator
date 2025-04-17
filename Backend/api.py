@@ -51,8 +51,6 @@ def api_find_loan(req: LoanRequest):
 def get_user_loan_data(username: str):
     return get_user_loan(username)
 
-
-
 @app.post("/api/register")
 def register(req: RegisterRequest):
     user = User(username=req.username, password=req.password)
