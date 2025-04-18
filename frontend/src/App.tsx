@@ -5,6 +5,8 @@ import Layout from "./components/Layout";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
 import Refinance from "./components/RefinanceForm";
+import LoanForm from "./components/LoanForm";
+import ProfilePage from "./components/ProfilePage";
 
 const App: React.FC = () => {
   return (
@@ -13,7 +15,9 @@ const App: React.FC = () => {
         <Route path="/" element={<LoginForm />} />
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/refinance" element={<Refinance />} />
-        <Route path="/login" element={<Refinance />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/kalkulator" element={<LoanForm />} />
+        <Route path="/profil" element={<ProfilePage />} />
       </Routes>
     </Layout>
   );
