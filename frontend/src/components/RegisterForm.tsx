@@ -22,7 +22,7 @@ const RegisterForm: React.FC = () => {
 
     localStorage.setItem("username", username);
     alert("Registrert!");
-    navigate("/refinance");
+    navigate("/profil");
   };
 
   return (

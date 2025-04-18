@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-
 interface Loan {
     bank: string;
     produkt: string;
@@ -20,61 +19,46 @@ const CombinedLoanForm: React.FC = () => {
     const [selectedLoan, setSelectedLoan] = useState<any | null>(null);
     const [confirmationVisible, setConfirmationVisible] = useState(false);
     const [refinanced, setRefinanced] = useState(false);
-    const [loanAlreadyFetched, setLoanAlreadyFetched] = useState(false);
 
     useEffect(() => {
-        const fetched = localStorage.getItem("loanAlreadyFetched");
-        if (fetched === "true") {
-            setLoanAlreadyFetched(true);
-            const savedLoan = localStorage.getItem("userLoan");
-            if (savedLoan) {
-                setLoan(JSON.parse(savedLoan));
+        const fetchUserLoanAndAlternatives = async () => {
+            const username = localStorage.getItem("username");
+            if (!username) return;
+
+            try {
+                const res = await fetch(`http://localhost:8000/api/user-loan/${username}`);
+                const data = await res.json();
+                setLoan(data);
+
+                const altRes = await fetch("http://localhost:8000/api/find-loan", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        age: 25,
+                        amount: data.mangler,
+                        years: data.years,
+                    }),
+                });
+
+                const bestLoans = await altRes.json();
+                const transformed = bestLoans.map((loan: any) => ({
+                    ...loan,
+                    total_kostnad: loan.total || loan.Totalkostnad || 0,
+                }));
+                setAlternatives(transformed);
+
+                const currentTotal = data.måntlig_betaling * data.years * 12;
+                const bestTotal = transformed[0]?.total_kostnad || currentTotal;
+                setSavings(Math.round(currentTotal - bestTotal));
+            } catch (err) {
+                console.error("Feil ved henting av lån eller alternativer", err);
+            } finally {
+                setLoading(false);
             }
-        }
+        };
+
+        fetchUserLoanAndAlternatives();
     }, []);
-
-
-
-    const handleFetchLoanAndAlternatives = async () => {
-        setLoading(true);
-        const username = localStorage.getItem("username");
-
-        try {
-            const response = await fetch("http://localhost:8000/api/authorize", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ username, fullmakt: true }),
-            });
-            const data = await response.json();
-            const currentLoan = data.loan;
-            setLoan(currentLoan);
-            localStorage.setItem("userLoan", JSON.stringify(currentLoan));
-
-            localStorage.setItem("loanAlreadyFetched", "true");
-            setLoanAlreadyFetched(true);
-
-            const res = await fetch("http://localhost:8000/api/find-loan", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    age: 25,
-                    amount: currentLoan.mangler,
-                    years: currentLoan.years,
-                }),
-            });
-
-            const bestLoans = await res.json();
-            setAlternatives(bestLoans);
-
-            const currentTotal = currentLoan.måntlig_betaling * currentLoan.years * 12;
-            const bestTotal = bestLoans[0]?.total || currentTotal;
-            setSavings(Math.round(currentTotal - bestTotal));
-        } catch (err) {
-            console.error("Feil ved henting av lån eller alternativer", err);
-        } finally {
-            setLoading(false);
-        }
-    };
 
     const handleLoanClick = (loan: any) => {
         setSelectedLoan(loan);
@@ -95,6 +79,8 @@ const CombinedLoanForm: React.FC = () => {
                 alert("Lån er refinansiert!");
                 setRefinanced(true);
                 setConfirmationVisible(false);
+                setLoan(selectedLoan);
+                localStorage.setItem("userLoan", JSON.stringify(selectedLoan));
             } else {
                 alert("Noe gikk galt ved lagring av nytt lån.");
             }
@@ -106,16 +92,6 @@ const CombinedLoanForm: React.FC = () => {
     return (
         <div className="max-w-3xl mx-auto p-6 bg-white rounded shadow">
             <h2 className="text-2xl font-bold mb-4">Låneoversikt og Alternativer</h2>
-
-            {!loan && !loanAlreadyFetched && (
-                <button
-                    onClick={handleFetchLoanAndAlternatives}
-                    disabled={loading}
-                    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-                >
-                    {loading ? "Henter..." : "Hent låneinformasjon"}
-                </button>
-            )}
 
             {loan && (
                 <>
@@ -139,13 +115,12 @@ const CombinedLoanForm: React.FC = () => {
                                     <li
                                         key={idx}
                                         onClick={() => handleLoanClick(alt)}
-                                        className={`border-b py-2 px-4 cursor-pointer rounded-lg ${selectedLoan === alt ? "bg-blue-100" : "hover:bg-gray-100"
-                                            }`}
+                                        className={`border-b py-2 px-4 cursor-pointer rounded-lg ${selectedLoan === alt ? "bg-blue-100" : "hover:bg-gray-100"}`}
                                     >
                                         <strong>{alt["Bank"]}</strong> - {alt["Produkt"]} <br />
                                         Effektiv rente: {alt["Effektiv rente"]?.toFixed(2)}% <br />
                                         Månedlig betaling: {alt["Måndlig betaling"]?.toLocaleString("no-NO")} kr <br />
-                                        Totalkostnad: {(alt["total"] || 0).toLocaleString("no-NO")} kr
+                                        Totalkostnad: {(alt["total_kostnad"] || 0).toLocaleString("no-NO")} kr
                                     </li>
                                 ))}
                             </ul>
@@ -176,21 +151,6 @@ const CombinedLoanForm: React.FC = () => {
                     )}
                 </>
             )}
-            {loanAlreadyFetched && (
-                <button
-                    onClick={() => {
-                        localStorage.removeItem("loanAlreadyFetched");
-                        localStorage.removeItem("userLoan");
-                        setLoan(null);
-                        setLoanAlreadyFetched(false);
-                    }}
-                    className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-                >
-                    Tilbakestill samtykke
-                </button>
-            )}
-
-
         </div>
     );
 };
