@@ -1,16 +1,17 @@
 {
-  "ola": {
-    "password": "ole",
+  "maja": {
+    "password": "erdigg",
     "loan": {
-      "bank": "Express Bank",
-      "produkt": "Refinansiering",
-      "sum_l\u00e5nt": 265000,
-      "effektiv_rente": 11.505,
-      "m\u00e5ntlig_betaling": 3002,
-      "nedbetalt": 106350,
-      "mangler": 158650,
-      "years": 9,
-      "gjennstende_total_kostnad": 324216
+      "Bank": "DNB Bank ASA",
+      "Produkt": "DNB Forbruksfinansiering",
+      "Nominell rente": 10.9,
+      "Effektiv rente": 12.234,
+      "Etableringsgebyr": 500,
+      "Termingebyr": 0,
+      "Maks l\u00f8petid": 5,
+      "M\u00e5ndlig betaling": 3392,
+      "max": 250000,
+      "total": 81408
     }
   }
 }

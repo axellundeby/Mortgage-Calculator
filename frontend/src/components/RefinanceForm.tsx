@@ -26,13 +26,18 @@ const CombinedLoanForm: React.FC = () => {
         const fetched = localStorage.getItem("loanAlreadyFetched");
         if (fetched === "true") {
             setLoanAlreadyFetched(true);
+            const savedLoan = localStorage.getItem("userLoan");
+            if (savedLoan) {
+                setLoan(JSON.parse(savedLoan));
+            }
         }
     }, []);
 
 
+
     const handleFetchLoanAndAlternatives = async () => {
         setLoading(true);
-        const username = localStorage.getItem("username") || "ola";
+        const username = localStorage.getItem("username");
 
         try {
             const response = await fetch("http://localhost:8000/api/authorize", {
@@ -43,6 +48,7 @@ const CombinedLoanForm: React.FC = () => {
             const data = await response.json();
             const currentLoan = data.loan;
             setLoan(currentLoan);
+            localStorage.setItem("userLoan", JSON.stringify(currentLoan));
 
             localStorage.setItem("loanAlreadyFetched", "true");
             setLoanAlreadyFetched(true);
@@ -170,6 +176,21 @@ const CombinedLoanForm: React.FC = () => {
                     )}
                 </>
             )}
+            {loanAlreadyFetched && (
+                <button
+                    onClick={() => {
+                        localStorage.removeItem("loanAlreadyFetched");
+                        localStorage.removeItem("userLoan");
+                        setLoan(null);
+                        setLoanAlreadyFetched(false);
+                    }}
+                    className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+                >
+                    Tilbakestill samtykke
+                </button>
+            )}
+
+
         </div>
     );
 };

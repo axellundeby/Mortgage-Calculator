@@ -27,7 +27,7 @@ const LoginForm: React.FC = () => {
       }
 
       localStorage.setItem("username", username);
-      navigate("/combined");
+      navigate("/refinance");
     } catch (err) {
       console.error("Login error", err);
       setError("Noe gikk galt under innlogging");

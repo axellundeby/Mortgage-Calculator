@@ -5,7 +5,7 @@ import RegisterForm from "./components/RegisterForm";
 import LoginForm from "./components/LoginForm";
 import LoanForm from "./components/LoanForm";
 import ConsentForm from "./components/ConsentForm";
-import CombinedLoanForm from "./components/CombinedLoanForm";
+import CombinedLoanForm from "./components/RefinanceForm";
 
 const App: React.FC = () => {
   return (
