@@ -2,17 +2,31 @@
   "maja": {
     "password": "erdigg",
     "loan": {
-      "Bank": "DNB Bank ASA",
-      "Produkt": "DNB Forbruksfinansiering",
-      "Nominell rente": 10.9,
-      "Effektiv rente": 11.872,
-      "Etableringsgebyr": 500,
+      "Bank": "Bank Norwegian, en filial av NOBA Bank Group AB (publ)",
+      "Produkt": "Usikret rammel\u00e5n",
+      "Nominell rente": 13.99,
+      "Effektiv rente": 14.923,
+      "Etableringsgebyr": 0,
       "Termingebyr": 0,
       "Maks l\u00f8petid": 5,
-      "M\u00e5ndlig betaling": 6328,
-      "max": 250000,
-      "total": 151872,
-      "total_kostnad": 151872
+      "M\u00e5ndlig betaling": 1050,
+      "max": 200000,
+      "total": 12600,
+      "total_kostnad": 12600
+    }
+  },
+  "ola": {
+    "password": "ole",
+    "loan": {
+      "bank": "Tysnes Sparebank",
+      "produkt": "Refinansiering",
+      "sum_l\u00e5nt": 48000,
+      "effektiv_rente": 16.244,
+      "m\u00e5ntlig_betaling": 1145,
+      "nedbetalt": 18313,
+      "mangler": 29687,
+      "years": 3,
+      "gjennstende_total_kostnad": 41220
     }
   }
 }

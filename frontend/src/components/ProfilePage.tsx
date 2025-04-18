@@ -8,7 +8,7 @@ interface Loan {
     nedbetalt: number;
     mangler: number;
     years: number;
-    total_kostnad?: number;
+    gjennstende_total_kostnad?: number;
 }
 
 const UserProfile: React.FC = () => {
@@ -27,8 +27,18 @@ const UserProfile: React.FC = () => {
                 body: JSON.stringify({ username, fullmakt: true }),
             });
             const data = await response.json();
-            setLoan(data.loan);
-            localStorage.setItem("userLoan", JSON.stringify(data.loan));
+            const fetchedLoan: Loan = {
+                bank: data.loan.bank || "",
+                produkt: data.loan.produkt || "",
+                effektiv_rente: data.loan.effektiv_rente || 0,
+                måntlig_betaling: data.loan.måntlig_betaling || 0,
+                nedbetalt: data.loan.nedbetalt || 0,
+                mangler: data.loan.mangler || 0,
+                years: data.loan.years || 0,
+                gjennstende_total_kostnad: data.loan.gjennstende_total_kostnad || data.loan.måntlig_betaling * data.loan.years * 12,
+            };
+            setLoan(fetchedLoan);
+            localStorage.setItem("userLoan", JSON.stringify(fetchedLoan));
             localStorage.setItem("loanAlreadyFetched", "true");
             setLoanFetched(true);
         } catch (err) {
@@ -47,8 +57,24 @@ const UserProfile: React.FC = () => {
         const fetched = localStorage.getItem("loanAlreadyFetched");
         const savedLoan = localStorage.getItem("userLoan");
         if (fetched === "true" && savedLoan) {
-            setLoan(JSON.parse(savedLoan));
-            setLoanFetched(true);
+            try {
+                const parsedLoan = JSON.parse(savedLoan);
+                const fallbackLoan: Loan = {
+                    bank: parsedLoan.bank || "",
+                    produkt: parsedLoan.produkt || "",
+                    effektiv_rente: parsedLoan.effektiv_rente || 0,
+                    måntlig_betaling: parsedLoan.måntlig_betaling || 0,
+                    nedbetalt: parsedLoan.nedbetalt || 0,
+                    mangler: parsedLoan.mangler || 0,
+                    years: parsedLoan.years || 0,
+                    gjennstende_total_kostnad: parsedLoan.gjennstende_total_kostnad || parsedLoan.måntlig_betaling * parsedLoan.years * 12,
+                };
+                setLoan(fallbackLoan);
+                setLoanFetched(true);
+            } catch (e) {
+                console.error("Feil ved parsing av lagret lån", e);
+                setLoanFetched(false);
+            }
         }
     }, []);
 
@@ -71,12 +97,12 @@ const UserProfile: React.FC = () => {
                     <ul>
                         <li><strong>Bank:</strong> {loan.bank}</li>
                         <li><strong>Produkt:</strong> {loan.produkt}</li>
-                        <li><strong>Effektiv rente:</strong> {loan.effektiv_rente?.toFixed(2)}%</li>
-                        <li><strong>Månedlig betaling:</strong> {loan.måntlig_betaling?.toLocaleString("no-NO")} kr</li>
-                        <li><strong>Nedbetalt:</strong> {loan.nedbetalt?.toLocaleString("no-NO")} kr</li>
-                        <li><strong>Gjenstående:</strong> {loan.mangler?.toLocaleString("no-NO")} kr</li>
+                        <li><strong>Effektiv rente:</strong> {loan.effektiv_rente.toFixed(2)}%</li>
+                        <li><strong>Månedlig betaling:</strong> {loan.måntlig_betaling.toLocaleString("no-NO")} kr</li>
+                        <li><strong>Nedbetalt:</strong> {loan.nedbetalt.toLocaleString("no-NO")} kr</li>
+                        <li><strong>Gjenstående:</strong> {loan.mangler.toLocaleString("no-NO")} kr</li>
                         <li><strong>Antall år igjen:</strong> {loan.years} år</li>
-                        <li><strong>Total gjenstående kostnad:</strong> {(loan.total_kostnad || loan.måntlig_betaling * loan.years * 12).toLocaleString("no-NO")} kr</li>
+                        <li><strong>Total gjenstående kostnad:</strong> {loan.gjennstende_total_kostnad?.toLocaleString("no-NO") || 0} kr</li>
                     </ul>
                     <button
                         onClick={handleResetConsent}

@@ -8,7 +8,7 @@ interface Loan {
     nedbetalt: number;
     mangler: number;
     years: number;
-    total_kostnad?: number;
+    gjennstende_total_kostnad: number;
 }
 
 const CombinedLoanForm: React.FC = () => {
@@ -104,7 +104,7 @@ const CombinedLoanForm: React.FC = () => {
                         <li><strong>Nedbetalt:</strong> {loan.nedbetalt?.toLocaleString("no-NO")} kr</li>
                         <li><strong>Gjenstående:</strong> {loan.mangler?.toLocaleString("no-NO")} kr</li>
                         <li><strong>Antall år igjen:</strong> {loan.years} år</li>
-                        <li><strong>Total gjenstående kostnad:</strong> {(loan.total_kostnad || loan.måntlig_betaling * loan.years * 12).toLocaleString("no-NO")} kr</li>
+                        <li><strong>Total gjenstående kostnad:</strong> {loan.gjennstende_total_kostnad?.toLocaleString("no-NO") || 0} kr</li>
                     </ul>
 
                     {alternatives.length > 0 && (
