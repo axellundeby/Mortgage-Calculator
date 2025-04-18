@@ -15,7 +15,7 @@ const App: React.FC = () => {
       <Route path="/login" element={<LoginForm />} />
       <Route path="/loan" element={<LoanForm />} />
       <Route path="/consent" element={<ConsentForm />} />
-      <Route path="/combined" element={<CombinedLoanForm />} />
+      <Route path="/refinance" element={<CombinedLoanForm />} />
     </Routes>
   );
 };

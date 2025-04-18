@@ -2,45 +2,15 @@
   "ola": {
     "password": "ole",
     "loan": {
-      "bank": "Sunndal Sparebank",
-      "produkt": "Eika Bill\u00e5n under 20% Egenkapital",
-      "effektiv_rente": 9.472,
-      "m\u00e5ntlig_betaling": 5440,
-      "nedbetalt": 428000,
-      "mangler": 572000
-    }
-  },
-  "ole": {
-    "password": "ola",
-    "loan": {
-      "bank": "Bien Sparebank ASA",
-      "produkt": "Eika Bill\u00e5n 20%-35% Egenkapital",
-      "effektiv_rente": 8.231,
-      "m\u00e5ntlig_betaling": 7247,
-      "nedbetalt": 599000,
-      "mangler": 401000
-    }
-  },
-  "axel": {
-    "password": "far",
-    "loan": {
-      "bank": "Santander Consumer Bank AS",
-      "produkt": "Standard Bill\u00e5n med 100%",
-      "effektiv_rente": 9.934,
-      "m\u00e5ntlig_betaling": 9760,
-      "nedbetalt": 754000,
-      "mangler": 246000
-    }
-  },
-  "callum": {
-    "password": "gran",
-    "loan": {
-      "bank": "Sparebanken \u00d8st",
-      "produkt": "Kontokreditt",
-      "effektiv_rente": 27.229,
-      "m\u00e5ntlig_betaling": 977,
-      "nedbetalt": 34000,
-      "mangler": 16000.0
+      "bank": "SpareBank 1 \u00d8stlandet",
+      "produkt": "SpareBank 1 Forbruksl\u00e5n",
+      "sum_l\u00e5nt": 464000,
+      "effektiv_rente": 14.892,
+      "m\u00e5ntlig_betaling": 10787,
+      "nedbetalt": 357321,
+      "mangler": 106679,
+      "years": 1,
+      "gjennstende_total_kostnad": 129444
     }
   }
 }

@@ -36,9 +36,8 @@ def save_user_loan(username: str, loan_data: dict):
     if username not in users:
         raise HTTPException(status_code=404, detail="Bruker finnes ikke")
 
-    if "loan" not in users[username]:
-        users[username]["loan"] = loan_data
-        save_users(users)
+    users[username]["loan"] = loan_data
+    save_users(users)
 
 def get_user_loan(username: str):
     users = load_users()

@@ -32,6 +32,10 @@ class LoanRequest(BaseModel):
     amount: float
     years: int
 
+class SaveLoanRequest(BaseModel):
+    username: str
+    loan: dict
+
 @app.post("/api/find-loan")
 def api_find_loan(req: LoanRequest):
     import os
@@ -65,8 +69,14 @@ def login(req: LoginRequest):
 def authorize(req: FullmaktRequest):
     if not req.fullmakt:
         raise HTTPException(status_code=400, detail="Fullmakt ikke gitt")
-
     loan_info = get_random_loan_and_status()
     save_user_loan(req.username, loan_info)
     return {"message": "Fullmakt gitt", "loan": loan_info}
 
+@app.post("/api/save-loan")
+def save_loan(req: SaveLoanRequest):
+    try:
+        save_user_loan(req.username, req.loan)
+        return {"message": "Lån lagret"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
