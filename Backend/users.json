@@ -2,15 +2,15 @@
   "ola": {
     "password": "ole",
     "loan": {
-      "bank": "SpareBank 1 \u00d8stlandet",
-      "produkt": "SpareBank 1 Forbruksl\u00e5n",
-      "sum_l\u00e5nt": 464000,
-      "effektiv_rente": 14.892,
-      "m\u00e5ntlig_betaling": 10787,
-      "nedbetalt": 357321,
-      "mangler": 106679,
-      "years": 1,
-      "gjennstende_total_kostnad": 129444
+      "bank": "Express Bank",
+      "produkt": "Refinansiering",
+      "sum_l\u00e5nt": 265000,
+      "effektiv_rente": 11.505,
+      "m\u00e5ntlig_betaling": 3002,
+      "nedbetalt": 106350,
+      "mangler": 158650,
+      "years": 9,
+      "gjennstende_total_kostnad": 324216
     }
   }
 }

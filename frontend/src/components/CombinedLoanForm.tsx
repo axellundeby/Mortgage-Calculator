@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 
 interface Loan {
     bank: string;
@@ -19,6 +20,15 @@ const CombinedLoanForm: React.FC = () => {
     const [selectedLoan, setSelectedLoan] = useState<any | null>(null);
     const [confirmationVisible, setConfirmationVisible] = useState(false);
     const [refinanced, setRefinanced] = useState(false);
+    const [loanAlreadyFetched, setLoanAlreadyFetched] = useState(false);
+
+    useEffect(() => {
+        const fetched = localStorage.getItem("loanAlreadyFetched");
+        if (fetched === "true") {
+            setLoanAlreadyFetched(true);
+        }
+    }, []);
+
 
     const handleFetchLoanAndAlternatives = async () => {
         setLoading(true);
@@ -33,6 +43,9 @@ const CombinedLoanForm: React.FC = () => {
             const data = await response.json();
             const currentLoan = data.loan;
             setLoan(currentLoan);
+
+            localStorage.setItem("loanAlreadyFetched", "true");
+            setLoanAlreadyFetched(true);
 
             const res = await fetch("http://localhost:8000/api/find-loan", {
                 method: "POST",
@@ -88,7 +101,7 @@ const CombinedLoanForm: React.FC = () => {
         <div className="max-w-3xl mx-auto p-6 bg-white rounded shadow">
             <h2 className="text-2xl font-bold mb-4">Låneoversikt og Alternativer</h2>
 
-            {!loan && (
+            {!loan && !loanAlreadyFetched && (
                 <button
                     onClick={handleFetchLoanAndAlternatives}
                     disabled={loading}
