@@ -1,22 +1,21 @@
+// src/App.tsx
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
-import RegisterForm from "./components/RegisterForm";
+import Layout from "./components/Layout";
 import LoginForm from "./components/LoginForm";
-import LoanForm from "./components/LoanForm";
-import ConsentForm from "./components/ConsentForm";
-import CombinedLoanForm from "./components/RefinanceForm";
+import RegisterForm from "./components/RegisterForm";
+import Refinance from "./components/RefinanceForm";
 
 const App: React.FC = () => {
   return (
-    <Routes>
-      <Route path="/" element={<RegisterForm />} />
-      <Route path="/register" element={<RegisterForm />} />
-      <Route path="/login" element={<LoginForm />} />
-      <Route path="/loan" element={<LoanForm />} />
-      <Route path="/consent" element={<ConsentForm />} />
-      <Route path="/refinance" element={<CombinedLoanForm />} />
-    </Routes>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="/register" element={<RegisterForm />} />
+        <Route path="/refinance" element={<Refinance />} />
+        <Route path="/login" element={<Refinance />} />
+      </Routes>
+    </Layout>
   );
 };
 

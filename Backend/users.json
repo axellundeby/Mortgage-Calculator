@@ -2,16 +2,30 @@
   "maja": {
     "password": "erdigg",
     "loan": {
+      "bank": "Lea Bank AB (publ) NUF",
+      "produkt": "Forbruksl\u00e5n",
+      "sum_l\u00e5nt": 88000,
+      "effektiv_rente": 12.71,
+      "m\u00e5ntlig_betaling": 1958,
+      "nedbetalt": 45085,
+      "mangler": 42915,
+      "years": 2,
+      "gjennstende_total_kostnad": 46992
+    }
+  },
+  "axel": {
+    "password": "far",
+    "loan": {
       "Bank": "DNB Bank ASA",
       "Produkt": "DNB Forbruksfinansiering",
       "Nominell rente": 10.9,
-      "Effektiv rente": 12.234,
+      "Effektiv rente": 13.966,
       "Etableringsgebyr": 500,
       "Termingebyr": 0,
       "Maks l\u00f8petid": 5,
-      "M\u00e5ndlig betaling": 3392,
+      "M\u00e5ndlig betaling": 531,
       "max": 250000,
-      "total": 81408
+      "total": 19116
     }
   }
 }
