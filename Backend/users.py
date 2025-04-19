@@ -82,3 +82,19 @@ def transform_to_user_loan_format(alt_loan: dict, base_loan: dict) -> dict:
         "years": base_loan.get("years"),
         "gjennstende_total_kostnad": alt_loan.get("total") or alt_loan.get("total_kostnad") or 0
     }
+
+def simulate_loan_after_months(loan: dict, months: int) -> dict:
+    måntlig_betaling = loan.get("måntlig_betaling", 0)
+    nedbetalt_ekstra = måntlig_betaling * months
+    ny_nedbetalt = loan.get("nedbetalt", 0) + nedbetalt_ekstra
+    ny_mangler = max(loan.get("sum_lånt", 0) - ny_nedbetalt, 0)
+    gjenstående_år = max(1, round(ny_mangler / (måntlig_betaling * 12))) if måntlig_betaling else 1
+    ny_total_kostnad = måntlig_betaling * 12 * gjenstående_år
+
+    return {
+        **loan,
+        "nedbetalt": ny_nedbetalt,
+        "mangler": ny_mangler,
+        "years": gjenstående_år,
+        "gjennstende_total_kostnad": ny_total_kostnad
+    }
