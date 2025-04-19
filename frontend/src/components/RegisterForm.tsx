@@ -9,7 +9,7 @@ const RegisterForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
+  
     const res = await fetch("http://localhost:8000/api/register", {
       method: "POST",
       headers: {
@@ -17,14 +17,21 @@ const RegisterForm: React.FC = () => {
       },
       body: JSON.stringify({ username, password, age }),
     });
-
+  
+    if (!res.ok) {
+      const errorData = await res.json();
+      alert(`Feil: ${errorData.detail}`); // 💥 Vis feilmelding
+      return;
+    }
+  
     const data = await res.json();
     console.log(data);
-
+  
     localStorage.setItem("username", username);
     alert("Registrert!");
     navigate("/profil");
   };
+  
 
   return (
     <div className="p-8 max-w-md mx-auto">

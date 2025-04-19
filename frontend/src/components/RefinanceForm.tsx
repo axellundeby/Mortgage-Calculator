@@ -19,6 +19,7 @@ const CombinedLoanForm: React.FC = () => {
     const [selectedLoan, setSelectedLoan] = useState<any | null>(null);
     const [confirmationVisible, setConfirmationVisible] = useState(false);
     const [refinanced, setRefinanced] = useState(false);
+    const [userAge, setUserAge] = useState<number | null>(null);
 
     useEffect(() => {
         const fetchUserLoanAndAlternatives = async () => {
@@ -26,6 +27,10 @@ const CombinedLoanForm: React.FC = () => {
             if (!username) return;
 
             try {
+                const ageRes = await fetch(`http://localhost:8000/api/user-age/${username}`);
+                const ageData = await ageRes.json();
+                setUserAge(ageData.age);
+
                 const res = await fetch(`http://localhost:8000/api/user-loan/${username}`);
                 const data = await res.json();
                 setLoan(data);
@@ -33,7 +38,7 @@ const CombinedLoanForm: React.FC = () => {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
-                      username: localStorage.getItem("username"),
+                      age: ageData.age,
                       amount: data.mangler,
                       years: data.years,
                     }),
