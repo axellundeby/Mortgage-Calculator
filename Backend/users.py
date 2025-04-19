@@ -4,13 +4,6 @@ import random
 from pydantic import BaseModel
 from fastapi import HTTPException
 from best_risky_three_loans_for_candidate import beregn_maanedlig_betaling, beregn_effektiv_rente
-from database import (
-    create_user,
-    authenticate_user,
-    get_user_age,
-    get_user_loan,
-    save_user_loan
-)
 
 class User(BaseModel):
     username: str

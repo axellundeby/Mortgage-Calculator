@@ -20,7 +20,7 @@ const RegisterForm: React.FC = () => {
   
     if (!res.ok) {
       const errorData = await res.json();
-      alert(`Feil: ${errorData.detail}`); // 💥 Vis feilmelding
+      alert(`Feil: ${errorData.detail}`);
       return;
     }
   
