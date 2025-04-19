@@ -28,6 +28,12 @@ def save_users(users):
     with open(USERS_FILE, "w") as f:
         json.dump(users, f, indent=2)
 
+def get_user_age(username: str) -> int:
+    users = load_users()
+    if username not in users:
+        raise HTTPException(status_code=404, detail="Bruker finnes ikke")
+    return users[username].get("age", 25)
+
 def save_user_loan(username: str, loan_data: dict):
     users = load_users()
     if username not in users:

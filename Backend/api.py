@@ -9,10 +9,12 @@ from users import (
     get_user_loan,
     save_user_loan,
     transform_to_user_loan_format,
+    get_user_age,
     User
 )
 from best_risky_three_loans_for_candidate import find_best_loan
 import os
+
 
 
 app = FastAPI()
@@ -41,14 +43,16 @@ class LoanRequest(BaseModel):
     age: int
     amount: float
     years: int
+    age: int = 25
 
 @app.post("/api/find-loan")
 def api_find_loan(req: LoanRequest):
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
+    actual_age = get_user_age(req.username) if hasattr(req, "username") else req.age
 
     loans = find_best_loan(
         csv_path=csv_path,
-        age=req.age,
+        age=actual_age,
         amount=req.amount,
         years=req.years,
         top_n=3

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 const RegisterForm: React.FC = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [age, setAge] = useState<number>(25); // 💡 Ny tilstand for alder
   const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -14,7 +15,7 @@ const RegisterForm: React.FC = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ username, password, age }),
     });
 
     const data = await res.json();
@@ -41,6 +42,13 @@ const RegisterForm: React.FC = () => {
           placeholder="Passord"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className="border px-4 py-2 w-full mb-4"
+        />
+        <input
+          type="number"
+          placeholder="Alder"
+          value={age}
+          onChange={(e) => setAge(parseInt(e.target.value))}
           className="border px-4 py-2 w-full mb-4"
         />
         <button

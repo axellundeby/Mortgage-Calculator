@@ -29,16 +29,16 @@ const CombinedLoanForm: React.FC = () => {
                 const res = await fetch(`http://localhost:8000/api/user-loan/${username}`);
                 const data = await res.json();
                 setLoan(data);
-
                 const altRes = await fetch("http://localhost:8000/api/find-loan", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
-                        age: 25,
-                        amount: data.mangler,
-                        years: data.years,
+                      username: localStorage.getItem("username"),
+                      amount: data.mangler,
+                      years: data.years,
                     }),
-                });
+                  });
+                  
 
                 const bestLoans = await altRes.json();
                 const transformed = bestLoans.map((loan: any) => ({

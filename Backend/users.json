@@ -1,46 +1,30 @@
 {
-  "maja": {
+  "Axel": {
     "password": "erdigg",
-    "loan": {
-      "Bank": "Bank Norwegian, en filial av NOBA Bank Group AB (publ)",
-      "Produkt": "Usikret rammel\u00e5n",
-      "Nominell rente": 13.99,
-      "Effektiv rente": 14.923,
-      "Etableringsgebyr": 0,
-      "Termingebyr": 0,
-      "Maks l\u00f8petid": 5,
-      "M\u00e5ndlig betaling": 1050,
-      "max": 200000,
-      "total": 12600,
-      "total_kostnad": 12600
-    }
-  },
-  "ola": {
-    "password": "ole",
     "loan": {
       "bank": "DNB Bank ASA",
       "produkt": "DNB Forbruksfinansiering",
-      "sum_l\u00e5nt": 21016,
-      "effektiv_rente": 13.322,
-      "m\u00e5ntlig_betaling": 703,
+      "sum_l\u00e5nt": 21243,
+      "effektiv_rente": 14.144,
+      "m\u00e5ntlig_betaling": 1012,
       "nedbetalt": 0,
-      "mangler": 21016,
-      "years": 3,
-      "gjennstende_total_kostnad": 25308
+      "mangler": 21243,
+      "years": 2,
+      "gjennstende_total_kostnad": 24288
     }
   },
-  "axel": {
+  "maja": {
     "password": "erdigg",
     "loan": {
-      "bank": "INSTABANK ASA",
-      "produkt": "Personl\u00e5n",
-      "sum_l\u00e5nt": 243178,
-      "effektiv_rente": 11.405,
-      "m\u00e5ntlig_betaling": 7944,
+      "bank": "Bank Norwegian, en filial av NOBA Bank Group AB (publ)",
+      "produkt": "Refinansiering",
+      "sum_l\u00e5nt": 6237,
+      "effektiv_rente": 25.345,
+      "m\u00e5ntlig_betaling": 586,
       "nedbetalt": 0,
-      "mangler": 243178,
-      "years": 3,
-      "gjennstende_total_kostnad": 285984
+      "mangler": 6237,
+      "years": 1,
+      "gjennstende_total_kostnad": 7032
     }
   }
 }
