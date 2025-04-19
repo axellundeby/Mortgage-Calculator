@@ -79,9 +79,13 @@ const CombinedLoanForm: React.FC = () => {
                 alert("Lån er refinansiert!");
                 setRefinanced(true);
                 setConfirmationVisible(false);
-                setLoan(selectedLoan);
-                localStorage.setItem("userLoan", JSON.stringify(selectedLoan));
-            } else {
+
+                const updatedRes = await fetch(`http://localhost:8000/api/user-loan/${username}`);
+                const updatedLoan = await updatedRes.json();
+                setLoan(updatedLoan);
+                localStorage.setItem("userLoan", JSON.stringify(updatedLoan));
+            }
+            else {
                 alert("Noe gikk galt ved lagring av nytt lån.");
             }
         } catch (err) {

@@ -18,15 +18,29 @@
   "ola": {
     "password": "ole",
     "loan": {
-      "bank": "Tysnes Sparebank",
-      "produkt": "Refinansiering",
-      "sum_l\u00e5nt": 48000,
-      "effektiv_rente": 16.244,
-      "m\u00e5ntlig_betaling": 1145,
-      "nedbetalt": 18313,
-      "mangler": 29687,
+      "bank": "DNB Bank ASA",
+      "produkt": "DNB Forbruksfinansiering",
+      "sum_l\u00e5nt": 21016,
+      "effektiv_rente": 13.322,
+      "m\u00e5ntlig_betaling": 703,
+      "nedbetalt": 0,
+      "mangler": 21016,
       "years": 3,
-      "gjennstende_total_kostnad": 41220
+      "gjennstende_total_kostnad": 25308
+    }
+  },
+  "axel": {
+    "password": "erdigg",
+    "loan": {
+      "bank": "INSTABANK ASA",
+      "produkt": "Personl\u00e5n",
+      "sum_l\u00e5nt": 243178,
+      "effektiv_rente": 11.405,
+      "m\u00e5ntlig_betaling": 7944,
+      "nedbetalt": 0,
+      "mangler": 243178,
+      "years": 3,
+      "gjennstende_total_kostnad": 285984
     }
   }
 }

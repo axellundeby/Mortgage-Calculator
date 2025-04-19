@@ -15,17 +15,14 @@ class User(BaseModel):
     username: str
     password: str  
 
-
 def hash_password(password: str) -> str:
     return password
-
 
 def load_users():
     if not os.path.exists(USERS_FILE):
         return {}
     with open(USERS_FILE, "r") as f:
         return json.load(f)
-
 
 def save_users(users):
     with open(USERS_FILE, "w") as f:
@@ -46,7 +43,6 @@ def get_user_loan(username: str):
 
     return users[username].get("loan", None)
 
-
 def register_user(user: User):
     users = load_users()
     if user.username in users:
@@ -58,7 +54,6 @@ def register_user(user: User):
     save_users(users)
     print(f"✅ Registrerer bruker: {user.username}, passord: {user.password}")
     return {"message": "Bruker registrert"}
-
 
 def authenticate_user(user: User):
     users = load_users()
@@ -132,4 +127,17 @@ def get_random_loan_and_status():
         "mangler": gjenstaaende,
         "years": estimerte_gjenstående_år,
         "gjennstende_total_kostnad": totalKostnad
+    }
+
+def transform_to_user_loan_format(alt_loan: dict, base_loan: dict) -> dict:
+    return {
+        "bank": alt_loan.get("Bank"),
+        "produkt": alt_loan.get("Produkt"),
+        "sum_lånt": base_loan.get("mangler"),
+        "effektiv_rente": alt_loan.get("Effektiv rente"),
+        "måntlig_betaling": alt_loan.get("Måndlig betaling"),
+        "nedbetalt": 0,
+        "mangler": base_loan.get("mangler"),
+        "years": base_loan.get("years"),
+        "gjennstende_total_kostnad": alt_loan.get("total") or alt_loan.get("total_kostnad") or 0
     }

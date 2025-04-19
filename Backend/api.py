@@ -1,8 +1,18 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from users import register_user, authenticate_user, get_random_loan_and_status, get_user_loan, save_user_loan, User
+from pydantic import BaseModel
+from fastapi import Request
+from users import (
+    register_user,
+    authenticate_user,
+    get_random_loan_and_status,
+    get_user_loan,
+    save_user_loan,
+    transform_to_user_loan_format,
+    User
+)
 from best_risky_three_loans_for_candidate import find_best_loan
+import os
 
 
 app = FastAPI()
@@ -32,13 +42,8 @@ class LoanRequest(BaseModel):
     amount: float
     years: int
 
-class SaveLoanRequest(BaseModel):
-    username: str
-    loan: dict
-
 @app.post("/api/find-loan")
 def api_find_loan(req: LoanRequest):
-    import os
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
 
     loans = find_best_loan(
@@ -74,9 +79,20 @@ def authorize(req: FullmaktRequest):
     return {"message": "Fullmakt gitt", "loan": loan_info}
 
 @app.post("/api/save-loan")
-def save_loan(req: SaveLoanRequest):
-    try:
-        save_user_loan(req.username, req.loan)
-        return {"message": "Lån lagret"}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+async def save_loan_api(request: Request):
+    body = await request.json()
+    username = body.get("username")
+    raw_loan = body.get("loan")
+
+    if not username or not raw_loan:
+        raise HTTPException(status_code=400, detail="Ugyldig data")
+
+    existing_loan = get_user_loan(username)
+    if not existing_loan:
+        raise HTTPException(status_code=404, detail="Ingen eksisterende lån funnet for bruker")
+
+    transformed = transform_to_user_loan_format(raw_loan, existing_loan)
+    save_user_loan(username, transformed)
+
+    return {"message": "Refinansiert lån lagret"}
+
