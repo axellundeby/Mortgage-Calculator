@@ -28,6 +28,25 @@ const UserProfile: React.FC = () => {
 
     const username = localStorage.getItem("username");
 
+    const [simMonths, setSimMonths] = useState(0);
+
+    const handleSimulateChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const months = parseInt(e.target.value);
+        setSimMonths(months);
+
+        const res = await fetch("http://localhost:8000/api/simulate-loan", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username, months }),
+        });
+
+        if (res.ok) {
+            const data = await res.json();
+            setLoan(data);
+        }
+    };
+
+
     const handleFetchLoan = async () => {
         try {
             const response = await fetch("http://localhost:8000/api/authorize", {
@@ -102,9 +121,22 @@ const UserProfile: React.FC = () => {
                     >
                         Tilbakestill samtykke
                     </button>
+
+                    <label className="block mb-2 font-medium">
+                        Simuler nedbetaling over {simMonths} måneder:
+                    </label>
+                    <input
+                        type="range"
+                        min="0"
+                        max="120"
+                        value={simMonths}
+                        onChange={handleSimulateChange}
+                        className="w-full"
+                    />
                 </div>
             )}
         </div>
+
     );
 };
 

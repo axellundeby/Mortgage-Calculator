@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from best_risky_three_loans_for_candidate import find_best_loan
+from fastapi import Body
 from users import get_random_loan_and_status, transform_to_user_loan_format
 from database import (
     authenticate_user,
@@ -104,3 +105,11 @@ async def save_loan_api(request: Request):
     final_loan = transform_to_user_loan_format(raw_loan, base_loan)
     save_user_loan(username, final_loan)
     return {"message": "Refinansiert lån lagret"}
+
+@app.post("/api/simulate-loan")
+def simulate_loan(username: str = Body(...), months: int = Body(...)):
+    loan = get_user_loan(username)
+    if not loan:
+        raise HTTPException(status_code=404, detail="Ingen lån funnet")
+    from users import simulate_loan_after_months
+    return simulate_loan_after_months(loan, months)
