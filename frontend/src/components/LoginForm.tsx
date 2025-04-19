@@ -9,30 +9,29 @@ const LoginForm: React.FC = () => {
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError("");
-
-    try {
-      const response = await fetch("http://localhost:8000/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        setError(errorData.detail || "Innlogging feilet");
-        return;
-      }
-
+  
+    const res = await fetch("http://localhost:8000/api/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username, password }),
+    });
+  
+    if (res.ok) {
       localStorage.setItem("username", username);
+  
+      const loanRes = await fetch(`http://localhost:8000/api/user-loan/${username}`);
+      if (loanRes.ok) {
+        const loan = await loanRes.json();
+        localStorage.setItem("userLoan", JSON.stringify(loan));
+        localStorage.setItem("loanAlreadyFetched", "true");
+      }
+  
       navigate("/profil");
-    } catch (err) {
-      console.error("Login error", err);
-      setError("Noe gikk galt under innlogging");
+    } else {
+      alert("Feil brukernavn eller passord");
     }
   };
+  
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50">
