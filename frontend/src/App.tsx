@@ -7,6 +7,7 @@ import RegisterForm from "./components/RegisterForm";
 import Refinance from "./components/RefinanceForm";
 import LoanForm from "./components/LoanForm";
 import ProfilePage from "./components/ProfilePage";
+import Home from "./components/Home";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/login" element={<LoginForm />} />
         <Route path="/kalkulator" element={<LoanForm />} />
         <Route path="/profil" element={<ProfilePage />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </Layout>
   );
