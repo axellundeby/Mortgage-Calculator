@@ -28,6 +28,9 @@ const UserProfile: React.FC = () => {
     const [simMonths, setSimMonths] = useState(0);
     const [simulatedLoan, setSimulatedLoan] = useState<Loan | null>(null);
     const [autoRefinance, setAutoRefinance] = useState(false);
+    const [loanHistory, setLoanHistory] = useState<Loan[]>([]);
+    const [totalSaved, setTotalSaved] = useState<number | null>(null);
+
 
     const username = localStorage.getItem("username");
     const isAdmin = username === "admin";
@@ -86,6 +89,24 @@ const UserProfile: React.FC = () => {
             console.error("Feil ved henting av lån", err);
         }
     };
+
+    const fetchHistory = async () => {
+        if (!username) return;
+        try {
+            const histRes = await fetch(`http://localhost:8000/api/loan-history/${username}`);
+            const historyData = await histRes.json();
+            setLoanHistory(historyData);
+
+            const totalRes = await fetch(`http://localhost:8000/api/total-savings/${username}`);
+            const totalData = await totalRes.json();
+            setTotalSaved(totalData.total_saved);
+        } catch (err) {
+            console.error("Feil ved henting av historikk", err);
+        }
+    };
+
+    fetchHistory();
+
 
     const handleResetConsent = () => {
         localStorage.removeItem("userLoan");
@@ -209,6 +230,29 @@ const UserProfile: React.FC = () => {
                                     </button>
                                 </div>
                             )}
+
+                            {loanHistory.length > 0 && (
+                                <div className="mt-8">
+                                    <h3 className="text-lg font-semibold mb-2">Lånehistorikk</h3>
+                                    <ul className="space-y-2">
+                                        {loanHistory.map((item, idx) => (
+                                            <li key={idx} className="border rounded p-3 bg-gray-50">
+                                                <strong>{item.bank}</strong> - {item.produkt} <br />
+                                                Effektiv rente: {item.effektiv_rente?.toFixed(2)}%<br />
+                                                Månedlig betaling: {item.monthly_payment?.toLocaleString("no-NO")} kr<br />
+                                                Gjenstående kostnad: {item.gjennstende_total_kostnad?.toLocaleString("no-NO")} kr
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
+                            {totalSaved !== null && (
+                                <div className="mt-4 text-green-700 font-semibold">
+                                    Du har totalt spart {totalSaved.toLocaleString("no-NO")} kr ved å flytte mellom lån 💸
+                                </div>
+                            )}
+
                         </>
                     )}
                 </div>
