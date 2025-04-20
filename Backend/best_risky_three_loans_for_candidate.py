@@ -98,7 +98,7 @@ def find_best_loan(csv_path, age, amount, years, top_n=3):
                     "Etableringsgebyr": establishment_fee,
                     "Termingebyr": term_fee,
                     "Maks løpetid": max_term,
-                    "Måndlig betaling": monthlypayment,
+                    "monthly_payment": monthlypayment,
                     "max": max_amount,
                     "total": totalpayment
 

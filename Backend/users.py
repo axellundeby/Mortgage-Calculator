@@ -47,7 +47,7 @@ def get_random_loan_and_status():
         termingebyr
     )
 
-    montly_payment = beregn_maanedlig_betaling(
+    monthly_payment = beregn_maanedlig_betaling(
         total_laanebelop,
         maks_løpetid,
         nominell_rente_aarlig,
@@ -56,14 +56,14 @@ def get_random_loan_and_status():
         termingebyr
     )
 
-    totalKostnad = montly_payment * 12 * estimerte_gjenstående_år
+    totalKostnad = monthly_payment * 12 * estimerte_gjenstående_år
 
     return {
         "bank": selected["Bank"],
         "produkt": selected["Lånenavn"],
         "sum_lånt": total_laanebelop,
         "effektiv_rente": effektiv_rente,
-        "monthly_payment": montly_payment,
+        "monthly_payment": monthly_payment,
         "nedbetalt": nedbetalt,
         "mangler": gjenstaaende,
         "years": estimerte_gjenstående_år,

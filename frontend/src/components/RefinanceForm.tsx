@@ -112,7 +112,7 @@ const CombinedLoanForm: React.FC = () => {
                         <li><strong>Bank:</strong> {loan.bank}</li>
                         <li><strong>Produkt:</strong> {loan.produkt}</li>
                         <li><strong>Effektiv rente:</strong> {loan.effektiv_rente?.toFixed(2)}%</li>
-                        <li><strong>Månedlig betaling:</strong> {loan.monthly_payment.toLocaleString("no-NO")} kr</li>
+                        <li><strong>Månedlig betaling:</strong> {(loan.monthly_payment || 0).toLocaleString("no-NO")} kr</li>
                         <li><strong>Nedbetalt:</strong> {loan.nedbetalt?.toLocaleString("no-NO")} kr</li>
                         <li><strong>Gjenstående:</strong> {loan.mangler?.toLocaleString("no-NO")} kr</li>
                         <li><strong>Antall år igjen:</strong> {loan.years} år</li>
@@ -131,7 +131,7 @@ const CombinedLoanForm: React.FC = () => {
                                     >
                                         <strong>{alt["Bank"]}</strong> - {alt["Produkt"]} <br />
                                         Effektiv rente: {alt["Effektiv rente"]?.toFixed(2)}% <br />
-                                        Månedlig betaling: {alt["Måndlig betaling"]?.toLocaleString("no-NO")} kr <br />
+                                        Månedlig betaling: {alt["monthly_payment"]?.toLocaleString("no-NO")} kr <br />
                                         Totalkostnad: {(alt["total_kostnad"] || 0).toLocaleString("no-NO")} kr
                                     </li>
                                 ))}
