@@ -98,6 +98,12 @@ async def save_loan_api(request: Request):
     if not username or not raw_loan:
         raise HTTPException(status_code=400, detail="Ugyldig data")
 
+    # Hvis lånet allerede har "sum_lånt" og "nedbetalt", antar vi at det er riktig struktur
+    if "sum_lånt" in raw_loan and "nedbetalt" in raw_loan:
+        save_user_loan(username, raw_loan)
+        return {"message": "Lagring av simulert lån vellykket"}
+
+    # Ellers transformerer vi fra API-format (f.eks. fra RefinanceForm)
     base_loan = get_user_loan(username)
     if not base_loan:
         raise HTTPException(status_code=404, detail="Fant ikke eksisterende lån")
@@ -105,6 +111,7 @@ async def save_loan_api(request: Request):
     final_loan = transform_to_user_loan_format(raw_loan, base_loan)
     save_user_loan(username, final_loan)
     return {"message": "Refinansiert lån lagret"}
+
 
 @app.post("/api/simulate-loan")
 def simulate_loan(username: str = Body(...), months: int = Body(...)):

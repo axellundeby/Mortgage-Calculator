@@ -63,7 +63,7 @@ def get_random_loan_and_status():
         "produkt": selected["Lånenavn"],
         "sum_lånt": total_laanebelop,
         "effektiv_rente": effektiv_rente,
-        "måntlig_betaling": montly_payment,
+        "monthly_payment": montly_payment,
         "nedbetalt": nedbetalt,
         "mangler": gjenstaaende,
         "years": estimerte_gjenstående_år,
@@ -76,7 +76,7 @@ def transform_to_user_loan_format(alt_loan: dict, base_loan: dict) -> dict:
         "produkt": alt_loan.get("Produkt"),
         "sum_lånt": base_loan.get("mangler"),
         "effektiv_rente": alt_loan.get("Effektiv rente"),
-        "måntlig_betaling": alt_loan.get("Måndlig betaling"),
+        "monthly_payment": alt_loan.get("monthly_payment"),
         "nedbetalt": 0,
         "mangler": base_loan.get("mangler"),
         "years": base_loan.get("years"),
@@ -84,13 +84,13 @@ def transform_to_user_loan_format(alt_loan: dict, base_loan: dict) -> dict:
     }
 
 def simulate_loan_after_months(loan: dict, months: int) -> dict:
-    måntlig_betaling = loan.get("måntlig_betaling", 0)
-    nedbetalt_ekstra = måntlig_betaling * months
+    monthly_payment = loan.get("monthly_payment", 0)
+    nedbetalt_ekstra = monthly_payment * months
     original_mangler = loan.get("mangler", 0)
     ny_mangler = max(original_mangler - nedbetalt_ekstra, 0)
     ny_nedbetalt = loan.get("nedbetalt", 0) + (original_mangler - ny_mangler)
-    gjenstående_år = max(1, round(ny_mangler / (måntlig_betaling * 12))) if måntlig_betaling else 1
-    ny_total_kostnad = måntlig_betaling * 12 * gjenstående_år
+    gjenstående_år = max(1, round(ny_mangler / (monthly_payment * 12))) if monthly_payment else 1
+    ny_total_kostnad = monthly_payment * 12 * gjenstående_år
 
     return {
         **loan,

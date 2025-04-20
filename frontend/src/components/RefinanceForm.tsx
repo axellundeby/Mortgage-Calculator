@@ -4,7 +4,7 @@ interface Loan {
     bank: string;
     produkt: string;
     effektiv_rente: number;
-    måntlig_betaling: number;
+    monthly_payment: number;
     nedbetalt: number;
     mangler: number;
     years: number;
@@ -34,16 +34,16 @@ const CombinedLoanForm: React.FC = () => {
                 const res = await fetch(`http://localhost:8000/api/user-loan/${username}`);
                 const data = await res.json();
                 setLoan(data);
+
                 const altRes = await fetch("http://localhost:8000/api/find-loan", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
-                      age: ageData.age,
-                      amount: data.mangler,
-                      years: data.years,
+                        age: ageData.age,
+                        amount: data.mangler,
+                        years: data.years,
                     }),
-                  });
-                  
+                });
 
                 const bestLoans = await altRes.json();
                 const transformed = bestLoans.map((loan: any) => ({
@@ -52,7 +52,10 @@ const CombinedLoanForm: React.FC = () => {
                 }));
                 setAlternatives(transformed);
 
-                const currentTotal = data.måntlig_betaling * data.years * 12;
+                const monthly = data.monthly_payment;
+                const years = data.years || 1;
+                const currentTotal = monthly * years * 12;
+
                 const bestTotal = transformed[0]?.total_kostnad || currentTotal;
                 setSavings(Math.round(currentTotal - bestTotal));
             } catch (err) {
@@ -109,7 +112,7 @@ const CombinedLoanForm: React.FC = () => {
                         <li><strong>Bank:</strong> {loan.bank}</li>
                         <li><strong>Produkt:</strong> {loan.produkt}</li>
                         <li><strong>Effektiv rente:</strong> {loan.effektiv_rente?.toFixed(2)}%</li>
-                        <li><strong>Månedlig betaling:</strong> {loan.måntlig_betaling?.toLocaleString("no-NO")} kr</li>
+                        <li><strong>Månedlig betaling:</strong> {loan.monthly_payment.toLocaleString("no-NO")} kr</li>
                         <li><strong>Nedbetalt:</strong> {loan.nedbetalt?.toLocaleString("no-NO")} kr</li>
                         <li><strong>Gjenstående:</strong> {loan.mangler?.toLocaleString("no-NO")} kr</li>
                         <li><strong>Antall år igjen:</strong> {loan.years} år</li>

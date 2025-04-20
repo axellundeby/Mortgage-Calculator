@@ -22,7 +22,7 @@ def init_db():
             produkt TEXT,
             sum_lant REAL,
             effektiv_rente REAL,
-            mantlig_betaling REAL,
+            monthly_payment REAL,
             nedbetalt REAL,
             mangler REAL,
             years INTEGER,

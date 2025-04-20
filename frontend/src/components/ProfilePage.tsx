@@ -4,7 +4,7 @@ interface Loan {
     bank: string;
     produkt: string;
     effektiv_rente: number;
-    måntlig_betaling: number;
+    monthly_payment: number;
     nedbetalt: number;
     mangler: number;
     years: number;
@@ -14,8 +14,8 @@ interface Loan {
 const normalizeLoanData = (data: any): Loan => ({
     bank: data.bank || data.Bank || "",
     produkt: data.produkt || data.Produkt || "",
-    effektiv_rente: data.effektiv_rente || data["Effektiv rente"] || 0,
-    måntlig_betaling: data.måntlig_betaling || data["Måndlig betaling"] || 0,
+    effektiv_rente: data.effektiv_rente || 0,
+    monthly_payment: data.monthly_payment || 0,
     nedbetalt: data.nedbetalt ?? 0,
     mangler: data.mangler ?? 0,
     years: data.years ?? 0,
@@ -108,7 +108,7 @@ const UserProfile: React.FC = () => {
                         <li><strong>Bank:</strong> {(simulatedLoan || loan).bank}</li>
                         <li><strong>Produkt:</strong> {(simulatedLoan || loan).produkt}</li>
                         <li><strong>Effektiv rente:</strong> {(simulatedLoan || loan).effektiv_rente.toFixed(2)}%</li>
-                        <li><strong>Månedlig betaling:</strong> {(simulatedLoan || loan).måntlig_betaling.toLocaleString("no-NO")} kr</li>
+                        <li><strong>Månedlig betaling:</strong> {(simulatedLoan || loan).monthly_payment.toLocaleString("no-NO")} kr</li>
                         <li><strong>Nedbetalt:</strong> {(simulatedLoan || loan).nedbetalt.toLocaleString("no-NO")} kr</li>
                         <li><strong>Gjenstående:</strong> {(simulatedLoan || loan).mangler.toLocaleString("no-NO")} kr</li>
                         <li><strong>Antall år igjen:</strong> {(simulatedLoan || loan).years} år</li>

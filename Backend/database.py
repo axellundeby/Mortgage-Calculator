@@ -53,7 +53,7 @@ def save_user_loan(username: str, loan_data: dict):
         raise HTTPException(status_code=404, detail="Bruker finnes ikke")
 
     c.execute('''
-        INSERT INTO loans (username, bank, produkt, sum_lant, effektiv_rente, mantlig_betaling,
+        INSERT INTO loans (username, bank, produkt, sum_lant, effektiv_rente, monthly_payment,
         nedbetalt, mangler, years, gjennstende_total_kostnad)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(username) DO UPDATE SET
@@ -61,7 +61,7 @@ def save_user_loan(username: str, loan_data: dict):
             produkt=excluded.produkt,
             sum_lant=excluded.sum_lant,
             effektiv_rente=excluded.effektiv_rente,
-            mantlig_betaling=excluded.mantlig_betaling,
+            monthly_payment=excluded.monthly_payment,
             nedbetalt=excluded.nedbetalt,
             mangler=excluded.mangler,
             years=excluded.years,
@@ -72,7 +72,7 @@ def save_user_loan(username: str, loan_data: dict):
         loan_data.get("produkt"),
         loan_data.get("sum_lånt"),
         loan_data.get("effektiv_rente"),
-        loan_data.get("måntlig_betaling"),
+        loan_data.get("monthly_payment"),
         loan_data.get("nedbetalt"),
         loan_data.get("mangler"),
         loan_data.get("years"),
@@ -96,7 +96,7 @@ def get_user_loan(username: str):
     loan = dict(zip(columns, row))
     conn.close()
 
-    loan["måntlig_betaling"] = loan.pop("mantlig_betaling", 0)
+    loan["monthly_payment"] = loan.pop("monthly_payment", 0)
 
     return loan
 
