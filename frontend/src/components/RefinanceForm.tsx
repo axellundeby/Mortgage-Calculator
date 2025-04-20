@@ -55,7 +55,6 @@ const CombinedLoanForm: React.FC = () => {
                 const monthly = data.monthly_payment;
                 const years = data.years || 1;
                 const currentTotal = monthly * years * 12;
-
                 const bestTotal = transformed[0]?.total_kostnad || currentTotal;
                 setSavings(Math.round(currentTotal - bestTotal));
             } catch (err) {
@@ -65,8 +64,33 @@ const CombinedLoanForm: React.FC = () => {
             }
         };
 
+        const checkAutoRefinance = async () => {
+            const username = localStorage.getItem("username");
+            if (!username) return;
+
+            try {
+                const res = await fetch("http://localhost:8000/api/auto-refinance", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ username }),
+                });
+
+                const result = await res.json();
+
+                if (result.should_refinance) {
+                    setSelectedLoan(result.suggested_loan);
+                    setConfirmationVisible(true);
+                    setSavings(Math.round(result.savings));
+                }
+            } catch (err) {
+                console.error("Feil ved automatisk refinansieringssjekk", err);
+            }
+        };
+
         fetchUserLoanAndAlternatives();
+        checkAutoRefinance();
     }, []);
+
 
     const handleLoanClick = (loan: any) => {
         setSelectedLoan(loan);
@@ -119,6 +143,7 @@ const CombinedLoanForm: React.FC = () => {
                         <li><strong>Total gjenstående kostnad:</strong> {loan.gjennstende_total_kostnad?.toLocaleString("no-NO") || 0} kr</li>
                     </ul>
 
+
                     {alternatives.length > 0 && (
                         <>
                             <h3 className="text-lg font-semibold mb-2">Beste alternative lån</h3>
@@ -145,16 +170,39 @@ const CombinedLoanForm: React.FC = () => {
                     )}
 
                     {confirmationVisible && selectedLoan && (
-                        <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mt-4">
-                            <p className="font-semibold mb-2">Signer for å godkjenne refinansiering:</p>
-                            <button
-                                onClick={handleConfirmRefinance}
-                                className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
-                            >
-                                Signer og bytt lån
-                            </button>
+                        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
+                            <div className="bg-white p-6 rounded shadow-lg max-w-md w-full text-center">
+                                <h3 className="text-xl font-bold mb-2">Spar penger!</h3>
+                                <p className="mb-4">
+                                    Du kan spare <span className="text-green-600 font-semibold">{savings?.toLocaleString("no-NO")} kr</span> ved å refinansiere lånet ditt.
+                                </p>
+
+                                <p className="text-sm text-gray-600 mb-4">
+                                    Signer med BankID på mobil for å gjennomføre byttet.
+                                </p>
+
+                                <div className="flex justify-center gap-4">
+                                    <button
+                                        onClick={handleConfirmRefinance}
+                                        className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+                                    >
+                                        Signer og bytt lån
+                                    </button>
+
+                                    <button
+                                        onClick={() => {
+                                            setConfirmationVisible(false);
+                                            setSelectedLoan(null);
+                                        }}
+                                        className="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300"
+                                    >
+                                        Nei takk
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     )}
+
 
                     {refinanced && (
                         <div className="mt-4 p-4 bg-green-100 text-green-800 border border-green-300 rounded">

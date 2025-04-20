@@ -11,7 +11,8 @@ def init_db():
         CREATE TABLE IF NOT EXISTS users (
             username TEXT PRIMARY KEY,
             password TEXT NOT NULL,
-            age INTEGER NOT NULL
+            age INTEGER NOT NULL,
+            auto_refinansiering BOOLEAN DEFAULT 1
         )
     ''')
 

@@ -99,3 +99,13 @@ def simulate_loan_after_months(loan: dict, months: int) -> dict:
         "years": gjenstående_år,
         "gjennstende_total_kostnad": ny_total_kostnad
     }
+
+def should_refinance(current_loan: dict, alternative_loan: dict) -> tuple[bool, float]:
+    if not current_loan or not alternative_loan:
+        return False, 0.0
+
+    current_total = current_loan.get("gjennstende_total_kostnad", 0)
+    alternative_total = alternative_loan.get("total") or alternative_loan.get("total_kostnad") or 0
+
+    savings = current_total - alternative_total
+    return (savings > 0), savings

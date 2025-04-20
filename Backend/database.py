@@ -8,6 +8,7 @@ class User(BaseModel):
     username: str
     password: str
     age: int
+    auto_refinansiering: bool = True
 
 def get_connection():
     return sqlite3.connect(DB_NAME)
@@ -129,3 +130,27 @@ def create_user(username: str, password: str, age: int):
     conn.commit()
     conn.close()
     print(f"✅ Bruker '{username}' opprettet")
+
+def is_auto_refinancing_enabled(username: str) -> bool:
+    conn = get_connection()
+    c = conn.cursor()
+    c.execute("SELECT auto_refinansiering FROM users WHERE username = ?", (username,))
+    result = c.fetchone()
+    conn.close()
+    if result is None:
+        raise HTTPException(status_code=404, detail="Bruker finnes ikke")
+    print(f"✅ Hentet auto_refinansiering for bruker '{username}': {result[0]}")
+    return bool(result[0])
+
+def set_auto_refinancing_enabled(username: str, enabled: bool):
+    conn = get_connection()
+    c = conn.cursor()
+    c.execute("SELECT * FROM users WHERE username = ?", (username,))
+    if not c.fetchone():
+        conn.close()
+        raise HTTPException(status_code=404, detail="Bruker finnes ikke")
+
+    c.execute("UPDATE users SET auto_refinance = ? WHERE username = ?", (int(enabled), username))
+    conn.commit()
+    conn.close()
+    print(f"✅ Auto-refinansiering for bruker '{username}' er nå {'aktivert' if enabled else 'deaktivert'}")

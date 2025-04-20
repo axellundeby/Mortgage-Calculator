@@ -27,9 +27,33 @@ const UserProfile: React.FC = () => {
     const [loanFetched, setLoanFetched] = useState(false);
     const [simMonths, setSimMonths] = useState(0);
     const [simulatedLoan, setSimulatedLoan] = useState<Loan | null>(null);
+    const [autoRefinance, setAutoRefinance] = useState(false);
 
     const username = localStorage.getItem("username");
     const isAdmin = username === "admin";
+
+    useEffect(() => {
+        if (!username) return;
+
+        const fetchAutoRefinance = async () => {
+            const res = await fetch(`http://localhost:8000/api/get-auto-refinansiering/${username}`);
+            const data = await res.json();
+            setAutoRefinance(data.auto_refinansiering);
+        };
+
+        fetchAutoRefinance();
+    }, [username]);
+
+    const handleAutoRefinanceToggle = async () => {
+        const newStatus = !autoRefinance;
+        setAutoRefinance(newStatus);
+
+        await fetch("http://localhost:8000/api/set-auto-refinansiering", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username, auto_refinansiering: newStatus }),
+        });
+    };
 
     const handleSimulateChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
         const months = parseInt(e.target.value);
@@ -90,10 +114,22 @@ const UserProfile: React.FC = () => {
         <div className="max-w-3xl mx-auto p-6 bg-white rounded shadow">
             <h2 className="text-2xl font-bold mb-4">Min profil</h2>
 
+            <div className="mt-4 flex items-center gap-2">
+                <input
+                    type="checkbox"
+                    checked={autoRefinance}
+                    onChange={handleAutoRefinanceToggle}
+                    id="autoRefinance"
+                />
+                <label htmlFor="autoRefinance" className="text-sm">
+                    Aktiver automatisk refinansiering
+                </label>
+            </div>
+
             {!loanFetched && (
                 <button
                     onClick={handleFetchLoan}
-                    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                    className="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
                 >
                     Hent via gjeldsregisteret
                 </button>
