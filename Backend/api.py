@@ -12,7 +12,10 @@ from database import (
     save_user_loan,
     create_user,
     is_auto_refinancing_enabled,
-    get_connection
+    get_connection,
+    get_loan_history,
+    get_total_savings
+
 )
 
 
@@ -190,3 +193,12 @@ def simulate_loan(username: str = Body(...), months: int = Body(...)):
         raise HTTPException(status_code=404, detail="Ingen lån funnet")
     from users import simulate_loan_after_months
     return simulate_loan_after_months(loan, months)
+
+@app.get("/api/loan-history/{username}")
+def api_get_loan_history(username: str):
+    return get_loan_history(username)
+
+
+@app.get("/api/total-savings/{username}")
+def api_get_total_savings(username: str):
+    return {"total_saved": get_total_savings(username)}
