@@ -32,6 +32,24 @@ def init_db():
         )
     ''')
 
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS loan_history (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT,
+            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+            bank TEXT,
+            produkt TEXT,
+            effektiv_rente REAL,
+            monthly_payment REAL,
+            nedbetalt REAL,
+            mangler REAL,
+            years INTEGER,
+            gjennstende_total_kostnad REAL,
+            savings REAL
+)  ''')
+
+    
+
     conn.commit()
     conn.close()
 

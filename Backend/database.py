@@ -154,3 +154,52 @@ def set_auto_refinancing_enabled(username: str, enabled: bool):
     conn.commit()
     conn.close()
     print(f"✅ Auto-refinansiering for bruker '{username}' er nå {'aktivert' if enabled else 'deaktivert'}")
+
+
+def archinve_user_loan(username:str, loan:dict):
+    conn = get_connection()
+    c = conn.cursor()
+
+    c.execute('''
+        INSERT INTO loan_history (username, bank, produkt, effektiv_rente, monthly_payment,
+        nedbetalt, mangler, years, gjennstende_total_kostnad)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ''', (
+        username,
+        loan.get("bank"),
+        loan.get("produkt"),
+        loan.get("effektiv_rente"),
+        loan.get("monthly_payment"),
+        loan.get("nedbetalt"),
+        loan.get("mangler"),
+        loan.get("years"),
+        loan.get("gjennstende_total_kostnad")
+    ))
+
+    conn.commit()
+    conn.close()
+    print(f"✅ Lån arkivert for bruker {username}")
+
+def get_loan_history(username: str):
+    conn = sqlite3.connect("flytta.db")
+    c = conn.cursor()
+
+    c.execute("SELECT * FROM loan_history WHERE username = ? ORDER BY rowid ASC", (username,))
+    rows = c.fetchall()
+    conn.close()
+
+    columns = ["username", "bank", "produkt", "sum_lant", "effektiv_rente", "monthly_payment", "nedbetalt", "mangler", "years", "gjennstende_total_kostnad"]
+    return [dict(zip(columns, row)) for row in rows]
+
+def get_total_savings(username: str):
+    history = get_loan_history(username)
+    if len(history) < 2:
+        return 0.0
+
+    total_savings = 0.0
+    for i in range(1, len(history)):
+        prev = history[i - 1].get("gjennstende_total_kostnad") or 0
+        current = history[i].get("gjennstende_total_kostnad") or 0
+        total_savings += max(0, prev - current)
+
+    return round(total_savings)
