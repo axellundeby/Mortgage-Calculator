@@ -29,6 +29,7 @@ const UserProfile: React.FC = () => {
     const [simulatedLoan, setSimulatedLoan] = useState<Loan | null>(null);
 
     const username = localStorage.getItem("username");
+    const isAdmin = username === "admin";
 
     const handleSimulateChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
         const months = parseInt(e.target.value);
@@ -37,22 +38,18 @@ const UserProfile: React.FC = () => {
         const res = await fetch("http://localhost:8000/api/simulate-loan", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ username: localStorage.getItem("username"), months }),
+            body: JSON.stringify({ username, months }),
         });
 
         const data = await res.json();
         setSimulatedLoan(data);
     };
 
-
-
     const handleFetchLoan = async () => {
         try {
             const response = await fetch("http://localhost:8000/api/authorize", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username, fullmakt: true }),
             });
             const data = await response.json();
@@ -123,63 +120,64 @@ const UserProfile: React.FC = () => {
                         Tilbakestill samtykke
                     </button>
 
-                    <p className="mt-2 text-sm text-gray-600">
-                        Simulert tid: {simMonths} måneder ({Math.floor(simMonths / 12)} år og {simMonths % 12} måneder)
-                    </p>
+                    {isAdmin && (
+                        <>
+                            <p className="mt-6 text-sm text-gray-600">
+                                Simulert tid: {simMonths} måneder ({Math.floor(simMonths / 12)} år og {simMonths % 12} måneder)
+                            </p>
 
-                    <input
-                        type="range"
-                        min="0"
-                        max={loan.years * 12}
-                        value={simMonths}
-                        onChange={handleSimulateChange}
-                        className="w-full"
-                    />
+                            <input
+                                type="range"
+                                min="0"
+                                max={loan.years * 12}
+                                value={simMonths}
+                                onChange={handleSimulateChange}
+                                className="w-full mb-4"
+                            />
+
+                            {simMonths > 0 && (
+                                <div className="flex gap-4">
+                                    <button
+                                        onClick={async () => {
+                                            if (!simulatedLoan || !username) return;
+
+                                            const res = await fetch("http://localhost:8000/api/save-loan", {
+                                                method: "POST",
+                                                headers: { "Content-Type": "application/json" },
+                                                body: JSON.stringify({ username, loan: simulatedLoan }),
+                                            });
+
+                                            if (res.ok) {
+                                                alert("Simulert lån lagret!");
+                                                localStorage.setItem("userLoan", JSON.stringify(simulatedLoan));
+                                                setLoan(simulatedLoan);
+                                                setSimulatedLoan(null);
+                                                setSimMonths(0);
+                                            } else {
+                                                alert("Noe gikk galt ved lagring.");
+                                            }
+                                        }}
+                                        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                                    >
+                                        Lagre simulert lån
+                                    </button>
+
+                                    <button
+                                        onClick={() => {
+                                            setSimMonths(0);
+                                            setSimulatedLoan(null);
+                                        }}
+                                        className="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50"
+                                    >
+                                        Tilbakestill simulering
+                                    </button>
+                                </div>
+                            )}
+                        </>
+                    )}
                 </div>
-
             )}
-            {simMonths > 0 && (
-                <div className="mt-4 flex gap-4">
-                    <button
-                        onClick={async () => {
-                            if (!simulatedLoan || !username) return;
-
-                            const res = await fetch("http://localhost:8000/api/save-loan", {
-                                method: "POST",
-                                headers: { "Content-Type": "application/json" },
-                                body: JSON.stringify({ username, loan: simulatedLoan }),
-                            });
-
-                            if (res.ok) {
-                                alert("Simulert lån lagret!");
-                                localStorage.setItem("userLoan", JSON.stringify(simulatedLoan));
-                                setLoan(simulatedLoan);
-                                setSimulatedLoan(null);
-                                setSimMonths(0);
-                            } else {
-                                alert("Noe gikk galt ved lagring.");
-                            }
-                        }}
-                        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-                    >
-                        Lagre simulert lån
-                    </button>
-
-                    <button
-                        onClick={() => {
-                            setSimMonths(0);
-                            setSimulatedLoan(null);
-                        }}
-                        className="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50"
-                    >
-                        Tilbakestill simulering
-                    </button>
-                </div>
-            )}
-
-
         </div>
-
     );
 };
 
