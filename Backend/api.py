@@ -181,3 +181,12 @@ def get_auto_refinansiering(username: str):
         raise HTTPException(status_code=404, detail="Bruker finnes ikke")
 
     return {"auto_refinansiering": bool(row[0])}
+
+
+@app.post("/api/simulate-loan")
+def simulate_loan(username: str = Body(...), months: int = Body(...)):
+    loan = get_user_loan(username)
+    if not loan:
+        raise HTTPException(status_code=404, detail="Ingen lån funnet")
+    from users import simulate_loan_after_months
+    return simulate_loan_after_months(loan, months)
