@@ -25,10 +25,10 @@ const normalizeLoanData = (data: any): Loan => ({
 const UserProfile: React.FC = () => {
     const [loan, setLoan] = useState<Loan | null>(null);
     const [loanFetched, setLoanFetched] = useState(false);
+    const [simMonths, setSimMonths] = useState(0);
+    const [simulatedLoan, setSimulatedLoan] = useState<Loan | null>(null);
 
     const username = localStorage.getItem("username");
-
-    const [simMonths, setSimMonths] = useState(0);
 
     const handleSimulateChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
         const months = parseInt(e.target.value);
@@ -37,13 +37,11 @@ const UserProfile: React.FC = () => {
         const res = await fetch("http://localhost:8000/api/simulate-loan", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ username, months }),
+            body: JSON.stringify({ username: localStorage.getItem("username"), months }),
         });
 
-        if (res.ok) {
-            const data = await res.json();
-            setLoan(data);
-        }
+        const data = await res.json();
+        setSimulatedLoan(data);
     };
 
 
@@ -72,6 +70,7 @@ const UserProfile: React.FC = () => {
         localStorage.removeItem("loanAlreadyFetched");
         setLoan(null);
         setLoanFetched(false);
+        setSimMonths(0);
     };
 
     useEffect(() => {
@@ -98,7 +97,7 @@ const UserProfile: React.FC = () => {
                     onClick={handleFetchLoan}
                     className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
                 >
-                    Hent mitt lån
+                    Hent via gjeldsregisteret
                 </button>
             )}
 
@@ -106,15 +105,16 @@ const UserProfile: React.FC = () => {
                 <div className="mt-6">
                     <h3 className="text-lg font-semibold mb-2">Mitt lån</h3>
                     <ul>
-                        <li><strong>Bank:</strong> {loan.bank}</li>
-                        <li><strong>Produkt:</strong> {loan.produkt}</li>
-                        <li><strong>Effektiv rente:</strong> {loan.effektiv_rente.toFixed(2)}%</li>
-                        <li><strong>Månedlig betaling:</strong> {loan.måntlig_betaling.toLocaleString("no-NO")} kr</li>
-                        <li><strong>Nedbetalt:</strong> {loan.nedbetalt.toLocaleString("no-NO")} kr</li>
-                        <li><strong>Gjenstående:</strong> {loan.mangler.toLocaleString("no-NO")} kr</li>
-                        <li><strong>Antall år igjen:</strong> {loan.years} år</li>
-                        <li><strong>Total gjenstående kostnad:</strong> {loan.gjennstende_total_kostnad?.toLocaleString("no-NO")} kr</li>
+                        <li><strong>Bank:</strong> {(simulatedLoan || loan).bank}</li>
+                        <li><strong>Produkt:</strong> {(simulatedLoan || loan).produkt}</li>
+                        <li><strong>Effektiv rente:</strong> {(simulatedLoan || loan).effektiv_rente.toFixed(2)}%</li>
+                        <li><strong>Månedlig betaling:</strong> {(simulatedLoan || loan).måntlig_betaling.toLocaleString("no-NO")} kr</li>
+                        <li><strong>Nedbetalt:</strong> {(simulatedLoan || loan).nedbetalt.toLocaleString("no-NO")} kr</li>
+                        <li><strong>Gjenstående:</strong> {(simulatedLoan || loan).mangler.toLocaleString("no-NO")} kr</li>
+                        <li><strong>Antall år igjen:</strong> {(simulatedLoan || loan).years} år</li>
+                        <li><strong>Total gjenstående kostnad:</strong> {(simulatedLoan || loan).gjennstende_total_kostnad?.toLocaleString("no-NO")} kr</li>
                     </ul>
+
                     <button
                         onClick={handleResetConsent}
                         className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
@@ -122,19 +122,61 @@ const UserProfile: React.FC = () => {
                         Tilbakestill samtykke
                     </button>
 
-                    <label className="block mb-2 font-medium">
-                        Simuler nedbetaling over {simMonths} måneder:
-                    </label>
+                    <p className="mt-2 text-sm text-gray-600">
+                        Simulert tid: {simMonths} måneder ({Math.floor(simMonths / 12)} år og {simMonths % 12} måneder)
+                    </p>
+
                     <input
                         type="range"
                         min="0"
-                        max="120"
+                        max={loan.years * 12}
                         value={simMonths}
                         onChange={handleSimulateChange}
                         className="w-full"
                     />
                 </div>
+
             )}
+            {simMonths > 0 && (
+                <div className="mt-4 flex gap-4">
+                    <button
+                        onClick={async () => {
+                            if (!simulatedLoan || !username) return;
+
+                            const res = await fetch("http://localhost:8000/api/save-loan", {
+                                method: "POST",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify({ username, loan: simulatedLoan }),
+                            });
+
+                            if (res.ok) {
+                                alert("Simulert lån lagret!");
+                                localStorage.setItem("userLoan", JSON.stringify(simulatedLoan));
+                                setLoan(simulatedLoan);
+                                setSimulatedLoan(null);
+                                setSimMonths(0);
+                            } else {
+                                alert("Noe gikk galt ved lagring.");
+                            }
+                        }}
+                        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                    >
+                        Lagre simulert lån
+                    </button>
+
+                    <button
+                        onClick={() => {
+                            setSimMonths(0);
+                            setSimulatedLoan(null);
+                        }}
+                        className="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50"
+                    >
+                        Tilbakestill simulering
+                    </button>
+                </div>
+            )}
+
+
         </div>
 
     );
