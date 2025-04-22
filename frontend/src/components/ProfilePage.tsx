@@ -109,12 +109,25 @@ const UserProfile: React.FC = () => {
         }
     };
 
-    const handleResetConsent = () => {
+    const handleResetConsent = async () => {
         localStorage.removeItem("userLoan");
         localStorage.removeItem("loanAlreadyFetched");
         setLoan(null);
         setLoanFetched(false);
         setSimMonths(0);
+        setLoanHistory([]);
+        setTotalSaved(null);
+
+        try {
+            await fetch("http://localhost:8000/api/clear-loan-history", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username }),
+            });
+        } 
+        catch (err) {
+            console.error("Feil ved sletting av historikk", err);
+        }
     };
 
     useEffect(() => {
