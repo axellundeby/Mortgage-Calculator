@@ -190,3 +190,11 @@ def get_loan_history(username: str):
 def get_total_savings(username: str):
     history = get_loan_history(username)
     return round(sum(l.get("savings", 0.0) for l in history if l.get("savings")))
+
+def clear_loan_history(username: str):
+    conn = get_connection()
+    c = conn.cursor()
+    c.execute("DELETE FROM loan_history WHERE username = ?", (username,))
+    conn.commit()
+    conn.close()
+    print(f"🧹 Lånehistorikk slettet for {username}")
