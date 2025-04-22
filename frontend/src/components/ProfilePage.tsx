@@ -31,7 +31,8 @@ const UserProfile: React.FC = () => {
     const [loanHistory, setLoanHistory] = useState<any[]>([]);
     const [totalSaved, setTotalSaved] = useState<number | null>(null);
     const username = localStorage.getItem("username");
-    const isAdmin = username === "admin";
+    const isAdmin = true;
+    //username === "admin";
 
     useEffect(() => {
         if (!username) return;
