@@ -145,7 +145,7 @@ const CombinedLoanForm: React.FC = () => {
                     </ul>
 
 
-                    {alternatives.length > 0 && (
+                    {alternatives.length > 0 ? (
                         <>
                             <h3 className="text-lg font-semibold mb-2">Beste alternative lån</h3>
                             <ul className="mb-4">
@@ -168,6 +168,11 @@ const CombinedLoanForm: React.FC = () => {
                                 </p>
                             )}
                         </>
+                    ) : (
+                        <div className="mt-6 text-center bg-green-50 border border-green-200 text-green-800 p-4 rounded shadow">
+                            ✅ Du har det beste lånet per dags dato!<br />
+                            Vi finner ingen bedre alternativer akkurat nå.
+                        </div>
                     )}
 
                     {confirmationVisible && selectedLoan && (
