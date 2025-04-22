@@ -154,3 +154,39 @@ def set_auto_refinancing_enabled(username: str, enabled: bool):
     conn.commit()
     conn.close()
     print(f"✅ Auto-refinansiering for bruker '{username}' er nå {'aktivert' if enabled else 'deaktivert'}")
+
+def archive_user_loan(username: str, loan: dict, savings: float = 0.0):
+    conn = get_connection()
+    c = conn.cursor()
+    c.execute('''
+        INSERT INTO loan_history (
+            username, bank, produkt, effektiv_rente, monthly_payment,
+            nedbetalt, mangler, years, gjennstende_total_kostnad, savings
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ''', (
+        username,
+        loan.get("bank"),
+        loan.get("produkt"),
+        loan.get("effektiv_rente"),
+        loan.get("monthly_payment"),
+        loan.get("nedbetalt"),
+        loan.get("mangler"),
+        loan.get("years"),
+        loan.get("gjennstende_total_kostnad"),
+        savings
+    ))
+    conn.commit()
+    conn.close()
+
+def get_loan_history(username: str):
+    conn = get_connection()
+    c = conn.cursor()
+    c.execute("SELECT * FROM loan_history WHERE username = ? ORDER BY timestamp ASC", (username,))
+    rows = c.fetchall()
+    columns = [desc[0] for desc in c.description]
+    conn.close()
+    return [dict(zip(columns, row)) for row in rows]
+
+def get_total_savings(username: str):
+    history = get_loan_history(username)
+    return round(sum(l.get("savings", 0.0) for l in history if l.get("savings")))
