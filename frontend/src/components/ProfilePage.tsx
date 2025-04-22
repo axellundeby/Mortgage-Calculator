@@ -191,6 +191,37 @@ const UserProfile: React.FC = () => {
                         Tilbakestill samtykke
                     </button>
 
+                    {loanHistory.length > 0 && (
+                                <div className="mt-8">
+                                    <h3 className="text-lg font-semibold mb-2">Lånehistorikk</h3>
+                                    <ul className="space-y-2">
+                                        {loanHistory.map((item, idx) => (
+                                            <li key={idx} className="border rounded p-3 bg-gray-50">
+                                                <strong>{item.bank}</strong> - {item.produkt} <br />
+                                                Effektiv rente: {Number(item.effektiv_rente)?.toFixed(2)}%<br />
+                                                Månedlig betaling: {Number(item.monthly_payment)?.toLocaleString("no-NO")} kr<br />
+
+                                                {item.is_initial ? (
+                                                    <span className="italic text-gray-600">Første lån</span>
+                                                ) : (
+                                                    <span className="text-green-700">
+                                                        Spart: {Number(item.savings || 0).toLocaleString("no-NO")} kr
+                                                    </span>
+                                                )}
+                                            </li>
+                                        ))}
+
+
+                                    </ul>
+                                </div>
+                            )}
+
+                            {totalSaved !== null && (
+                                <div className="mt-4 text-green-700 font-semibold">
+                                    Totalt spart ved refinansiering: {totalSaved.toLocaleString("no-NO")} kr 💸
+                                </div>
+                            )}
+
                     {isAdmin && (
                         <>
                             <p className="mt-6 text-sm text-gray-600">
@@ -244,38 +275,6 @@ const UserProfile: React.FC = () => {
                                     </button>
                                 </div>
                             )}
-
-                            {loanHistory.length > 0 && (
-                                <div className="mt-8">
-                                    <h3 className="text-lg font-semibold mb-2">Lånehistorikk</h3>
-                                    <ul className="space-y-2">
-                                        {loanHistory.map((item, idx) => (
-                                            <li key={idx} className="border rounded p-3 bg-gray-50">
-                                                <strong>{item.bank}</strong> - {item.produkt} <br />
-                                                Effektiv rente: {Number(item.effektiv_rente)?.toFixed(2)}%<br />
-                                                Månedlig betaling: {Number(item.monthly_payment)?.toLocaleString("no-NO")} kr<br />
-
-                                                {item.is_initial ? (
-                                                    <span className="italic text-gray-600">Første lån</span>
-                                                ) : (
-                                                    <span className="text-green-700">
-                                                        Spart: {Number(item.savings || 0).toLocaleString("no-NO")} kr
-                                                    </span>
-                                                )}
-                                            </li>
-                                        ))}
-
-
-                                    </ul>
-                                </div>
-                            )}
-
-                            {totalSaved !== null && (
-                                <div className="mt-4 text-green-700 font-semibold">
-                                    Totalt spart ved refinansiering: {totalSaved.toLocaleString("no-NO")} kr 💸
-                                </div>
-                            )}
-
                         </>
                     )}
                 </div>

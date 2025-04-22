@@ -147,8 +147,10 @@ async def save_loan_api(request: Request):
         return {"message": "Simulert lån lagret"}
 
     # Bruk transformering hvis det er fra refinansieringsvalg
-    if all(key not in raw_loan for key in ["monthly_payment", "nedbetalt", "mangler", "years"]):
+    csv_keys = ["Bank", "Produkt", "Effektiv rente", "Totalkostnad", "total"]
+    if any(key in raw_loan for key in csv_keys):
         raw_loan = transform_to_user_loan_format(raw_loan, base_loan)
+
 
     # Beregn besparelse
     tidligere_kostnad = base_loan.get("gjennstende_total_kostnad") or 0
