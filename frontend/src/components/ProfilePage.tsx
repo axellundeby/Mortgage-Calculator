@@ -202,7 +202,7 @@ const UserProfile: React.FC = () => {
                                             const res = await fetch("http://localhost:8000/api/save-loan", {
                                                 method: "POST",
                                                 headers: { "Content-Type": "application/json" },
-                                                body: JSON.stringify({ username, loan: simulatedLoan }),
+                                                body: JSON.stringify({ username, loan: { ...simulatedLoan, simulert: true } }),
                                             });
 
                                             if (res.ok) {

@@ -125,7 +125,12 @@ async def save_loan_api(request: Request):
         archive_user_loan(username, raw_loan, savings=0.0)
         return {"message": "Første lån registrert"}
 
-    # Bruk transformering hvis lånet er fra refinansierings-alternativ
+    # Hvis det er et simulert lån (manuelt justert med slider)
+    if raw_loan.get("simulert", False):
+        save_user_loan(username, raw_loan)
+        return {"message": "Simulert lån lagret"}
+
+    # Bruk transformering hvis det er fra refinansieringsvalg
     if all(key not in raw_loan for key in ["monthly_payment", "nedbetalt", "mangler", "years"]):
         raw_loan = transform_to_user_loan_format(raw_loan, base_loan)
 
@@ -139,6 +144,7 @@ async def save_loan_api(request: Request):
     save_user_loan(username, raw_loan)
 
     return {"message": "Lån lagret"}
+
 
 
 @app.post("/api/auto-refinance")
@@ -171,8 +177,6 @@ def auto_refinance(req: UsernameOnlyRequest):
         }
 
     return {"should_refinance": False}
-
-
 
 
 @app.post("/api/set-auto-refinansiering")
