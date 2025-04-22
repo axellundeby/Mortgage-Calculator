@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Request,APIRouter
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from best_risky_three_loans_for_candidate import find_best_loan
@@ -12,7 +12,10 @@ from database import (
     save_user_loan,
     create_user,
     is_auto_refinancing_enabled,
-    get_connection
+    get_connection,
+    get_loan_history, 
+    get_total_savings,
+    archive_user_loan
 )
 
 
@@ -108,11 +111,16 @@ async def save_loan_api(request: Request):
     # Hvis lånet ser "ferdig" ut, lagre direkte
     if all(key in raw_loan for key in ["monthly_payment", "nedbetalt", "mangler", "years"]):
         save_user_loan(username, raw_loan)
+        archive_user_loan(username, raw_loan, savings=0.0)
         return {"message": "Simulert lån lagret"}
 
     # Ellers bruk transformering (fra refinansieringsvalg)
     base_loan = get_user_loan(username)
     final_loan = transform_to_user_loan_format(raw_loan, base_loan)
+
+    savings = (base_loan.get("gjennstende_total_kostnad") or 0) - (final_loan.get("gjennstende_total_kostnad") or 0)
+    archive_user_loan(username, final_loan, savings=max(0, round(savings)))
+
     save_user_loan(username, final_loan)
     return {"message": "Refinansiert lån lagret"}
 
@@ -190,3 +198,11 @@ def simulate_loan(username: str = Body(...), months: int = Body(...)):
         raise HTTPException(status_code=404, detail="Ingen lån funnet")
     from users import simulate_loan_after_months
     return simulate_loan_after_months(loan, months)
+
+@app.get("/api/loan-history/{username}")
+def loan_history(username: str):
+    return get_loan_history(username)
+
+@app.get("/api/total-savings/{username}")
+def total_savings(username: str):
+    return {"total_saved": get_total_savings(username)}
