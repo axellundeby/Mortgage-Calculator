@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from best_risky_three_loans_for_candidate import find_best_loan
 from fastapi import Body
 import os
+import math
 from users import get_random_loan_and_status, transform_to_user_loan_format
 from database import (
     authenticate_user,
@@ -87,7 +88,7 @@ def authorize(req: FullmaktRequest):
 
 @app.post("/api/find-loan")
 def api_find_loan(req: LoanRequest):
-    import os
+    import os, math
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
 
     loans = find_best_loan(
@@ -97,7 +98,14 @@ def api_find_loan(req: LoanRequest):
         years=req.years,
         top_n=3
     )
+
+    for loan in loans:
+        for key in loan:
+            if loan[key] is None or (isinstance(loan[key], float) and math.isnan(loan[key])):
+                loan[key] = 0
+
     return loans
+
 
 @app.post("/api/save-loan")
 async def save_loan_api(request: Request):
@@ -108,21 +116,29 @@ async def save_loan_api(request: Request):
     if not username or not raw_loan:
         raise HTTPException(status_code=400, detail="Ugyldig data")
 
-    # Hvis lånet ser "ferdig" ut, lagre direkte
-    if all(key in raw_loan for key in ["monthly_payment", "nedbetalt", "mangler", "years"]):
+    # Sjekk om det finnes et gammelt lån fra før
+    try:
+        base_loan = get_user_loan(username)
+    except HTTPException:
+        # Første lån – bare lagre det som aktivt, og legg til i historikken
         save_user_loan(username, raw_loan)
         archive_user_loan(username, raw_loan, savings=0.0)
-        return {"message": "Simulert lån lagret"}
+        return {"message": "Første lån registrert"}
 
-    # Ellers bruk transformering (fra refinansieringsvalg)
-    base_loan = get_user_loan(username)
-    final_loan = transform_to_user_loan_format(raw_loan, base_loan)
+    # Bruk transformering hvis lånet er fra refinansierings-alternativ
+    if all(key not in raw_loan for key in ["monthly_payment", "nedbetalt", "mangler", "years"]):
+        raw_loan = transform_to_user_loan_format(raw_loan, base_loan)
 
-    savings = (base_loan.get("gjennstende_total_kostnad") or 0) - (final_loan.get("gjennstende_total_kostnad") or 0)
-    archive_user_loan(username, final_loan, savings=max(0, round(savings)))
+    # Beregn besparelse
+    tidligere_kostnad = base_loan.get("gjennstende_total_kostnad") or 0
+    ny_kostnad = raw_loan.get("gjennstende_total_kostnad") or 0
+    spart = max(0, round(tidligere_kostnad - ny_kostnad))
 
-    save_user_loan(username, final_loan)
-    return {"message": "Refinansiert lån lagret"}
+    # Arkiver og lagre nytt lån
+    archive_user_loan(username, raw_loan, savings=spart)
+    save_user_loan(username, raw_loan)
+
+    return {"message": "Lån lagret"}
 
 
 @app.post("/api/auto-refinance")
@@ -135,7 +151,6 @@ def auto_refinance(req: UsernameOnlyRequest):
     user_loan = get_user_loan(username)
     age = get_user_age(username)
 
-    # Hent beste alternativ
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
     from best_risky_three_loans_for_candidate import find_best_loan
     alternatives = find_best_loan(csv_path, age, user_loan["mangler"], user_loan["years"], top_n=1)
@@ -152,7 +167,7 @@ def auto_refinance(req: UsernameOnlyRequest):
         return {
             "should_refinance": True,
             "savings": savings,
-            "suggested_loan": refined
+            "suggested_loan": safe_loan_for_json(refined)
         }
 
     return {"should_refinance": False}
@@ -206,3 +221,9 @@ def loan_history(username: str):
 @app.get("/api/total-savings/{username}")
 def total_savings(username: str):
     return {"total_saved": get_total_savings(username)}
+
+def safe_loan_for_json(loan: dict):
+    return {
+        k: (0 if v is None or (isinstance(v, float) and math.isnan(v)) else v)
+        for k, v in loan.items()
+    }
