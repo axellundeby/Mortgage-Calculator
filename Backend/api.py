@@ -16,7 +16,8 @@ from database import (
     get_connection,
     get_loan_history, 
     get_total_savings,
-    archive_user_loan
+    archive_user_loan,
+    clear_loan_history
 )
 
 
@@ -231,3 +232,8 @@ def safe_loan_for_json(loan: dict):
         k: (0 if v is None or (isinstance(v, float) and math.isnan(v)) else v)
         for k, v in loan.items()
     }
+
+@app.post("/api/clear-loan-history")
+def clear_loan_history_endpoint(req: UsernameOnlyRequest):
+    clear_loan_history(req.username)
+    return {"message": "Lånehistorikk fjernet"}
