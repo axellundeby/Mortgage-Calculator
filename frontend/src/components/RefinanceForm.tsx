@@ -39,6 +39,7 @@ const CombinedLoanForm: React.FC = () => {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
+                        username,
                         age: ageData.age,
                         amount: data.mangler,
                         years: data.years,

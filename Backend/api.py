@@ -1,11 +1,11 @@
-from fastapi import FastAPI, HTTPException, Request,APIRouter
+from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from best_risky_three_loans_for_candidate import find_best_loan
 from fastapi import Body
 import os
 import math
-from users import get_random_loan_and_status, transform_to_user_loan_format
+from users import get_random_loan_and_status, transform_to_user_loan_format, should_refinance
 from database import (
     authenticate_user,
     get_user_age,
@@ -46,6 +46,7 @@ class FullmaktRequest(BaseModel):
     fullmakt: bool
 
 class LoanRequest(BaseModel):
+    username:str
     age: int
     amount: float
     years: int
@@ -97,23 +98,29 @@ def authorize(req: FullmaktRequest):
 
 @app.post("/api/find-loan")
 def api_find_loan(req: LoanRequest):
-    import os, math
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
+    loans = find_best_loan(csv_path, req.age, req.amount, req.years, top_n=10)
 
-    loans = find_best_loan(
-        csv_path=csv_path,
-        age=req.age,
-        amount=req.amount,
-        years=req.years,
-        top_n=3
-    )
+    try:
+        current_loan = get_user_loan(req.username)
+    except Exception:
+        return loans[:3]
 
+    filtered = []
     for loan in loans:
         for key in loan:
             if loan[key] is None or (isinstance(loan[key], float) and math.isnan(loan[key])):
                 loan[key] = 0
 
-    return loans
+        should, _ = should_refinance(current_loan, loan)
+        if should:
+            filtered.append(loan)
+        if len(filtered) == 3:
+            break
+
+    return filtered
+
+
 
 
 @app.post("/api/save-loan")
