@@ -45,7 +45,8 @@ def init_db():
         mangler REAL,
         years INTEGER,
         gjennstende_total_kostnad REAL,
-        savings REAL
+        savings REAL,
+        is_initial BOOLEAN DEFAULT 0
     )
 ''')
 

@@ -155,14 +155,14 @@ def set_auto_refinancing_enabled(username: str, enabled: bool):
     conn.close()
     print(f"✅ Auto-refinansiering for bruker '{username}' er nå {'aktivert' if enabled else 'deaktivert'}")
 
-def archive_user_loan(username: str, loan: dict, savings: float = 0.0):
+def archive_user_loan(username: str, loan: dict, savings: float = 0.0,is_initial: bool = False):
     conn = get_connection()
     c = conn.cursor()
     c.execute('''
         INSERT INTO loan_history (
             username, bank, produkt, effektiv_rente, monthly_payment,
-            nedbetalt, mangler, years, gjennstende_total_kostnad, savings
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            nedbetalt, mangler, years, gjennstende_total_kostnad, savings,is_initial
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?)
     ''', (
         username,
         loan.get("bank"),
@@ -173,7 +173,8 @@ def archive_user_loan(username: str, loan: dict, savings: float = 0.0):
         loan.get("mangler"),
         loan.get("years"),
         loan.get("gjennstende_total_kostnad"),
-        savings
+        savings,
+        int(is_initial)
     ))
     conn.commit()
     conn.close()

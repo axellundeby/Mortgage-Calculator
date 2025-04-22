@@ -124,7 +124,7 @@ const UserProfile: React.FC = () => {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username }),
             });
-        } 
+        }
         catch (err) {
             console.error("Feil ved sletting av historikk", err);
         }
@@ -251,13 +251,21 @@ const UserProfile: React.FC = () => {
                                     <ul className="space-y-2">
                                         {loanHistory.map((item, idx) => (
                                             <li key={idx} className="border rounded p-3 bg-gray-50">
-                                                <strong>{item.bank}</strong> – {item.produkt}<br />
-                                                Effektiv rente: {item.effektiv_rente?.toFixed(2)}%<br />
-                                                Månedlig betaling: {item.monthly_payment?.toLocaleString("no-NO")} kr<br />
-                                                Gjenstående kostnad: {item.gjennstende_total_kostnad?.toLocaleString("no-NO")} kr<br />
-                                                {item.savings > 0 && <span className="text-green-600 font-medium">Spart: {item.savings.toLocaleString("no-NO")} kr</span>}
+                                                <strong>{item.bank}</strong> - {item.produkt} <br />
+                                                Effektiv rente: {Number(item.effektiv_rente)?.toFixed(2)}%<br />
+                                                Månedlig betaling: {Number(item.monthly_payment)?.toLocaleString("no-NO")} kr<br />
+
+                                                {item.is_initial ? (
+                                                    <span className="italic text-gray-600">Første lån</span>
+                                                ) : (
+                                                    <span className="text-green-700">
+                                                        Spart: {Number(item.savings || 0).toLocaleString("no-NO")} kr
+                                                    </span>
+                                                )}
                                             </li>
                                         ))}
+
+
                                     </ul>
                                 </div>
                             )}

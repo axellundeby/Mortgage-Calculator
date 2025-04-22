@@ -81,11 +81,19 @@ def api_get_user_age(username: str):
 @app.post("/api/authorize")
 def authorize(req: FullmaktRequest):
     if not req.fullmakt:
-        raise HTTPException(status_code=400, detail="Fullmakt ikke gitt")
+        raise HTTPException(status_code=403, detail="Fullmakt kreves")
 
-    loan_info = get_random_loan_and_status()
-    save_user_loan(req.username, loan_info)
-    return {"message": "Fullmakt gitt", "loan": loan_info}
+    username = req.username
+    loan = get_random_loan_and_status()
+
+    try:
+        get_user_loan(username)
+    except HTTPException:
+        save_user_loan(username, loan)
+        archive_user_loan(username, loan, savings=0.0, is_initial=True)
+
+    return {"loan": loan}
+
 
 @app.post("/api/find-loan")
 def api_find_loan(req: LoanRequest):
@@ -123,7 +131,7 @@ async def save_loan_api(request: Request):
     except HTTPException:
         # Første lån – bare lagre det som aktivt, og legg til i historikken
         save_user_loan(username, raw_loan)
-        archive_user_loan(username, raw_loan, savings=0.0)
+        archive_user_loan(username, raw_loan, savings=0.0, is_initial=False)
         return {"message": "Første lån registrert"}
 
     # Hvis det er et simulert lån (manuelt justert med slider)
@@ -141,7 +149,7 @@ async def save_loan_api(request: Request):
     spart = max(0, round(tidligere_kostnad - ny_kostnad))
 
     # Arkiver og lagre nytt lån
-    archive_user_loan(username, raw_loan, savings=spart)
+    archive_user_loan(username, raw_loan, savings=spart, is_initial=False)
     save_user_loan(username, raw_loan)
 
     return {"message": "Lån lagret"}
