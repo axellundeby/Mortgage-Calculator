@@ -254,3 +254,13 @@ def safe_loan_for_json(loan: dict):
 def clear_loan_history_endpoint(req: UsernameOnlyRequest):
     clear_loan_history(req.username)
     return {"message": "Lånehistorikk fjernet"}
+
+
+@app.get("/api/has-consent/{username}")
+def has_consent(username: str):
+    try:
+        get_user_loan(username)
+        return {"has_consent": True}
+    except HTTPException:
+        return {"has_consent": False}
+    print("bruker sammtykke")

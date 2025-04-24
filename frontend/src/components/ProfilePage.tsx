@@ -31,6 +31,9 @@ const UserProfile: React.FC = () => {
     const [loanHistory, setLoanHistory] = useState<any[]>([]);
     const [totalSaved, setTotalSaved] = useState<number | null>(null);
     const username = localStorage.getItem("username");
+    const [hasConsent, setHasConsent] = useState<boolean | null>(null);
+
+    
     const isAdmin = true;
     //username === "admin";
 
@@ -45,6 +48,24 @@ const UserProfile: React.FC = () => {
 
         fetchAutoRefinance();
     }, [username]);
+
+    useEffect(() => {
+        const fetchConsentStatus = async () => {
+            const username = localStorage.getItem("username");
+            if (!username) return;
+    
+            try {
+                const res = await fetch(`http://localhost:8000/api/has-consent/${username}`);
+                const data = await res.json();
+                setHasConsent(data.has_consent);
+            } catch (err) {
+                console.error("Feil ved henting av samtykke-status", err);
+            }
+        };
+    
+        fetchConsentStatus();
+    }, []);
+    
 
     useEffect(() => {
         const fetchHistory = async () => {
@@ -118,7 +139,8 @@ const UserProfile: React.FC = () => {
         setSimMonths(0);
         setLoanHistory([]);
         setTotalSaved(null);
-
+        setHasConsent(false);
+    
         try {
             await fetch("http://localhost:8000/api/clear-loan-history", {
                 method: "POST",
@@ -130,6 +152,7 @@ const UserProfile: React.FC = () => {
             console.error("Feil ved sletting av historikk", err);
         }
     };
+    
 
     useEffect(() => {
         const fetched = localStorage.getItem("loanAlreadyFetched");
@@ -203,7 +226,7 @@ const UserProfile: React.FC = () => {
                                                 Månedlig betaling: {Number(item.monthly_payment)?.toLocaleString("no-NO")} kr<br />
 
                                                 {item.is_initial ? (
-                                                    <span className="italic text-gray-600">Første lån</span>
+                                                    <span className="italic text-gray-600">Orginale lån</span>
                                                 ) : (
                                                     <span className="text-green-700">
                                                         Spart: {Number(item.savings || 0).toLocaleString("no-NO")} kr

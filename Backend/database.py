@@ -196,6 +196,7 @@ def clear_loan_history(username: str):
     conn = get_connection()
     c = conn.cursor()
     c.execute("DELETE FROM loan_history WHERE username = ?", (username,))
+    c.execute("DELETE FROM loans WHERE username = ?", (username,))
     conn.commit()
     conn.close()
-    print(f"🧹 Lånehistorikk slettet for {username}")
+    print(f"🧹 Lån og historikk slettet for {username}")
