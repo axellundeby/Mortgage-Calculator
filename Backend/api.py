@@ -175,9 +175,26 @@ def auto_refinance(req: UsernameOnlyRequest):
     user_loan = get_user_loan(username)
     age = get_user_age(username)
 
+    amount = user_loan.get("mangler")
+    years = user_loan.get("years")
+
+    if not isinstance(amount, (int, float)) or not isinstance(years, (int, float)):
+        raise HTTPException(status_code=400, detail="Ugyldige låneparametere")
+    if amount <= 0 or years <= 0:
+        raise HTTPException(status_code=400, detail="Lånebeløp og/eller løpetid må være større enn 0")
+
+
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
-    from best_risky_three_loans_for_candidate import find_best_loan
-    alternatives = find_best_loan(csv_path, age, user_loan["mangler"], user_loan["years"], top_n=1)
+    
+    alternatives = find_best_loan(
+    csv_path,
+    age,
+    amount,
+    years,
+    top_n=3
+    )
+
+    print(f"🔍 Refinansiering: alder={age}, beløp={amount}, år={years}")
 
     if not alternatives:
         raise HTTPException(status_code=404, detail="Fant ingen alternative lån")

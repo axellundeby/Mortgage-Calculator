@@ -18,7 +18,7 @@ def get_random_loan_and_status():
     max_loan = float(selected["Maks beløp"])
     min_loan = float(selected["Min beløp"])
 
-    øvre_grense = min(500_000, max_loan)
+    øvre_grense = min(750_000, max_loan)
     nedre_grense = max(20_000, min_loan)
 
     if nedre_grense >= øvre_grense:
@@ -71,17 +71,29 @@ def get_random_loan_and_status():
     }
 
 def transform_to_user_loan_format(alt_loan: dict, base_loan: dict) -> dict:
+    # Hent og valider grunnlagstall
+    mangler = base_loan.get("mangler") or 0
+    years = base_loan.get("years") or 1
+    effektiv_rente = alt_loan.get("Effektiv rente") or 0
+    total = alt_loan.get("total") or alt_loan.get("total_kostnad") or 0
+
+    # Beregn månedlig betaling hvis ikke oppgitt
+    monthly_payment = alt_loan.get("monthly_payment")
+    if not monthly_payment and total and years:
+        monthly_payment = round(total / (years * 12))
+
     return {
-        "bank": alt_loan.get("Bank"),
-        "produkt": alt_loan.get("Produkt"),
-        "sum_lånt": base_loan.get("mangler"),
-        "effektiv_rente": alt_loan.get("Effektiv rente"),
-        "monthly_payment": alt_loan.get("monthly_payment"),
+        "bank": alt_loan.get("Bank", ""),
+        "produkt": alt_loan.get("Produkt", ""),
+        "sum_lånt": mangler,
+        "effektiv_rente": effektiv_rente,
+        "monthly_payment": monthly_payment or 0,
         "nedbetalt": 0,
-        "mangler": base_loan.get("mangler"),
-        "years": base_loan.get("years"),
-        "gjennstende_total_kostnad": alt_loan.get("total") or alt_loan.get("total_kostnad") or 0
+        "mangler": mangler,
+        "years": years,
+        "gjennstende_total_kostnad": total
     }
+
 
 def simulate_loan_after_months(loan: dict, months: int) -> dict:
     monthly_payment = loan.get("monthly_payment", 0)
