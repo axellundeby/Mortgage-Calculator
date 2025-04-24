@@ -36,6 +36,8 @@ const RegisterForm: React.FC = () => {
     console.log(data);
 
     localStorage.setItem("username", username);
+    localStorage.removeItem("userLoan");
+    localStorage.removeItem("loanAlreadyFetched");
     alert("Registrert!");
     navigate("/profil");
   };

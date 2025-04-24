@@ -33,7 +33,7 @@ const UserProfile: React.FC = () => {
     const username = localStorage.getItem("username");
     const [hasConsent, setHasConsent] = useState<boolean | null>(null);
 
-    
+
     const isAdmin = true;
     //username === "admin";
 
@@ -53,7 +53,7 @@ const UserProfile: React.FC = () => {
         const fetchConsentStatus = async () => {
             const username = localStorage.getItem("username");
             if (!username) return;
-    
+
             try {
                 const res = await fetch(`http://localhost:8000/api/has-consent/${username}`);
                 const data = await res.json();
@@ -62,10 +62,10 @@ const UserProfile: React.FC = () => {
                 console.error("Feil ved henting av samtykke-status", err);
             }
         };
-    
+
         fetchConsentStatus();
     }, []);
-    
+
 
     useEffect(() => {
         const fetchHistory = async () => {
@@ -140,7 +140,7 @@ const UserProfile: React.FC = () => {
         setLoanHistory([]);
         setTotalSaved(null);
         setHasConsent(false);
-    
+
         try {
             await fetch("http://localhost:8000/api/clear-loan-history", {
                 method: "POST",
@@ -152,14 +152,19 @@ const UserProfile: React.FC = () => {
             console.error("Feil ved sletting av historikk", err);
         }
     };
-    
+
 
     useEffect(() => {
         const fetched = localStorage.getItem("loanAlreadyFetched");
         const savedLoan = localStorage.getItem("userLoan");
+
         if (fetched === "true" && savedLoan) {
             try {
                 const parsed = JSON.parse(savedLoan);
+
+                const hasData = parsed.bank || parsed.produkt || parsed.monthly_payment > 0;
+                if (!hasData) return;
+
                 setLoan(normalizeLoanData(parsed));
                 setLoanFetched(true);
             } catch (e) {
@@ -168,6 +173,7 @@ const UserProfile: React.FC = () => {
             }
         }
     }, []);
+
 
     return (
         <div className="max-w-3xl mx-auto p-6 bg-white rounded shadow">
@@ -216,35 +222,35 @@ const UserProfile: React.FC = () => {
                     </button>
 
                     {loanHistory.length > 0 && (
-                                <div className="mt-8">
-                                    <h3 className="text-lg font-semibold mb-2">Lånehistorikk</h3>
-                                    <ul className="space-y-2">
-                                        {loanHistory.map((item, idx) => (
-                                            <li key={idx} className="border rounded p-3 bg-gray-50">
-                                                <strong>{item.bank}</strong> - {item.produkt} <br />
-                                                Effektiv rente: {Number(item.effektiv_rente)?.toFixed(2)}%<br />
-                                                Månedlig betaling: {Number(item.monthly_payment)?.toLocaleString("no-NO")} kr<br />
+                        <div className="mt-8">
+                            <h3 className="text-lg font-semibold mb-2">Lånehistorikk</h3>
+                            <ul className="space-y-2">
+                                {loanHistory.map((item, idx) => (
+                                    <li key={idx} className="border rounded p-3 bg-gray-50">
+                                        <strong>{item.bank}</strong> - {item.produkt} <br />
+                                        Effektiv rente: {Number(item.effektiv_rente)?.toFixed(2)}%<br />
+                                        Månedlig betaling: {Number(item.monthly_payment)?.toLocaleString("no-NO")} kr<br />
 
-                                                {item.is_initial ? (
-                                                    <span className="italic text-gray-600">Orginale lån</span>
-                                                ) : (
-                                                    <span className="text-green-700">
-                                                        Spart: {Number(item.savings || 0).toLocaleString("no-NO")} kr
-                                                    </span>
-                                                )}
-                                            </li>
-                                        ))}
+                                        {item.is_initial ? (
+                                            <span className="italic text-gray-600">Orginale lån</span>
+                                        ) : (
+                                            <span className="text-green-700">
+                                                Spart: {Number(item.savings || 0).toLocaleString("no-NO")} kr
+                                            </span>
+                                        )}
+                                    </li>
+                                ))}
 
 
-                                    </ul>
-                                </div>
-                            )}
+                            </ul>
+                        </div>
+                    )}
 
-                            {totalSaved !== null && (
-                                <div className="mt-4 text-green-700 font-semibold">
-                                    Totalt spart ved refinansiering: {totalSaved.toLocaleString("no-NO")} kr 💸
-                                </div>
-                            )}
+                    {totalSaved !== null && (
+                        <div className="mt-4 text-green-700 font-semibold">
+                            Totalt spart ved refinansiering: {totalSaved.toLocaleString("no-NO")} kr 💸
+                        </div>
+                    )}
 
                     {isAdmin && (
                         <>
