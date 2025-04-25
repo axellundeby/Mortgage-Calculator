@@ -65,7 +65,12 @@ const CombinedLoanForm: React.FC = () => {
 
                 const currentTotal = data.gjennstende_total_kostnad;
                 const bestTotal = transformed[0].total_kostnad;
+
+                console.log("Current Total:", currentTotal);
+                console.log("Best Total:", bestTotal);
+
                 const savings = currentTotal - bestTotal;
+                console.log("Savings:", savings);
                 setSavings(savings);
                 
 
@@ -80,7 +85,6 @@ const CombinedLoanForm: React.FC = () => {
                     if (result.should_refinance) {
                         setSelectedLoan(result.suggested_loan);
                         setConfirmationVisible(true);
-                        setSavings(Math.round(result.savings));
                     }
                 }
             } catch (err) {
