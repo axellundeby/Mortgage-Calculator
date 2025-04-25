@@ -4,13 +4,16 @@ import numpy_financial as npf
 
 def beregn_maanedlig_betaling(
     laanebelop,
-    years,
+    months,
     nominell_rente_aarlig,
     etableringsgebyr_prosent,
     etableringsgebyr_min,
     termingebyr
 ): 
-    nedbetalingstid_maaneder = years * 12
+    
+    if months <= 0:
+        return 0
+    nedbetalingstid_maaneder = int(months)
 
     etableringsgebyr = max(etableringsgebyr_prosent / 100 * laanebelop, etableringsgebyr_min)
     tilbakebetalings_belop = laanebelop + etableringsgebyr 
@@ -26,13 +29,15 @@ def beregn_maanedlig_betaling(
 
 def beregn_effektiv_rente(
     laanebelop,
-    years,
+    months,
     nominell_rente_aarlig,
     etableringsgebyr_prosent,
     etableringsgebyr_min,
     termingebyr): 
 
-    nedbetalingstid_maaneder = years * 12
+    if months <= 0:
+        return 0  
+    nedbetalingstid_maaneder = int(months)
     
     etableringsgebyr = max(etableringsgebyr_prosent / 100 * laanebelop, etableringsgebyr_min)
     tilbakebetalings_belop = laanebelop + etableringsgebyr if etableringsgebyr_prosent > 0 else laanebelop
@@ -54,9 +59,8 @@ def beregn_effektiv_rente(
 
 
 
-def find_best_loan(csv_path, age, amount, years, top_n=3):
+def find_best_loan(csv_path, age, amount, months, top_n=3):
     candidates = []
-
     with open(csv_path, newline='', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -73,22 +77,21 @@ def find_best_loan(csv_path, age, amount, years, top_n=3):
                 max_age = int(row["Maks alder"] or 100)
                 max_term = int(row["Maks løpetid (år)"] or 0)
                 maxlvt =  float(row["Belaningsgrad"] or 0)
-
                 lvt = amount / (amount + establishment_fee)
 
+
+                max_term_months = max_term * 12
                 if not maxlvt < lvt:
                     continue
                 if not (min_amount <= amount <= max_amount):
                     continue
                 if not (min_age <= age <= max_age):
                     continue
-                if years > max_term:
+                if months > max_term_months:
                     continue
-                effective = beregn_effektiv_rente(amount, years, nominal,establishment_fee_pct ,establishment_fee, term_fee)
-                monthlypayment = beregn_maanedlig_betaling(amount, years, nominal,establishment_fee_pct ,establishment_fee, term_fee)
-                totalpayment = monthlypayment * 12 * years
-                if effective is None:
-                    continue
+                effective = beregn_effektiv_rente(amount, months, nominal,establishment_fee_pct ,establishment_fee, term_fee)
+                monthlypayment = beregn_maanedlig_betaling(amount, months, nominal,establishment_fee_pct ,establishment_fee, term_fee)
+                totalpayment = monthlypayment * months
 
                 candidates.append({
                     "Bank": bank,

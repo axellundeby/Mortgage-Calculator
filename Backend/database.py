@@ -55,7 +55,7 @@ def save_user_loan(username: str, loan_data: dict):
 
     c.execute('''
         INSERT INTO loans (username, bank, produkt, sum_lant, effektiv_rente, monthly_payment,
-        nedbetalt, mangler, years, gjennstende_total_kostnad)
+        nedbetalt, mangler, months, gjennstende_total_kostnad)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(username) DO UPDATE SET
             bank=excluded.bank,
@@ -65,7 +65,7 @@ def save_user_loan(username: str, loan_data: dict):
             monthly_payment=excluded.monthly_payment,
             nedbetalt=excluded.nedbetalt,
             mangler=excluded.mangler,
-            years=excluded.years,
+            months=excluded.months,
             gjennstende_total_kostnad=excluded.gjennstende_total_kostnad
     ''', (
         username,
@@ -76,7 +76,7 @@ def save_user_loan(username: str, loan_data: dict):
         loan_data.get("monthly_payment"),
         loan_data.get("nedbetalt"),
         loan_data.get("mangler"),
-        loan_data.get("years"),
+        loan_data.get("months"),
         loan_data.get("gjennstende_total_kostnad")
     ))
 
@@ -98,7 +98,6 @@ def get_user_loan(username: str):
     conn.close()
 
     loan["monthly_payment"] = loan.pop("monthly_payment", 0)
-
     return loan
 
 
@@ -161,7 +160,7 @@ def archive_user_loan(username: str, loan: dict, savings: float = 0.0,is_initial
     c.execute('''
         INSERT INTO loan_history (
             username, bank, produkt, effektiv_rente, monthly_payment,
-            nedbetalt, mangler, years, gjennstende_total_kostnad, savings,is_initial
+            nedbetalt, mangler, months, gjennstende_total_kostnad, savings,is_initial
         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?)
     ''', (
         username,
@@ -171,7 +170,7 @@ def archive_user_loan(username: str, loan: dict, savings: float = 0.0,is_initial
         loan.get("monthly_payment"),
         loan.get("nedbetalt"),
         loan.get("mangler"),
-        loan.get("years"),
+        loan.get("months"),
         loan.get("gjennstende_total_kostnad"),
         savings,
         int(is_initial)

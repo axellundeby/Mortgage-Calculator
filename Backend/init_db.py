@@ -26,7 +26,7 @@ def init_db():
             monthly_payment REAL,
             nedbetalt REAL,
             mangler REAL,
-            years INTEGER,
+            months INTEGER,
             gjennstende_total_kostnad REAL,
             FOREIGN KEY (username) REFERENCES users(username)
         )
@@ -43,7 +43,7 @@ def init_db():
         monthly_payment REAL,
         nedbetalt REAL,
         mangler REAL,
-        years INTEGER,
+        months INTEGER,
         gjennstende_total_kostnad REAL,
         savings REAL,
         is_initial BOOLEAN DEFAULT 0

@@ -21,7 +21,6 @@ from database import (
 )
 
 
-
 app = FastAPI()
 
 app.add_middleware(
@@ -49,7 +48,7 @@ class LoanRequest(BaseModel):
     username:str
     age: int
     amount: float
-    years: int
+    months: int
 
 class UsernameOnlyRequest(BaseModel):
     username: str
@@ -86,7 +85,6 @@ def authorize(req: FullmaktRequest):
 
     username = req.username
     loan = get_random_loan_and_status()
-
     try:
         get_user_loan(username)
     except HTTPException:
@@ -99,7 +97,7 @@ def authorize(req: FullmaktRequest):
 @app.post("/api/find-loan")
 def api_find_loan(req: LoanRequest):
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
-    loans = find_best_loan(csv_path, req.age, req.amount, req.years, top_n=10)
+    loans = find_best_loan(csv_path, req.age, req.amount, req.months, top_n=10)
 
     try:
         current_loan = get_user_loan(req.username)
@@ -176,14 +174,14 @@ def auto_refinance(req: UsernameOnlyRequest):
     age = get_user_age(username)
 
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
-    from best_risky_three_loans_for_candidate import find_best_loan
-    alternatives = find_best_loan(csv_path, age, user_loan["mangler"], user_loan["years"], top_n=1)
+    alternatives = find_best_loan(csv_path, age, user_loan["mangler"], 31, top_n=1)
+
+    print(alternatives)
 
     if not alternatives:
         raise HTTPException(status_code=404, detail="Fant ingen alternative lån")
 
     best = alternatives[0]
-    from users import should_refinance, transform_to_user_loan_format
     should, savings = should_refinance(user_loan, best)
 
     if should:
@@ -263,4 +261,3 @@ def has_consent(username: str):
         return {"has_consent": True}
     except HTTPException:
         return {"has_consent": False}
-    print("bruker sammtykke")
