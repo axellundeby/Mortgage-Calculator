@@ -7,7 +7,7 @@ interface Loan {
     monthly_payment: number;
     nedbetalt: number;
     mangler: number;
-    years: number;
+    months: number;
     gjennstende_total_kostnad?: number;
 }
 
@@ -18,7 +18,7 @@ const normalizeLoanData = (data: any): Loan => ({
     monthly_payment: data.monthly_payment || 0,
     nedbetalt: data.nedbetalt ?? 0,
     mangler: data.mangler ?? 0,
-    years: data.years ?? 0,
+    months: data.months ?? 0,
     gjennstende_total_kostnad: data.gjennstende_total_kostnad || data.total || data.total_kostnad || 0,
 });
 
@@ -210,7 +210,7 @@ const UserProfile: React.FC = () => {
                         <li><strong>Månedlig betaling:</strong> {(simulatedLoan || loan).monthly_payment.toLocaleString("no-NO")} kr</li>
                         <li><strong>Nedbetalt:</strong> {(simulatedLoan || loan).nedbetalt.toLocaleString("no-NO")} kr</li>
                         <li><strong>Gjenstående:</strong> {(simulatedLoan || loan).mangler.toLocaleString("no-NO")} kr</li>
-                        <li><strong>Antall år igjen:</strong> {(simulatedLoan || loan).years} år</li>
+                        <li><strong>Nedbetalingstid:</strong> {Math.floor(loan.months / 12)} år og {loan.months % 12} måneder</li>
                         <li><strong>Total gjenstående kostnad:</strong> {(simulatedLoan || loan).gjennstende_total_kostnad?.toLocaleString("no-NO")} kr</li>
                     </ul>
 
@@ -261,7 +261,7 @@ const UserProfile: React.FC = () => {
                             <input
                                 type="range"
                                 min="0"
-                                max={loan.years * 12}
+                                max={loan.months * 12}
                                 value={simMonths}
                                 onChange={handleSimulateChange}
                                 className="w-full mb-4"
