@@ -20,7 +20,7 @@ def get_random_loan_and_status():
     min_loan = float(selected["Min beløp"])
 
     øvre_grense = min(500_000, max_loan)
-    nedre_grense = max(20_000, min_loan)
+    nedre_grense = max(50_000, min_loan)
 
     if nedre_grense >= øvre_grense:
         nedre_grense = øvre_grense * 0.8
@@ -35,13 +35,11 @@ def get_random_loan_and_status():
     total_løpetid_mnd = maks_løpetid_år * 12
     gjenstaaende_mnd = max(1, round((1 - andel_nedbetalt) * total_løpetid_mnd))
 
-    # Bruk gjenstående som faktisk lånebeløp
     nominell_rente_aarlig = float(selected["Nominell rente"])
     etableringsgebyr_prosent = float(selected.get("Etableringsgebyr i %", 0))
     etableringsgebyr_min = float(selected.get("Etableringsgebyr", 0))
     termingebyr = float(selected.get("Termingebyr", 0))
 
-    # Beregninger basert på det som faktisk gjenstår
     effektiv_rente = beregn_effektiv_rente(
         gjenstaaende,
         gjenstaaende_mnd,

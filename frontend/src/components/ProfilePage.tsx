@@ -210,7 +210,11 @@ const UserProfile: React.FC = () => {
                         <li><strong>Månedlig betaling:</strong> {(simulatedLoan || loan).monthly_payment.toLocaleString("no-NO")} kr</li>
                         <li><strong>Nedbetalt:</strong> {(simulatedLoan || loan).nedbetalt.toLocaleString("no-NO")} kr</li>
                         <li><strong>Gjenstående:</strong> {(simulatedLoan || loan).mangler.toLocaleString("no-NO")} kr</li>
-                        <li><strong>Nedbetalingstid:</strong> {Math.floor(loan.months / 12)} år og {loan.months % 12} måneder</li>
+                        <li>
+                            <strong>Nedbetalingstid:</strong>{" "}
+                            {Math.floor((simulatedLoan || loan).months / 12)} år og {(simulatedLoan || loan).months % 12} måneder
+                        </li>
+
                         <li><strong>Total gjenstående kostnad:</strong> {(simulatedLoan || loan).gjennstende_total_kostnad?.toLocaleString("no-NO")} kr</li>
                     </ul>
 
@@ -261,7 +265,7 @@ const UserProfile: React.FC = () => {
                             <input
                                 type="range"
                                 min="0"
-                                max={loan.months * 12}
+                                max={loan.months}
                                 value={simMonths}
                                 onChange={handleSimulateChange}
                                 className="w-full mb-4"

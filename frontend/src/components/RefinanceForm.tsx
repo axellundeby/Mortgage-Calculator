@@ -14,6 +14,7 @@ interface Loan {
 const CombinedLoanForm: React.FC = () => {
     const [loan, setLoan] = useState<Loan | null>(null);
     const [alternatives, setAlternatives] = useState<any[]>([]);
+    const [loading, setLoading] = useState(false);
     const [savings, setSavings] = useState<number | null>(null);
     const [selectedLoan, setSelectedLoan] = useState<any | null>(null);
     const [confirmationVisible, setConfirmationVisible] = useState(false);
@@ -22,23 +23,16 @@ const CombinedLoanForm: React.FC = () => {
     const [hasConsent, setHasConsent] = useState<boolean | null>(null);
 
     useEffect(() => {
-        const fetchAll = async () => {
+        const fetchUserLoanAndAlternatives = async () => {
             const username = localStorage.getItem("username");
             if (!username) return;
 
             try {
-                const consentRes = await fetch(`http://localhost:8000/api/has-consent/${username}`);
-                const consentData = await consentRes.json();
-                setHasConsent(consentData.has_consent);
-
-                if (!consentData.has_consent) return;
-
                 const ageRes = await fetch(`http://localhost:8000/api/user-age/${username}`);
                 const ageData = await ageRes.json();
                 setUserAge(ageData.age);
 
                 const res = await fetch(`http://localhost:8000/api/user-loan/${username}`);
-                if (!res.ok) return;
                 const data = await res.json();
                 setLoan(data);
 
@@ -52,7 +46,6 @@ const CombinedLoanForm: React.FC = () => {
                         months: data.months,
                     }),
                 });
-
                 const bestLoans = await altRes.json();
                 const transformed = bestLoans
                 .filter((loan: any) => loan.total || loan.Totalkostnad)
@@ -72,28 +65,55 @@ const CombinedLoanForm: React.FC = () => {
                 const savings = currentTotal - bestTotal;
                 console.log("Savings:", savings);
                 setSavings(savings);
-                
+            } catch (err) {
+                console.error("Feil ved henting av lån eller alternativer", err);
+            } finally {
+                setLoading(false);
+            }
+        };
 
-                const autoRes = await fetch("http://localhost:8000/api/auto-refinance", {
+        const checkAutoRefinance = async () => {
+            const username = localStorage.getItem("username");
+            if (!username) return;
+
+            try {
+                const res = await fetch("http://localhost:8000/api/auto-refinance", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ username }),
                 });
 
-                if (autoRes.ok) {
-                    const result = await autoRes.json();
-                    if (result.should_refinance) {
-                        setSelectedLoan(result.suggested_loan);
-                        setConfirmationVisible(true);
-                    }
+                const result = await res.json();
+
+                if (result.should_refinance) {
+                    setSelectedLoan(result.suggested_loan);
+                    setConfirmationVisible(true);
+                    setSavings(Math.round(result.savings));
                 }
             } catch (err) {
-                console.error("Feil ved lasting av lån og alternativer", err);
-            } 
+                console.error("Feil ved automatisk refinansieringssjekk", err);
+            }
+        };
+        const username = localStorage.getItem("username");
+        if (!username) return;
+
+        const fetchConsentStatus = async () => {
+            try {
+                const res = await fetch(`http://localhost:8000/api/has-consent/${username}`);
+                const data = await res.json();
+                setHasConsent(data.has_consent);
+            } catch (err) {
+                console.error("Feil ved henting av samtykke-status", err);
+            }
         };
 
-        fetchAll();
+        fetchConsentStatus();
+
+
+        fetchUserLoanAndAlternatives();
+        checkAutoRefinance();
     }, []);
+
 
     const handleLoanClick = (loan: any) => {
         setSelectedLoan(loan);
@@ -119,7 +139,8 @@ const CombinedLoanForm: React.FC = () => {
                 const updatedLoan = await updatedRes.json();
                 setLoan(updatedLoan);
                 localStorage.setItem("userLoan", JSON.stringify(updatedLoan));
-            } else {
+            }
+            else {
                 alert("Noe gikk galt ved lagring av nytt lån.");
             }
         } catch (err) {
@@ -141,7 +162,10 @@ const CombinedLoanForm: React.FC = () => {
                         <li><strong>Månedlig betaling:</strong> {(loan.monthly_payment || 0).toLocaleString("no-NO")} kr</li>
                         <li><strong>Nedbetalt:</strong> {loan.nedbetalt?.toLocaleString("no-NO")} kr</li>
                         <li><strong>Gjenstående:</strong> {loan.mangler?.toLocaleString("no-NO")} kr</li>
-                        <li><strong>Nedbetalingstid:</strong> {Math.floor(loan.months / 12)} år og {loan.months % 12} måneder</li>
+                        <li>
+                            <strong>Nedbetalingstid:</strong>{" "}
+                            {Math.floor((loan).months / 12)} år og {(loan).months % 12} måneder
+                        </li>
                         <li><strong>Total gjenstående kostnad:</strong> {loan.gjennstende_total_kostnad?.toLocaleString("no-NO") || 0} kr</li>
                     </ul>
 

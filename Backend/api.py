@@ -97,6 +97,8 @@ def authorize(req: FullmaktRequest):
 @app.post("/api/find-loan")
 def api_find_loan(req: LoanRequest):
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
+    print("finner lån",req.age, req.amount, req.months)
+
     loans = find_best_loan(csv_path, req.age, req.amount, req.months, top_n=10)
 
     try:
@@ -142,6 +144,8 @@ async def save_loan_api(request: Request):
     # Hvis det er et simulert lån (manuelt justert med slider)
     if raw_loan.get("simulert", False):
         save_user_loan(username, raw_loan)
+        print("larger simulert lån")
+        print(f"✅ Simulert lån lagret for bruker '{username}': {raw_loan}")
         return {"message": "Simulert lån lagret"}
 
     # Bruk transformering hvis det er fra refinansieringsvalg
@@ -159,6 +163,8 @@ async def save_loan_api(request: Request):
     archive_user_loan(username, raw_loan, savings=spart, is_initial=False)
     save_user_loan(username, raw_loan)
 
+    print(f"✅ Lån lagret for bruker '{username}': {raw_loan}")
+
     return {"message": "Lån lagret"}
 
 
@@ -166,7 +172,6 @@ async def save_loan_api(request: Request):
 @app.post("/api/auto-refinance")
 def auto_refinance(req: UsernameOnlyRequest):
     username = req.username
-
     if not is_auto_refinancing_enabled(username):
         return {"should_refinance": False, "message": "Auto-refinansiering er deaktivert"}
 
@@ -174,9 +179,8 @@ def auto_refinance(req: UsernameOnlyRequest):
     age = get_user_age(username)
 
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
-    alternatives = find_best_loan(csv_path, age, user_loan["mangler"], 31, top_n=1)
-
-    print(alternatives)
+    print(age, user_loan["mangler"], user_loan["months"])
+    alternatives = find_best_loan(csv_path, age, user_loan["mangler"], user_loan["months"], top_n=3)
 
     if not alternatives:
         raise HTTPException(status_code=404, detail="Fant ingen alternative lån")

@@ -45,6 +45,7 @@ def authenticate_user(username: str, password: str):
 
 
 def save_user_loan(username: str, loan_data: dict):
+    print(f"✅ Lagre lån for bruker: {username}, data: {loan_data}")
     conn = get_connection()
     c = conn.cursor()
 
