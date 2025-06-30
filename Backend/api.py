@@ -132,23 +132,19 @@ async def save_loan_api(request: Request):
     if not username or not raw_loan:
         raise HTTPException(status_code=400, detail="Ugyldig data")
 
-    # Sjekk om det finnes et gammelt lån fra før
     try:
         base_loan = get_user_loan(username)
     except HTTPException:
-        # Første lån – bare lagre det som aktivt, og legg til i historikken
         save_user_loan(username, raw_loan)
         archive_user_loan(username, raw_loan, savings=0.0, is_initial=False)
         return {"message": "Første lån registrert"}
 
-    # Hvis det er et simulert lån (manuelt justert med slider)
     if raw_loan.get("simulert", False):
         save_user_loan(username, raw_loan)
         print("larger simulert lån")
         print(f"✅ Simulert lån lagret for bruker '{username}': {raw_loan}")
         return {"message": "Simulert lån lagret"}
 
-    # Bruk transformering hvis det er fra refinansieringsvalg
     csv_keys = ["Bank", "Produkt", "Effektiv rente", "Totalkostnad", "total"]
     if any(key in raw_loan for key in csv_keys):
         raw_loan = transform_to_user_loan_format(raw_loan, base_loan)
