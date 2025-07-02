@@ -1,11 +1,12 @@
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from best_risky_three_loans_for_candidate import find_best_loan
+from loan_evaluator import find_best_loan, simulate_loan_over_time
+from risky_Loans_writer import fetch_loan_data
 from fastapi import Body
 import os
 import math
-from users import get_random_loan_and_status, transform_to_user_loan_format, should_refinance
+from users import get_random_loan_and_status, transform_to_user_loan_format, should_refinance, set_total_loan_amount, get_random_loan_entry
 from database import (
     authenticate_user,
     get_user_age,
@@ -53,6 +54,13 @@ class LoanRequest(BaseModel):
 class UsernameOnlyRequest(BaseModel):
     username: str
 
+@app.post("/api/fetch-loan-data")
+def fetch_loan_data_endpoint():
+    try:
+        fetch_loan_data()
+        return {"message": "Lånedata oppdatert"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/api/register")
 def register(req: RegisterRequest):
@@ -84,7 +92,8 @@ def authorize(req: FullmaktRequest):
         raise HTTPException(status_code=403, detail="Fullmakt kreves")
 
     username = req.username
-    loan = get_random_loan_and_status()
+    loan = get_random_loan_entry("backend/forbrukslan_data_clean.csv")
+    
     try:
         get_user_loan(username)
     except HTTPException:
@@ -96,7 +105,7 @@ def authorize(req: FullmaktRequest):
 
 @app.post("/api/find-loan")
 def api_find_loan(req: LoanRequest):
-    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
+    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "backend/forbrukslan_data_clean.csv"))
     print("finner lån",req.age, req.amount, req.months)
 
     loans = find_best_loan(csv_path, req.age, req.amount, req.months, top_n=10)
@@ -174,7 +183,7 @@ def auto_refinance(req: UsernameOnlyRequest):
     user_loan = get_user_loan(username)
     age = get_user_age(username)
 
-    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
+    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "backend/forbrukslan_data_clean.csv"))
     print(age, user_loan["mangler"], user_loan["months"])
     alternatives = find_best_loan(csv_path, age, user_loan["mangler"], user_loan["months"], top_n=3)
 
@@ -226,14 +235,6 @@ def get_auto_refinansiering(username: str):
     return {"auto_refinansiering": bool(row[0])}
 
 
-@app.post("/api/simulate-loan")
-def simulate_loan(username: str = Body(...), months: int = Body(...)):
-    loan = get_user_loan(username)
-    if not loan:
-        raise HTTPException(status_code=404, detail="Ingen lån funnet")
-    from users import simulate_loan_after_months
-    return simulate_loan_after_months(loan, months)
-
 @app.get("/api/loan-history/{username}")
 def loan_history(username: str):
     return get_loan_history(username)
@@ -261,3 +262,13 @@ def has_consent(username: str):
         return {"has_consent": True}
     except HTTPException:
         return {"has_consent": False}
+
+@app.post("/api/simulate-loan")
+def simulate_loan(months: int = Body(..., embed=True)):
+    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "backend/forbrukslan_data_clean.csv"))
+    try:
+        result = simulate_loan_over_time(csv_path, months)
+        return {"message": f"{len(result['updated_rows'])} rader oppdatert", "indices": result["updated_rows"]}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+

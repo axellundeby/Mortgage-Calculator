@@ -1,8 +1,12 @@
 import csv
 import numpy_financial as npf
+import random
+import pandas as pd
+import os
 
 
-def beregn_maanedlig_betaling(
+
+def calculate_monthly_payment(
     laanebelop,
     months,
     nominell_rente_aarlig,
@@ -27,7 +31,7 @@ def beregn_maanedlig_betaling(
 
     return round(maanedlig_betaling_med_gebyr)
 
-def beregn_effektiv_rente(
+def calculate_intrest(
     laanebelop,
     months,
     nominell_rente_aarlig,
@@ -89,8 +93,8 @@ def find_best_loan(csv_path, age, amount, months, top_n=3):
                     continue
                 if months > max_term_months:
                     continue
-                effective = beregn_effektiv_rente(amount, months, nominal,establishment_fee_pct ,establishment_fee, term_fee)
-                monthlypayment = beregn_maanedlig_betaling(amount, months, nominal,establishment_fee_pct ,establishment_fee, term_fee)
+                effective = calculate_intrest(amount, months, nominal,establishment_fee_pct ,establishment_fee, term_fee)
+                monthlypayment = calculate_monthly_payment(amount, months, nominal,establishment_fee_pct ,establishment_fee, term_fee)
                 totalpayment = monthlypayment * months
 
                 candidates.append({
@@ -113,3 +117,32 @@ def find_best_loan(csv_path, age, amount, months, top_n=3):
     sorted_loans = sorted(candidates, key=lambda x: x["Effektiv rente"])
     return sorted_loans[:top_n]
 
+def simulate_interest_rate(base_rate: float, month: int) -> float:
+    trend = 0.0005 * month 
+    noise = random.gauss(0, 0.05)  
+    new_rate = base_rate + trend + noise
+    return round(max(0, new_rate), 2)  
+
+def simulate_fee(base_fee: float, month: int) -> float:
+    inflation_factor = 1 + 0.01 * (month / 12)  
+    noise = random.uniform(-5, 5)
+    return round(max(0, base_fee * inflation_factor + noise), 2)
+
+def simulate_loan_over_time(path_to_csv: str, months_passed: int):
+    csv = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", path_to_csv))
+    df = pd.read_csv(csv)
+    num_rows_to_update = len(df) // 2
+    indices_to_update = random.sample(range(len(df)), num_rows_to_update)
+
+    for idx in indices_to_update:
+        row = df.loc[idx]
+        base_rate = row["Nominell rente"]
+        new_rate = base_rate + random.uniform(-0.015, 0.015) * months_passed
+        df.at[idx, "Nominell rente"] = max(new_rate, 0)  
+        estab_fee = row["Etableringsgebyr"]
+        df.at[idx, "Etableringsgebyr"] = max(estab_fee + random.uniform(0, 10) * months_passed, 0)
+        term_fee = row["Termingebyr"]
+        df.at[idx, "Termingebyr"] = max(term_fee + random.uniform(0, 5) * months_passed, 0)
+    df.to_csv(path_to_csv, index=False)
+    print(f"Simulert lån over {months_passed} måneder. Oppdaterte {num_rows_to_update} rader.")
+    return {"updated_rows": indices_to_update}

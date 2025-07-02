@@ -17,6 +17,23 @@ const UserProfile: React.FC = () => {
     const [loanHistory, setLoanHistory] = useState<any[]>([]);
     const [totalSaved, setTotalSaved] = useState<number | null>(null);
     const username = localStorage.getItem("username");
+    const [sliderValue, setSliderValue] = useState(0);
+
+    const handleSimulate = async (months: number) => {
+        try {
+            const response = await fetch("http://localhost:8000/api/simulate-loan", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ months }),
+            });
+
+            const data = await response.json();
+            console.log("Simulering fullført:", data);
+        } catch (err) {
+            console.error("Feil ved simulering av lån", err);
+        }
+    };
+
 
     useEffect(() => {
         if (!username) return;
@@ -161,6 +178,7 @@ const UserProfile: React.FC = () => {
                                         <strong>{item.bank}</strong> - {item.produkt} <br />
                                         Effektiv rente: {Number(item.effektiv_rente)?.toFixed(2)}%<br />
                                         Månedlig betaling: {Number(item.monthly_payment)?.toLocaleString("no-NO")} kr<br />
+
                                         {item.is_initial ? (
                                             <span className="italic text-gray-600">Orginale lån</span>
                                         ) : (
@@ -180,7 +198,29 @@ const UserProfile: React.FC = () => {
                         </div>
                     )}
                 </div>
+
             )}
+            <div className="mt-6">
+                <label htmlFor="monthSlider" className="block text-sm font-medium text-gray-700">
+                    Simuler tid (i måneder): {sliderValue}
+                </label>
+                <input
+                    id="monthSlider"
+                    type="range"
+                    min={0}
+                    max={60}
+                    value={sliderValue}
+                    onChange={(e) => setSliderValue(Number(e.target.value))}
+                    className="w-full mt-1"
+                />
+                <button
+                    onClick={() => handleSimulate(sliderValue)}
+                    className="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                >
+                    Simuler renteendringer
+                </button>
+            </div>
+
         </div>
     );
 };

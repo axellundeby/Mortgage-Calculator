@@ -3,74 +3,82 @@ import pandas as pd
 import random
 from pydantic import BaseModel
 from fastapi import HTTPException
-from best_risky_three_loans_for_candidate import beregn_maanedlig_betaling, beregn_effektiv_rente
+from loan_evaluator import calculate_monthly_payment, calculate_intrest
 import math
 
 class User(BaseModel):
     username: str
     password: str  
     age: int
-
-def get_random_loan_and_status():
-    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "forbrukslan_data_clean.csv"))
+    
+    
+def get_random_loan_entry(path):
+    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", path))
     df = pd.read_csv(csv_path)
-    selected = df.sample(1).iloc[0]
+    random_selected_loan = df.sample(1).iloc[0].to_dict()
+    return get_random_loan_and_status(random_selected_loan)
 
-    max_loan = float(selected["Maks beløp"])
-    min_loan = float(selected["Min beløp"])
+def get_random_loan_and_status(random_selected_loan):
+    
+    total_amount= set_total_loan_amount(random_selected_loan)
+    portion_paid = round(total_amount * random.uniform(0.3, 0.8))
+    remaining = total_amount - portion_paid
 
-    øvre_grense = min(500_000, max_loan)
-    nedre_grense = max(50_000, min_loan)
+    down_payment_in_years = int(random_selected_loan["Maks løpetid (år)"])
+    total_løpetid_mnd = down_payment_in_years * 12
 
-    if nedre_grense >= øvre_grense:
-        nedre_grense = øvre_grense * 0.8
+    portion_paid_fraction = portion_paid / total_amount
+    remaning_months = max(1, round((1 - portion_paid_fraction) * total_løpetid_mnd))
 
-    total_laanebelop = round(random.randint(int(nedre_grense), int(øvre_grense)) / 1000) * 1000
-    andel_nedbetalt = random.uniform(0.3, 0.8)
 
-    nedbetalt = round(total_laanebelop * andel_nedbetalt)
-    gjenstaaende = total_laanebelop - nedbetalt
+    yearly_intrest = float(random_selected_loan["Nominell rente"])
+    establisment_fee = float(random_selected_loan.get("Etableringsgebyr", 0))
+    fee_precentage = float(random_selected_loan.get("Etableringsgebyr i %", 0))
+    yearly_fee = float(random_selected_loan.get("Termingebyr", 0))
 
-    maks_løpetid_år = int(selected["Maks løpetid (år)"])
-    total_løpetid_mnd = maks_løpetid_år * 12
-    gjenstaaende_mnd = max(1, round((1 - andel_nedbetalt) * total_løpetid_mnd))
-
-    nominell_rente_aarlig = float(selected["Nominell rente"])
-    etableringsgebyr_prosent = float(selected.get("Etableringsgebyr i %", 0))
-    etableringsgebyr_min = float(selected.get("Etableringsgebyr", 0))
-    termingebyr = float(selected.get("Termingebyr", 0))
-
-    effektiv_rente = beregn_effektiv_rente(
-        gjenstaaende,
-        gjenstaaende_mnd,
-        nominell_rente_aarlig,
-        etableringsgebyr_prosent,
-        etableringsgebyr_min,
-        termingebyr
+    effektiv_rente = calculate_intrest(
+        remaining,
+        remaning_months,
+        yearly_intrest,
+        fee_precentage,
+        establisment_fee,
+        yearly_fee
     )
 
-    monthly_payment = beregn_maanedlig_betaling(
-        gjenstaaende,
-        gjenstaaende_mnd,
-        nominell_rente_aarlig,
-        etableringsgebyr_prosent,
-        etableringsgebyr_min,
-        termingebyr
+    monthly_payment = calculate_monthly_payment(
+        remaining,
+        remaning_months,
+        yearly_intrest,
+        fee_precentage,
+        establisment_fee,
+        yearly_fee
     )
 
-    totalKostnad = monthly_payment * gjenstaaende_mnd
+    left_to_pay = monthly_payment * remaning_months
 
     return {
-        "bank": selected["Bank"],
-        "produkt": selected["Lånenavn"],
-        "sum_lånt": total_laanebelop,
+        "bank": random_selected_loan["Bank"],
+        "produkt": random_selected_loan["Lånenavn"],
+        "sum_lånt": total_amount,
         "effektiv_rente": effektiv_rente,
         "monthly_payment": monthly_payment,
-        "nedbetalt": nedbetalt,
-        "mangler": gjenstaaende,
-        "months": gjenstaaende_mnd,
-        "gjennstende_total_kostnad": totalKostnad
+        "nedbetalt": portion_paid,
+        "mangler": remaining,
+        "months": remaning_months,
+        "gjennstende_total_kostnad": left_to_pay
     }
+
+def set_total_loan_amount(random_selected_loan) -> int:
+    max_amount = random_selected_loan["Maks beløp"]
+    min_amount = random_selected_loan["Min beløp"]
+    lower_bound = max(50_000, float(min_amount))
+    upper_bound = min(500_000, float(max_amount))
+
+    if lower_bound >= upper_bound:
+        lower_bound = upper_bound * 0.8
+
+    total_loan_amoaunt = round(random.randint(int(lower_bound), int(upper_bound)) / 1000) * 1000
+    return total_loan_amoaunt
 
 
 def transform_to_user_loan_format(alt_loan: dict, base_loan: dict) -> dict:

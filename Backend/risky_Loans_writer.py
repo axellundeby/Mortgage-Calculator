@@ -3,10 +3,10 @@ import os
 from dotenv import load_dotenv
 import requests
 from xml.etree import ElementTree
-
+from loan_evaluator import simulate_loan_over_time
 load_dotenv()
 
-def hent_forbrukslan_data():
+def fetch_loan_data():
     url = 'https://www.finansportalen.no/services/feed/v3/bank/smaalan.atom'
     username = os.getenv('FINANSPORTALEN_USERNAME')
     password = os.getenv('FINANSPORTALEN_PASSWORD')
@@ -21,7 +21,7 @@ def hent_forbrukslan_data():
                 'f': 'http://www.finansportalen.no/feed/ns/1.0'
             }
 
-            with open('forbrukslan_data_clean.csv', mode='w', newline='', encoding='utf-8') as file:
+            with open('backend/forbrukslan_data_clean.csv', mode='w', newline='', encoding='utf-8') as file:
                 writer = csv.writer(file)
                 writer.writerow([
                     "Bank", "Lånenavn", "Nominell rente", "Etableringsgebyr", "Etableringsgebyr i %",
@@ -93,4 +93,5 @@ def hent_forbrukslan_data():
         print(f"En feil oppstod: {e}")
 
 if __name__ == "__main__":
-    hent_forbrukslan_data()
+    fetch_loan_data()
+   
