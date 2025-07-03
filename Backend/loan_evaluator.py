@@ -146,3 +146,22 @@ def simulate_loan_over_time(path_to_csv: str, months_passed: int):
     df.to_csv(path_to_csv, index=False)
     print(f"Simulert lån over {months_passed} måneder. Oppdaterte {num_rows_to_update} rader.")
     return {"updated_rows": indices_to_update}
+
+def current_loan(loan: dict, months: int):
+    intrest = loan.get("effektiv_rente", 0)
+    fee = loan.get("etableringsgebyr", 0)
+    fee_percentage = loan.get("etableringsgebyr i %", 0)
+    yearly_fee = loan.get("termingebyr", 50)  
+
+    sim_intrest = simulate_interest_rate(intrest, months) + 10
+    sim_fee = simulate_fee(fee, months) + 2
+    sim_fee_percentage = simulate_fee(fee_percentage, months) + 2
+    sim_yearly_fee = simulate_fee(yearly_fee, months) + 2
+
+
+    loan["effektiv_rente"] = sim_intrest
+    loan["etableringsgebyr"] = sim_fee
+    loan["etableringsgebyr i %"] = sim_fee_percentage
+    loan["termingebyr"] = sim_yearly_fee
+
+    return loan

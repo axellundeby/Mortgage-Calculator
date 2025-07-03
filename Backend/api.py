@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from loan_evaluator import find_best_loan, simulate_loan_over_time
+from loan_evaluator import find_best_loan, simulate_loan_over_time, current_loan
 from risky_Loans_writer import fetch_loan_data
 from fastapi import Body
 import os
@@ -272,3 +272,16 @@ def simulate_loan(months: int = Body(..., embed=True)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.post("/api/sim-current-loan/{username}")
+def sim_current_loan(username: str, months: int = Body(..., embed=True)):
+    try:
+        loan = get_user_loan(username)
+        simulated_loan = current_loan(loan, months)
+        save_user_loan(username, simulated_loan)
+    except HTTPException:
+        raise HTTPException(status_code=404, detail="Lån ikke funnet")
+
+    if not loan:
+        raise HTTPException(status_code=404, detail="Lån ikke funnet")
+    
+    return {"simulated_loan": simulated_loan}

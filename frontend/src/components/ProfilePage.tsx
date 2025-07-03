@@ -20,19 +20,37 @@ const UserProfile: React.FC = () => {
     const [sliderValue, setSliderValue] = useState(0);
 
     const handleSimulate = async (months: number) => {
-        try {
-            const response = await fetch("http://localhost:8000/api/simulate-loan", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ months }),
-            });
+        if (!username) return;
 
-            const data = await response.json();
-            console.log("Simulering fullført:", data);
+        try {
+            // Kall begge API-ene parallelt
+            const [csvSimRes, loanSimRes] = await Promise.all([
+                fetch("http://localhost:8000/api/simulate-loan", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ months }),
+                }),
+                fetch(`http://localhost:8000/api/sim-current-loan/${username}`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ months }),
+                })
+            ]);
+
+            const csvData = await csvSimRes.json();
+            const loanData = await loanSimRes.json();
+
+            console.log("CSV-simulering:", csvData);
+            console.log("Brukerlån simulert:", loanData);
+
+            setLoan(loanData.simulated_loan);
+            localStorage.setItem("userLoan", JSON.stringify(loanData.simulated_loan));
         } catch (err) {
-            console.error("Feil ved simulering av lån", err);
+            console.error("Feil ved simulering", err);
         }
     };
+
+
 
 
     useEffect(() => {
