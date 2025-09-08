@@ -10,10 +10,7 @@ const RegisterForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const API_URL = (process.env.REACT_APP_API_BASE || "")
-      .trim()
-      .replace(/[\u200B\u200C\u200D\uFEFF]/g, "")
-      .replace(/\/+$/, "");
+    const API_URL = (process.env.REACT_APP_API_BASE || "");
 
     if (age < 18) {
       setError("Du må være minst 18 år for å registrere deg.");
@@ -23,6 +20,7 @@ const RegisterForm: React.FC = () => {
     setError(null);
 
     const res = await fetch(`${API_URL}/api/register`, {
+      
       method: "POST",
       headers: {
         "Content-Type": "application/json",
