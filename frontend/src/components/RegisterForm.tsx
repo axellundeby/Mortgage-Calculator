@@ -15,8 +15,6 @@ const RegisterForm: React.FC = () => {
       .replace(/[\u200B\u200C\u200D\uFEFF]/g, "")
       .replace(/\/+$/, "");
 
-    console.log("API_URL", API_URL);
-
     if (age < 18) {
       setError("Du må være minst 18 år for å registrere deg.");
       return;
@@ -24,8 +22,7 @@ const RegisterForm: React.FC = () => {
 
     setError(null);
 
-    //const res = await fetch(`${API_URL}/api/register`, {
-    const res = await fetch(`https://flytta.onrender.com/api/register`, {
+    const res = await fetch(`${API_URL}/api/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
