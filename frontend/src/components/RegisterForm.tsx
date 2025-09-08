@@ -18,7 +18,6 @@ const RegisterForm: React.FC = () => {
     }
 
     setError(null);
-
     const res = await fetch(`${API_URL}/api/register`, {
       
       method: "POST",
