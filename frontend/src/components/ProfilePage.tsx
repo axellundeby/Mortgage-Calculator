@@ -10,6 +10,7 @@ interface Loan {
     months: number;
     gjennstende_total_kostnad?: number;
 }
+const API_URL = process.env.REACT_APP_API_BASE || "";
 
 const UserProfile: React.FC = () => {
     const [loan, setLoan] = useState<Loan | null>(null);
@@ -25,12 +26,12 @@ const UserProfile: React.FC = () => {
         try {
             // Kall begge API-ene parallelt
             const [csvSimRes, loanSimRes] = await Promise.all([
-                fetch("http://localhost:8000/api/simulate-loan", {
+                fetch(`${API_URL}/api/simulate-loan`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ months }),
                 }),
-                fetch(`http://localhost:8000/api/sim-current-loan/${username}`, {
+                fetch(`${API_URL}/api/sim-current-loan/${username}`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ months }),
@@ -59,9 +60,9 @@ const UserProfile: React.FC = () => {
         const fetchData = async () => {
             try {
                 const [autoRefRes, histRes, totalRes] = await Promise.all([
-                    fetch(`http://localhost:8000/api/get-auto-refinansiering/${username}`),
-                    fetch(`http://localhost:8000/api/loan-history/${username}`),
-                    fetch(`http://localhost:8000/api/total-savings/${username}`)
+                    fetch(`${API_URL}/api/get-auto-refinansiering/${username}`),
+                    fetch(`${API_URL}/api/loan-history/${username}`),
+                    fetch(`${API_URL}/api/total-savings/${username}`)
                 ]);
 
                 const autoData = await autoRefRes.json();
@@ -84,7 +85,7 @@ const UserProfile: React.FC = () => {
         const newStatus = !autoRefinance;
         setAutoRefinance(newStatus);
 
-        await fetch("http://localhost:8000/api/set-auto-refinansiering", {
+        await fetch(`${API_URL}/api/set-auto-refinansiering`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, auto_refinansiering: newStatus }),
@@ -93,7 +94,7 @@ const UserProfile: React.FC = () => {
 
     const handleFetchLoan = async () => {
         try {
-            const response = await fetch("http://localhost:8000/api/authorize", {
+            const response = await fetch(`${API_URL}/api/authorize`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username, fullmakt: true }),
@@ -113,7 +114,7 @@ const UserProfile: React.FC = () => {
         setTotalSaved(null);
 
         try {
-            await fetch("http://localhost:8000/api/clear-loan-history", {
+                await fetch(`${API_URL}/api/clear-loan-history`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username }),

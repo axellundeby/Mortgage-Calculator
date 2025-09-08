@@ -10,6 +10,7 @@ interface Loan {
     months: number;
     gjennstende_total_kostnad: number;
 }
+const API_URL = process.env.REACT_APP_API_BASE || "";
 
 const CombinedLoanForm: React.FC = () => {
     const [loan, setLoan] = useState<Loan | null>(null);
@@ -28,15 +29,15 @@ const CombinedLoanForm: React.FC = () => {
             if (!username) return;
 
             try {
-                const ageRes = await fetch(`http://localhost:8000/api/user-age/${username}`);
+                const ageRes = await fetch(`${API_URL}/api/user-age/${username}`);
                 const ageData = await ageRes.json();
                 setUserAge(ageData.age);
 
-                const res = await fetch(`http://localhost:8000/api/user-loan/${username}`);
+                const res = await fetch(`${API_URL}/api/user-loan/${username}`);
                 const data = await res.json();
                 setLoan(data);
 
-                const altRes = await fetch("http://localhost:8000/api/find-loan", {
+                const altRes = await fetch(`${API_URL}/api/find-loan`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
@@ -77,7 +78,7 @@ const CombinedLoanForm: React.FC = () => {
             if (!username) return;
 
             try {
-                const res = await fetch("http://localhost:8000/api/auto-refinance", {
+                const res = await fetch(`${API_URL}/api/auto-refinance`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ username }),
@@ -99,7 +100,7 @@ const CombinedLoanForm: React.FC = () => {
 
         const fetchConsentStatus = async () => {
             try {
-                const res = await fetch(`http://localhost:8000/api/has-consent/${username}`);
+                const res = await fetch(`${API_URL}/api/has-consent/${username}`);
                 const data = await res.json();
                 setHasConsent(data.has_consent);
             } catch (err) {
@@ -124,7 +125,7 @@ const CombinedLoanForm: React.FC = () => {
         const username = localStorage.getItem("username") || "ola";
 
         try {
-            const res = await fetch("http://localhost:8000/api/save-loan", {
+            const res = await fetch(`${API_URL}/api/save-loan`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username, loan: selectedLoan }),
@@ -135,7 +136,7 @@ const CombinedLoanForm: React.FC = () => {
                 setRefinanced(true);
                 setConfirmationVisible(false);
 
-                const updatedRes = await fetch(`http://localhost:8000/api/user-loan/${username}`);
+                const updatedRes = await fetch(`${API_URL}/api/user-loan/${username}`);
                 const updatedLoan = await updatedRes.json();
                 setLoan(updatedLoan);
                 localStorage.setItem("userLoan", JSON.stringify(updatedLoan));

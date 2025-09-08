@@ -8,9 +8,11 @@ const LoanForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const API_URL = process.env.REACT_APP_API_BASE || "";
+
 
     try {
-      const response = await fetch("http://localhost:8000/api/find-loan", {
+      const response = await fetch(`${API_URL}/api/find-loan`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
