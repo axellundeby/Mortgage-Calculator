@@ -9,6 +9,7 @@ interface Loan {
   mangler: number;
   years: number;
 }
+const API_URL = process.env.REACT_APP_API_BASE || "";
 
 const ConsentForm: React.FC = () => {
   const [loan, setLoan] = useState<Loan | null>(null);
@@ -24,7 +25,7 @@ const ConsentForm: React.FC = () => {
 
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:8000/api/authorize", {
+      const response = await fetch(`${API_URL}/api/authorize`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

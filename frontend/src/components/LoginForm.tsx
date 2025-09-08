@@ -9,8 +9,10 @@ const LoginForm: React.FC = () => {
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
+    const API_URL = process.env.REACT_APP_API_BASE || "";
+
   
-    const res = await fetch("http://localhost:8000/api/login", {
+    const res = await fetch(`${API_URL}/api/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password }),
@@ -19,7 +21,7 @@ const LoginForm: React.FC = () => {
     if (res.ok) {
       localStorage.setItem("username", username);
   
-      const loanRes = await fetch(`http://localhost:8000/api/user-loan/${username}`);
+      const loanRes = await fetch(`${API_URL}/api/user-loan/${username}`);
       if (loanRes.ok) {
         const loan = await loanRes.json();
         localStorage.setItem("userLoan", JSON.stringify(loan));
