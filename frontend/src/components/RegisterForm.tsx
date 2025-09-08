@@ -11,7 +11,7 @@ const RegisterForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const API_URL = process.env.REACT_APP_API_BASE || "";
-
+    console.log("API_URL", API_URL);
     if (age < 18) {
       setError("Du må være minst 18 år for å registrere deg.");
       return;
