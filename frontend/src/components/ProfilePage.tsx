@@ -219,7 +219,7 @@ const UserProfile: React.FC = () => {
                 </div>
 
             )}
-            <div className="mt-6">
+            {/* <div className="mt-6">
                 <label htmlFor="monthSlider" className="block text-sm font-medium text-gray-700">
                     Simuler tid (i måneder): {sliderValue}
                 </label>
@@ -238,7 +238,7 @@ const UserProfile: React.FC = () => {
                 >
                     Simuler renteendringer
                 </button>
-            </div>
+            </div> */}
 
         </div>
     );
