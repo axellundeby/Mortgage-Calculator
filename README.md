@@ -11,7 +11,7 @@ A small full‑stack app for exploring and refinancing consumer loans. The backe
 
 ## Monorepo Structure
 ```
-Backend/
+backend/
   api.py               # FastAPI app (all routes under /api/...)
   database.py          # SQLite helpers and persistence
   users.py             # Loan/user helpers (calculations & transforms)
@@ -52,7 +52,7 @@ python -m uvicorn api:app --host 0.0.0.0 --port 8000 --reload
 
 If you use Anaconda, ensure you run uvicorn via the venv’s Python:
 ```bash
-/absolute/path/to/repo/Backend/.venv/bin/python -m uvicorn api:app --reload
+/absolute/path/to/repo/backend/.venv/bin/python -m uvicorn api:app --reload
 ```
 
 ### Frontend (React CRA)
@@ -99,7 +99,7 @@ python risky_Loans_writer.py
 
 ### Backend on Render
 - Create a new Web Service from your GitHub repo.
-- Root Directory: `Backend`
+- Root Directory: `backend`
 - Build Command:
   ```
   pip install -r requirements.txt
