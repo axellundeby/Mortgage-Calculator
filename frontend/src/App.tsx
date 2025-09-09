@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
+import Register from "./components/Register";
 import Refinance from "./components/RefinanceForm";
 import LoanForm from "./components/LoanForm";
 import ProfilePage from "./components/ProfilePage";
@@ -15,7 +16,8 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginForm />} />
-        <Route path="/reg" element={<RegisterForm />} />
+        {/* <Route path="/reg" element={<RegisterForm />} /> */}
+        <Route path="/reg" element={<Register />} />
         <Route path="/refinance" element={<Refinance />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/kalkulator" element={<LoanForm />} />
