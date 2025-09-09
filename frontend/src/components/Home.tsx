@@ -9,7 +9,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-hero">
-      {/* Header */}
+      {/* Header
       <header className="container mx-auto px-6 py-8">
         <div className="flex justify-between items-center">
           <div className="text-2xl font-bold text-primary-blue">Flytta</div>
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
             </Button>
           </div>
         </div>
-      </header>
+      </header> */}
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-16 text-center">
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
               Kom i gang gratis
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6" onClick={() => navigate("/how-it-works")}>
               Se hvordan det virker
             </Button>
           </div>
