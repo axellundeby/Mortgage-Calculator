@@ -24,9 +24,16 @@ from database import (
 
 app = FastAPI()
 
+# Explicitly allow frontend origins (avoid wildcard with credentials)
+ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://flytta-nu.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
+    allow_origin_regex=r"https://.*\.vercel\.app$",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
