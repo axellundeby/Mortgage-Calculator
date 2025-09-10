@@ -15,10 +15,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <>
-      <header className="bg-blue-600 text-white p-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold cursor-pointer" onClick={() => navigate("/")}>
-          Flytta
-        </h1>
+      <header className="bg-blue-600 text-white px-4 h-14 flex justify-between items-center">
+        <div className="flex items-center space-x-2 cursor-pointer" onClick={() => navigate("/")}> 
+          <img src={require("../flytta.png")} alt="Flytta" className="h-12 w-auto object-contain" />
+        </div>
         {username ? (
           <div className="space-x-4">
             <button onClick={() => navigate("/refinance")} className="hover:underline">
