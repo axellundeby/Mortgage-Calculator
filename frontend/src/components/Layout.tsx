@@ -15,9 +15,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <>
-      <header className="bg-blue-600 text-white px-4 h-14 flex justify-between items-center">
+      <header className="sticky top-0 z-50 bg-blue-600 text-white px-4 h-14 flex justify-between items-center">
         <div className="flex items-center space-x-2 cursor-pointer" onClick={() => navigate("/")}> 
-          <img src={require("../flytta.png")} alt="Flytta" className="h-12 w-auto object-contain" />
+          <img src={require("../flyttaHvit.png")} alt="Flytta" className="h-10 w-auto object-contain" />
         </div>
         {username ? (
           <div className="space-x-4">

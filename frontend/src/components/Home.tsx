@@ -211,7 +211,7 @@ const Home: React.FC = () => {
       <footer className="border-t bg-card/50 backdrop-blur-sm">
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-2xl font-bold text-primary-blue mb-4 md:mb-0">Flytta</div>
+            <img src={require("../flytta.png")} alt="Flytta" className="h-8 w-auto mb-4 md:mb-0" />
             <div className="text-sm text-muted-foreground">
               © 2025 Flytta. Gjør refinansiering enkelt og problemfri.
             </div>
