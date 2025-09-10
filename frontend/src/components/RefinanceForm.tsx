@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Button } from "./ui/button";
+import { Badge } from "./ui/badge";
+import { AlertCircle, CheckCircle, TrendingDown, Building2, Calculator } from "lucide-react";
 
 interface Loan {
     bank: string;
@@ -10,6 +14,7 @@ interface Loan {
     months: number;
     gjennstende_total_kostnad: number;
 }
+
 const API_URL = process.env.REACT_APP_API_BASE || "";
 
 const CombinedLoanForm: React.FC = () => {
@@ -109,12 +114,9 @@ const CombinedLoanForm: React.FC = () => {
         };
 
         fetchConsentStatus();
-
-
         fetchUserLoanAndAlternatives();
         checkAutoRefinance();
     }, []);
-
 
     const handleLoanClick = (loan: any) => {
         setSelectedLoan(loan);
@@ -150,109 +152,215 @@ const CombinedLoanForm: React.FC = () => {
     };
 
     return (
-        <div className="max-w-3xl mx-auto p-6 bg-white rounded shadow">
-            <h2 className="text-2xl font-bold mb-4">Låneoversikt og Alternativer</h2>
+        <div className="min-h-screen bg-gradient-to-br from-background to-muted/20 p-6">
+            <div className="max-w-4xl mx-auto space-y-6">
+                <div className="text-center mb-8">
+                    <h1 className="text-3xl font-bold text-primary mb-2">Låneoversikt</h1>
+                    <p className="text-muted-foreground">Se ditt nåværende lån og potensielle besparelser</p>
+                </div>
 
-            {loan && hasConsent === true && (
-                <>
-                    <h3 className="text-lg font-semibold mt-6 mb-2">Ditt nåværende lån</h3>
-                    <ul className="mb-6">
-                        <li><strong>Bank:</strong> {loan.bank}</li>
-                        <li><strong>Produkt:</strong> {loan.produkt}</li>
-                        <li><strong>Effektiv rente:</strong> {loan.effektiv_rente?.toFixed(2)}%</li>
-                        <li><strong>Månedlig betaling:</strong> {(loan.monthly_payment || 0).toLocaleString("no-NO")} kr</li>
-                        <li><strong>Nedbetalt:</strong> {loan.nedbetalt?.toLocaleString("no-NO")} kr</li>
-                        <li><strong>Gjenstående:</strong> {loan.mangler?.toLocaleString("no-NO")} kr</li>
-                        <li>
-                            <strong>Nedbetalingstid:</strong>{" "}
-                            {Math.floor((loan).months / 12)} år og {(loan).months % 12} måneder
-                        </li>
-                        <li><strong>Total gjenstående kostnad:</strong> {loan.gjennstende_total_kostnad?.toLocaleString("no-NO") || 0} kr</li>
-                    </ul>
-
-
-                    {alternatives.length > 0 ? (
-                        <>
-                            <h3 className="text-lg font-semibold mb-2">Beste alternative lån</h3>
-                            <ul className="mb-4">
-                                {alternatives.map((alt, idx) => (
-                                    <li
-                                        key={idx}
-                                        onClick={() => handleLoanClick(alt)}
-                                        className={`border-b py-2 px-4 cursor-pointer rounded-lg ${selectedLoan === alt ? "bg-blue-100" : "hover:bg-gray-100"}`}
-                                    >
-                                        <strong>{alt["Bank"]}</strong> - {alt["Produkt"]} <br />
-                                        Effektiv rente: {alt["Effektiv rente"]?.toFixed(2)}% <br />
-                                        Månedlig betaling: {alt["monthly_payment"]?.toLocaleString("no-NO")} kr <br />
-                                        Totalkostnad: {(alt["total_kostnad"] || 0).toLocaleString("no-NO")} kr
-                                    </li>
-                                ))}
-                            </ul>
-                            {savings !== null && (
-                                <p className="text-green-600 font-bold">
-                                    Du kan potensielt spare {savings.toLocaleString("no-NO")} kr på å bytte lån!
-                                </p>
-                            )}
-                        </>
-                    ) : (
-                        <div className="mt-6 text-center bg-green-50 border border-green-200 text-green-800 p-4 rounded shadow">
-                            ✅ Du har det beste lånet per dags dato!<br />
-                            Vi finner ingen bedre alternativer akkurat nå.
-                        </div>
-                    )}
-
-                    {confirmationVisible && selectedLoan && (
-                        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
-                            <div className="bg-white p-6 rounded shadow-lg max-w-md w-full text-center">
-                                <h3 className="text-xl font-bold mb-2">Spar penger!</h3>
-                                <p className="mb-4">
-                                    Du kan spare <span className="text-green-600 font-semibold">{savings?.toLocaleString("no-NO")} kr</span> ved å refinansiere lånet ditt.
-                                </p>
-
-                                <p className="text-sm text-gray-600 mb-4">
-                                    Signer med BankID på mobil for å gjennomføre byttet.
-                                </p>
-
-                                <div className="flex justify-center gap-4">
-                                    <button
-                                        onClick={handleConfirmRefinance}
-                                        className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
-                                    >
-                                        Signer og bytt lån
-                                    </button>
-
-                                    <button
-                                        onClick={() => {
-                                            setConfirmationVisible(false);
-                                            setSelectedLoan(null);
-                                        }}
-                                        className="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300"
-                                    >
-                                        Nei takk
-                                    </button>
+                {hasConsent === false && (
+                    <Card className="border-warning bg-warning/5">
+                        <CardContent className="pt-6">
+                            <div className="flex items-center gap-3 text-warning-foreground">
+                                <AlertCircle className="h-5 w-5" />
+                                <div>
+                                    <p className="font-semibold">Du må gi samtykke for å hente låneinformasjon</p>
+                                    <p className="text-sm text-muted-foreground">Gå til profilsiden for å gi samtykke til at vi kan hente dine lånedata.</p>
                                 </div>
                             </div>
-                        </div>
-                    )}
-                    {refinanced && (
-                        <div className="mt-4 p-4 bg-green-100 text-green-800 border border-green-300 rounded">
-                            Lånet ditt er nå refinansiert 🎉
-                        </div>
-                    )}
-                </>
-            )}
-            {hasConsent === false && (
-                <div className="mt-6 text-center bg-yellow-50 border border-yellow-200 text-yellow-800 p-4 rounded shadow">
-                    <p className="mb-2 font-semibold">⚠️ Du må gi samtykke for å hente låneinformasjon.</p>
-                    <button
-                        onClick={() => window.location.href = "/profil"}
-                        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-                    >
-                        Gå til profilside for å gi samtykke
-                    </button>
-                </div>
-            )}
+                            <Button 
+                                onClick={() => window.location.href = "/profil"}
+                                className="mt-4"
+                            >
+                                Gå til profilside
+                            </Button>
+                        </CardContent>
+                    </Card>
+                )}
 
+                {loan && hasConsent === true && (
+                    <>
+                        <Card>
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-2">
+                                    <Building2 className="h-5 w-5" />
+                                    Ditt nåværende lån
+                                </CardTitle>
+                                <CardDescription>
+                                    Oversikt over ditt aktive forbrukslån
+                                </CardDescription>
+                            </CardHeader>
+                            <CardContent className="space-y-4">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div className="space-y-2">
+                                        <div className="flex justify-between">
+                                            <span className="text-muted-foreground">Bank:</span>
+                                            <span className="font-medium">{loan.bank}</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-muted-foreground">Produkt:</span>
+                                            <span className="font-medium">{loan.produkt}</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-muted-foreground">Effektiv rente:</span>
+                                            <Badge variant="outline">{loan.effektiv_rente?.toFixed(2)}%</Badge>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-muted-foreground">Månedlig betaling:</span>
+                                            <span className="font-medium">{(loan.monthly_payment || 0).toLocaleString("no-NO")} kr</span>
+                                        </div>
+                                    </div>
+                                    <div className="space-y-2">
+                                        <div className="flex justify-between">
+                                            <span className="text-muted-foreground">Nedbetalt:</span>
+                                            <span className="font-medium text-accent">{loan.nedbetalt?.toLocaleString("no-NO")} kr</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-muted-foreground">Gjenstående:</span>
+                                            <span className="font-medium">{loan.mangler?.toLocaleString("no-NO")} kr</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-muted-foreground">Nedbetalingstid:</span>
+                                            <span className="font-medium">
+                                                {Math.floor((loan).months / 12)} år og {(loan).months % 12} måneder
+                                            </span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-muted-foreground">Total gjenstående kostnad:</span>
+                                            <span className="font-medium">{loan.gjennstende_total_kostnad?.toLocaleString("no-NO") || 0} kr</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {alternatives.length > 0 ? (
+                            <>
+                                <Card>
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <TrendingDown className="h-5 w-5 text-accent" />
+                                            Beste alternative lån
+                                        </CardTitle>
+                                        <CardDescription>
+                                            Sammenlign med bedre lånetilbud på markedet
+                                        </CardDescription>
+                                    </CardHeader>
+                                    <CardContent className="space-y-3">
+                                        {alternatives.map((alt, idx) => (
+                                            <Card 
+                                                key={idx}
+                                                className={`cursor-pointer transition-all hover:shadow-md ${
+                                                    selectedLoan === alt ? "ring-2 ring-primary bg-primary/5" : "hover:bg-muted/30"
+                                                }`}
+                                                onClick={() => handleLoanClick(alt)}
+                                            >
+                                                <CardContent className="pt-4">
+                                                    <div className="flex justify-between items-start mb-3">
+                                                        <div>
+                                                            <h4 className="font-semibold">{alt["Bank"]}</h4>
+                                                            <p className="text-sm text-muted-foreground">{alt["Produkt"]}</p>
+                                                        </div>
+                                                        <Badge variant="secondary">
+                                                            {alt["Effektiv rente"]?.toFixed(2)}%
+                                                        </Badge>
+                                                    </div>
+                                                    <div className="grid grid-cols-2 gap-4 text-sm">
+                                                        <div>
+                                                            <span className="text-muted-foreground">Månedlig betaling:</span>
+                                                            <p className="font-medium">{alt["monthly_payment"]?.toLocaleString("no-NO")} kr</p>
+                                                        </div>
+                                                        <div>
+                                                            <span className="text-muted-foreground">Totalkostnad:</span>
+                                                            <p className="font-medium">{(alt["total_kostnad"] || 0).toLocaleString("no-NO")} kr</p>
+                                                        </div>
+                                                    </div>
+                                                </CardContent>
+                                            </Card>
+                                        ))}
+                                    </CardContent>
+                                </Card>
+
+                                {savings !== null && (
+                                    <Card className="border-accent bg-accent/5">
+                                        <CardContent className="pt-6">
+                                            <div className="flex items-center gap-3 text-accent-foreground">
+                                                <Calculator className="h-5 w-5" />
+                                                <div>
+                                                    <p className="text-sm text-muted-foreground">
+                                                        Du kan spare {savings.toLocaleString("no-NO")} kr
+                                                    </p>
+                                                    <p className="text-sm text-muted-foreground">ved å bytte til et bedre lån</p>
+                                                </div>
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                )}
+                            </>
+                        ) : (
+                            <Card className="border-accent bg-accent/5">
+                                <CardContent className="pt-6">
+                                    <div className="flex items-center gap-3 text-accent-foreground text-center">
+                                        <CheckCircle className="h-5 w-5" />
+                                        <div>
+                                            <p className="text-sm text-muted-foreground">Du har det beste lånet per dags dato!</p>
+                                            <p className="text-sm text-muted-foreground">Vi finner ingen bedre alternativer akkurat nå.</p>
+                                        </div>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        )}
+
+                        {confirmationVisible && selectedLoan && (
+                            <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
+                                <Card className="w-full max-w-md">
+                                    <CardHeader className="text-center">
+                                        <CardTitle className="text-xl text-accent">Spar penger!</CardTitle>
+                                        <CardDescription>
+                                            Du kan spare <span className="text-accent font-semibold">{savings?.toLocaleString("no-NO")} kr</span> ved å refinansiere lånet ditt.
+                                        </CardDescription>
+                                    </CardHeader>
+                                    <CardContent className="space-y-4">
+                                        <p className="text-sm text-muted-foreground text-center">
+                                            Signer med BankID på mobil for å gjennomføre byttet.
+                                        </p>
+                                        <div className="flex gap-3">
+                                            <Button
+                                                onClick={handleConfirmRefinance}
+                                                className="flex-1"
+                                            >
+                                                Signer og bytt lån
+                                            </Button>
+                                            <Button
+                                                variant="outline"
+                                                onClick={() => {
+                                                    setConfirmationVisible(false);
+                                                    setSelectedLoan(null);
+                                                }}
+                                                className="flex-1"
+                                            >
+                                                Nei takk
+                                            </Button>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        )}
+
+                        {refinanced && (
+                            <Card className="border-accent bg-accent/5">
+                                <CardContent className="pt-6">
+                                    <div className="flex items-center gap-3 text-accent-foreground text-center">
+                                        <CheckCircle className="h-5 w-5" />
+                                        <p className="text-sm text-muted-foreground">Lånet ditt er nå refinansiert! 🎉</p>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        )}
+                    </>
+                )}
+            </div>
         </div>
     );
 };
