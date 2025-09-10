@@ -9,20 +9,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-hero">
-      {/* Header */}
-      <header className="container mx-auto px-6 py-8">
-        <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-primary-blue">Flytta</div>
-          <div className="flex space-x-4">
-            <Button variant="ghost" onClick={() => navigate("/login")}>
-              Logg inn
-            </Button>
-            <Button variant="default" onClick={() => navigate("/reg")}>
-              Registrer deg
-            </Button>
-          </div>
-        </div>
-      </header>
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-16 text-center">
