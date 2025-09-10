@@ -2,14 +2,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
-import { TrendingUp, Shield, Zap, Calculator, CheckCircle, ArrowRight } from "lucide-react";
+import { TrendingUp, Shield, Zap, Calculator, CheckCircle, ArrowRight, Building2, Eye, Clock, ArrowDown } from "lucide-react";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gradient-hero">
-      {/* Header
+      {/* Header */}
       <header className="container mx-auto px-6 py-8">
         <div className="flex justify-between items-center">
           <div className="text-2xl font-bold text-primary-blue">Flytta</div>
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
             </Button>
           </div>
         </div>
-      </header> */}
+      </header>
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-16 text-center">
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
               Kom i gang gratis
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6" onClick={() => navigate("/how-it-works")}>
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6" onClick={() => navigate("/hvordan-det-virker")}>
               Se hvordan det virker
             </Button>
           </div>
@@ -54,49 +54,101 @@ const Home: React.FC = () => {
             Se hvor mye du kan spare
           </h2>
           <p className="text-lg text-muted-foreground">
-            Reelle eksempler på besparelser med Flytta
+            Eksempler på besparelser med Flytta
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="p-8 shadow-card bg-card/50 backdrop-blur-sm border border-success-green/20">
+          {/* Small Loan Example */}
+          <Card className="p-8 shadow-card bg-card/50 backdrop-blur-sm border border-success-green/20 relative overflow-hidden">
+            {/* Continuous monitoring indicator */}
+            <div className="absolute top-4 right-4 flex items-center gap-2 bg-primary-blue/10 text-primary-blue px-3 py-1 rounded-full text-xs font-medium">
+              <div className="w-2 h-2 bg-primary-blue rounded-full animate-pulse"></div>
+              Live
+            </div>
+            
             <div className="text-center">
               <div className="text-3xl font-bold text-success-green mb-2">120 000 kr</div>
-              <div className="text-sm text-muted-foreground mb-4">i gjeld</div>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Fra:</span>
-                  <span className="font-semibold">3 200 kr/mnd (21%)</span>
+              <div className="text-sm text-muted-foreground mb-6">i gjeld</div>
+              
+              {/* Bank transfer flow */}
+              <div className="space-y-4 mb-6">
+                {/* From bank */}
+                <div className="bg-destructive/5 border border-destructive/20 rounded-lg p-4">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <Building2 className="h-4 w-4 text-destructive" />
+                    <span className="font-semibold text-destructive">Nordea</span>
+                  </div>
+                  <div className="text-sm">3 200 kr/mnd • 21% rente</div>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Til:</span>
-                  <span className="font-semibold text-success-green">2 700 kr/mnd</span>
+                
+                {/* Transfer arrow */}
+                <div className="flex justify-center">
+                  <div className="bg-success-green/10 rounded-full p-3">
+                    <ArrowDown className="h-6 w-6 text-success-green" />
+                  </div>
                 </div>
-                <div className="border-t pt-3">
-                  <div className="text-2xl font-bold text-success-green">28 000 kr</div>
-                  <div className="text-sm text-muted-foreground">totalt spart</div>
+                
+                {/* To bank */}
+                <div className="bg-success-green/5 border border-success-green/20 rounded-lg p-4">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <Building2 className="h-4 w-4 text-success-green" />
+                    <span className="font-semibold text-success-green">SpareBank 1</span>
+                  </div>
+                  <div className="text-sm">2 700 kr/mnd • 16% rente</div>
                 </div>
+              </div>
+              
+              <div className="border-t pt-4">
+                <div className="text-2xl font-bold text-success-green">28 000 kr</div>
+                <div className="text-sm text-muted-foreground">totalt spart automatisk</div>
               </div>
             </div>
           </Card>
 
-          <Card className="p-8 shadow-card bg-card/50 backdrop-blur-sm border border-success-green/20">
+          {/* Large Loan Example */}
+          <Card className="p-8 shadow-card bg-card/50 backdrop-blur-sm border border-success-green/20 relative overflow-hidden">
+            {/* Continuous monitoring indicator */}
+            <div className="absolute top-4 right-4 flex items-center gap-2 bg-primary-blue/10 text-primary-blue px-3 py-1 rounded-full text-xs font-medium">
+              <div className="w-2 h-2 bg-primary-blue rounded-full animate-pulse"></div>
+              Live
+            </div>
+            
             <div className="text-center">
               <div className="text-3xl font-bold text-success-green mb-2">500 000 kr</div>
-              <div className="text-sm text-muted-foreground mb-4">i gjeld</div>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Fra:</span>
-                  <span className="font-semibold">13 350 kr/mnd (21%)</span>
+              <div className="text-sm text-muted-foreground mb-6">i gjeld</div>
+              
+              {/* Bank transfer flow */}
+              <div className="space-y-4 mb-6">
+                {/* From bank */}
+                <div className="bg-destructive/5 border border-destructive/20 rounded-lg p-4">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <Building2 className="h-4 w-4 text-destructive" />
+                    <span className="font-semibold text-destructive">DNB</span>
+                  </div>
+                  <div className="text-sm">13 350 kr/mnd • 21% rente</div>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Til:</span>
-                  <span className="font-semibold text-success-green">11 400 kr/mnd</span>
+                
+                {/* Transfer arrow */}
+                <div className="flex justify-center">
+                  <div className="bg-success-green/10 rounded-full p-3">
+                    <ArrowDown className="h-6 w-6 text-success-green" />
+                  </div>
                 </div>
-                <div className="border-t pt-3">
-                  <div className="text-2xl font-bold text-success-green">117 000 kr</div>
-                  <div className="text-sm text-muted-foreground">totalt spart</div>
+                
+                {/* To bank */}
+                <div className="bg-success-green/5 border border-success-green/20 rounded-lg p-4">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <Building2 className="h-4 w-4 text-success-green" />
+                    <span className="font-semibold text-success-green">Handelsbanken</span>
+                  </div>
+                  <div className="text-sm">11 400 kr/mnd • 16% rente</div>
                 </div>
+              </div>
+              
+              <div className="border-t pt-4">
+                <div className="text-2xl font-bold text-success-green">117 000 kr</div>
+                <div className="text-sm text-muted-foreground">totalt spart automatisk</div>
               </div>
             </div>
           </Card>
@@ -213,7 +265,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-2xl font-bold text-primary-blue mb-4 md:mb-0">Flytta</div>
             <div className="text-sm text-muted-foreground">
-              © 2025 Flytta. Gjør refinansiering enkelt og problemfri.
+              © 2024 Flytta. Gjør refinansiering enkelt og problemfri.
             </div>
           </div>
         </div>
